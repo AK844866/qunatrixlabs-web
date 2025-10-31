@@ -31,7 +31,7 @@ const solutionData = [
     title: "Client Portal",
     subtitle:
       "Step into what’s next. Explore trending skills, unlock learning paths, and level up to stay startup-ready — all from one hub.",
-    buttonLink: "/",
+    buttonLink: "",
   },
 
   {
