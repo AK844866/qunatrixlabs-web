@@ -12,7 +12,7 @@ export default function ForSection() {
           className="absolute -top-[20%] w-[60%] z-0 lg:block hidden"
           alt="Shape"
         />
-        <div className="container mx-auto lg:py-32 py-8 lg:space-y-20 space-y-6 z-10">
+        <div className="container mx-auto lg:py-32 py-8 lg:space-y-16 space-y-6 z-10">
           <div className="text-center space-y-2">
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
@@ -51,7 +51,7 @@ export default function ForSection() {
             </div>
 
             <div className="bg-white/10 border border-white/10 rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-200">
-               <div className="lg:p-6 p-4">
+              <div className="lg:p-6 p-4">
                 <h1 className="lg:text-2xl text-2xl font-medium">
                   Fueling Startup Success
                 </h1>
@@ -67,7 +67,7 @@ export default function ForSection() {
             </div>
 
             <div className="bg-white/10 border border-white/10 rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-200">
-             <div className="lg:p-6 p-4">
+              <div className="lg:p-6 p-4">
                 <h1 className="lg:text-2xl text-2xl font-medium">
                   Startups, Verified for Growth
                 </h1>
@@ -91,7 +91,7 @@ export default function ForSection() {
           className="absolute -top-[20%] right-[10%] w-[60%] z-0 lg:block hidden"
           alt="Shape"
         />
-        <div className="container mx-auto lg:py-32 py-8 lg:space-y-20 space-y-6 z-10">
+        <div className="container mx-auto lg:py-32 py-8 lg:space-y-16 space-y-6 z-10">
           <div className="text-center space-y-2">
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
@@ -114,7 +114,7 @@ export default function ForSection() {
 
           <div className="grid md:grid-cols-3 grid-cols-1 xl:gap-10 gap-4">
             <div className="bg-[#2563EB] rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-200">
-               <div className="lg:p-6 p-4">
+              <div className="lg:p-6 p-4">
                 <h1 className="lg:text-2xl text-2xl font-medium">
                   Your Gateway to Startups
                 </h1>
@@ -130,7 +130,7 @@ export default function ForSection() {
             </div>
 
             <div className="bg-white/10 border border-white/10 rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-200">
-            <div className="lg:p-6 p-4">
+              <div className="lg:p-6 p-4">
                 <h1 className="lg:text-2xl text-2xl font-medium">
                   Opportunities Made Real
                 </h1>
@@ -146,7 +146,7 @@ export default function ForSection() {
             </div>
 
             <div className="bg-white/10 border border-white/10 rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-200">
-            <div className="lg:p-6 p-4">
+              <div className="lg:p-6 p-4">
                 <h1 className="lg:text-2xl text-2xl font-medium">
                   Verified Individuals, Limitless Opportunities
                 </h1>
@@ -170,7 +170,7 @@ export default function ForSection() {
           className="absolute -top-[10%] -left-[10%] w-[60%] z-0 lg:block hidden"
           alt="Shape"
         />
-        <div className="container mx-auto lg:py-32 py-8 lg:space-y-20 space-y-6 z-10">
+        <div className="container mx-auto lg:py-32 py-8 lg:space-y-16 space-y-6 z-10">
           <div className="text-center space-y-2">
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
@@ -193,7 +193,7 @@ export default function ForSection() {
 
           <div className="grid md:grid-cols-3 grid-cols-1 xl:gap-10 gap-4">
             <div className="bg-[#2563EB] rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-200">
-             <div className="lg:p-6 p-4">
+              <div className="lg:p-6 p-4">
                 <h1 className="lg:text-2xl text-2xl font-medium">
                   Elevate Your Institution
                 </h1>
@@ -209,7 +209,7 @@ export default function ForSection() {
             </div>
 
             <div className="bg-white/10 border border-white/10 rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-200">
-             <div className="lg:p-6 p-4">
+              <div className="lg:p-6 p-4">
                 <h1 className="lg:text-2xl text-2xl font-medium">
                   Redefining Institutional Reputation
                 </h1>
