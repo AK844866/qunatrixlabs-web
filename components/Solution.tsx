@@ -56,7 +56,7 @@ const Solutions = () => {
   };
 
   return (
-    <section className=" text-white lg:py-20 py-8  snap-start h-screen flex items-center justify-center">
+    <section className=" text-white lg:py-20 py-8  snap-start h-screen flex items-center justify-center overflow-hidden">
       <div className="space-y-10">
         <div className="text-left  container mx-auto flex items-end justify-between lg:px-0 px-6 ">
           <div className="space-y-2 ">
@@ -122,7 +122,7 @@ const Solutions = () => {
             </button>
           </div>
         </div>
-        <div className="relative container mx-auto  block lg:w-auto w-screen lg:overflow-visible overflow-hidden lg:pl-0 pl-6">
+        <div className="relative container mx-auto block lg:w-auto w-screen lg:overflow-visible overflow-hidden lg:pl-0 pl-6">
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={30}
