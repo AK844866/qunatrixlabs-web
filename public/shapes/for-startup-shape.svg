@@ -1,0 +1,12 @@
+<svg width="1876" height="1911" viewBox="0 0 1876 1911" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.25" filter="url(#filter0_f_138_99)">
+<g clip-path="url(#paint0_angular_138_99_clip_path)" data-figma-skip-parse="true"><g transform="matrix(0 0.422 -0.422 0 955.333 955.333)"><foreignObject x="-1003.16" y="-1003.16" width="2006.32" height="2006.32"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(151, 115, 254, 0.5) 0deg,rgba(252, 201, 121, 0.5) 183.75deg,rgba(221, 129, 235, 0.5) 346.875deg,rgba(151, 115, 254, 0.5) 360deg);height:100%;width:100%;opacity:1"></div></foreignObject></g></g><path d="M1377.33 955.333C1377.33 1188.4 1188.4 1377.33 955.333 1377.33C722.269 1377.33 533.333 1188.4 533.333 955.333C533.333 722.269 722.269 533.333 955.333 533.333C1188.4 533.333 1377.33 722.269 1377.33 955.333Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.59215688705444336,&#34;g&#34;:0.45098039507865906,&#34;b&#34;:0.99607843160629272,&#34;a&#34;:0.50},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.98823529481887817,&#34;g&#34;:0.78823530673980713,&#34;b&#34;:0.47450980544090271,&#34;a&#34;:0.50},&#34;position&#34;:0.51041668653488159},{&#34;color&#34;:{&#34;r&#34;:0.86666667461395264,&#34;g&#34;:0.50588238239288330,&#34;b&#34;:0.92156863212585449,&#34;a&#34;:0.50},&#34;position&#34;:0.96354168653488159}],&#34;stopsVar&#34;:[],&#34;transform&#34;:{&#34;m00&#34;:5.1680095749725985e-14,&#34;m01&#34;:-844.0,&#34;m02&#34;:1377.3332519531250,&#34;m10&#34;:844.0,&#34;m11&#34;:5.1680095749725985e-14,&#34;m12&#34;:533.33337402343750},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
+</g>
+<defs>
+<filter id="filter0_f_138_99" x="-0.00012207" y="0" width="1910.67" height="1910.67" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="266.667" result="effect1_foregroundBlur_138_99"/>
+</filter>
+<clipPath id="paint0_angular_138_99_clip_path"><path d="M1377.33 955.333C1377.33 1188.4 1188.4 1377.33 955.333 1377.33C722.269 1377.33 533.333 1188.4 533.333 955.333C533.333 722.269 722.269 533.333 955.333 533.333C1188.4 533.333 1377.33 722.269 1377.33 955.333Z"/></clipPath></defs>
+</svg>
