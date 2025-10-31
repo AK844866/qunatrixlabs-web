@@ -118,13 +118,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="lg:hidden bloack grid grid-cols-2 gap-3">
+        <div className="lg:hidden bloack grid grid-cols-1 gap-3">
           <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4  ">
             <div className="w-12 h-12 rounded-full bg-[#DA1D5D] shrink-0 flex items-center justify-center ">
               <img src="/img/home/verified-digital.svg" className="size-6" />
             </div>
             <div className="space-y-0.5 ">
-              <h1 className="text-lg font-medium">
+              <h1 className="lg:text-lg text-base font-medium">
                 1. Verified Digital Passport
               </h1>
               <p className="text-sm  text-white/80 font-light">
@@ -140,7 +140,7 @@ export default function Home() {
               <img src="/img/home/skill-validation.svg" className="size-6" />
             </div>
             <div>
-              <h1 className="text-xl font-medium">
+             <h1 className="lg:text-lg text-base font-medium">
                 2. Skill Validation & Proof
               </h1>
               <p className="text-sm  text-white/80 font-light">
@@ -155,7 +155,7 @@ export default function Home() {
               <img src="/img/home/smarter-faster.svg" className="size-6" />
             </div>
             <div>
-              <h1 className="text-lg font-medium">3. Smarter, Faster Hiring</h1>
+             <h1 className="lg:text-lg text-base font-medium">3. Smarter, Faster Hiring</h1>
               <p className="text-sm  text-white/80 font-light">
                 Enable easy hiring through automated skill-matching , screening
                 & shortlisting— saving time and effort for both sides.
@@ -168,20 +168,20 @@ export default function Home() {
               <img src="/img/home/real-world.svg" className="size-6" />
             </div>
             <div>
-              <h1 className="text-lg font-medium">4. Smarter, Faster Hiring</h1>
+             <h1 className="lg:text-lg text-base font-medium">4. Smarter, Faster Hiring</h1>
               <p className="text-sm  text-white/80 font-light">
-                 Stay ahead of the curve with startup-led workshops, projects,
+                Stay ahead of the curve with startup-led workshops, projects,
                 and practical tech experiences.
               </p>
             </div>
           </div>
 
-          <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4 col-span-2  ">
+          <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4 col-span-1  ">
             <div className="w-12 h-12 rounded-full bg-[#5556D1] shrink-0 flex items-center justify-center">
               <img src="/img/home/community-driven.svg" className="size-6" />
             </div>
             <div>
-              <h1 className="text-lg font-medium">
+               <h1 className="lg:text-lg text-base font-medium">
                 5. Community-Driven Growth
               </h1>
               <p className="text-sm text-white/80 font-light">
