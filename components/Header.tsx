@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -6,6 +8,17 @@ export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
+
+   const pathname = usePathname();
+
+  const navItems = [
+    { href: "/", label: "Home" },
+    { href: "/employees", label: "Students & Professionals" },
+    { href: "/employers", label: "Companies & Startups" },
+    { href: "/universities-and-college", label: "Universities & Colleges" },
+    { href: "/blog", label: "Blog" },
+  ];
+
 
   useEffect(() => {
     let timeout: NodeJS.Timeout;
@@ -57,12 +70,20 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center space-x-6 text-white/70">
-            <a className="text-white font-medium cursor-pointer">Home</a>
-            <a className="hover:text-white transition">Employees</a>
-            <a className="hover:text-white transition">Employers</a>
-            <a className="hover:text-white transition">Institutions</a>
-            <a className="hover:text-white transition">Students</a>
-            <a className="hover:text-white transition">Blog</a>
+            {navItems.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className={`transition font-medium ${
+                  pathname === href
+                    ? "text-white border-b-2 border-white pb-1"
+                    : "hover:text-white"
+                }`}
+              >
+                {label}
+              </Link>
+            ))}
+            
           </nav>
 
           {/* Desktop Buttons */}
