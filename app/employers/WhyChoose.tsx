@@ -31,7 +31,7 @@ export default function WhyChoose() {
         </motion.p>
       </div>
 
-      <div className="grid grid-cols-5 gap-3">
+      <div className="grid lg:grid-cols-5 grid-cols-2 lg:gap-3 gap-2">
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4  ">
           <div className="w-12 h-12 rounded-full bg-[#DA1D5D] shrink-0 flex items-center justify-center ">
             <svg
@@ -163,7 +163,7 @@ export default function WhyChoose() {
           </div>
         </div>
 
-        <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4 col-span-1  ">
+        <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4 lg:col-span-1 col-span-2 ">
           <div className="w-12 h-12 rounded-full bg-[#5556D1] shrink-0 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"

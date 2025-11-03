@@ -65,9 +65,7 @@ const Featured = () => {
         </div>
 
         {/* Swiper */}
-        <div className="relative container mx-auto block w-full ">
-          {/* Custom Vertical Pagination (RIGHT SIDE) */}
-          <div className="custom-pagination absolute -left-24! top-1/2! -translate-y-1/2! flex flex-col items-center z-50 "></div>
+        <div className="relative container mx-auto block lg:w-auto w-screen lg:overflow-visible overflow-hidden ">
           <Swiper
             modules={[Navigation, Autoplay, Pagination]}
             spaceBetween={30}
@@ -84,17 +82,17 @@ const Featured = () => {
               },
             }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
-            className="2xl:h-160 h-120"
+            className="lg:h-160 h-120"
           >
             {solutionData.map((slide) => (
               <SwiperSlide key={slide.id}>
-                <div className="flex items-center space-x-20 container mx-auto relative z-20 h-full">
-                  <div className="text-left text-white space-y-8 w-6/12">
-                    <button className="px-8 py-1.5 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-sm space-x-2 bg-linear-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF]">
-                      <span>Feature {slide.id}</span>
+                <div className="flex lg:flex-row flex-col-reverse lg:gap-20 gap-6 items-center container mx-auto relative z-20 h-full lg:px-0 px-6  ">
+                  <div className="text-left  text-white space-y-8 lg:w-5/12 w-full">
+                    <button className="px-8 py-1.5 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-sm space-x-2 bg-linear-to-r  from-[#0066FF] via-[#217AFF] to-[#A1BEFF ">
+                      <span>Feature {slide.id} </span>
                     </button>
 
-                    <div className="space-y-4">
+                    <div className="space-y-4  ">
                       <motion.h1
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -119,17 +117,16 @@ const Featured = () => {
                     </div>
 
                     <div className="flex items-center space-x-4">
-                      <button className="px-10 py-3 flex items-center border border-white rounded-full 2xl:text-xl text-lg space-x-2 hover:bg-white/10 transition">
+                      <button className="lg:px-10 px-8 lg:py-3 py-2 flex items-center border border-white rounded-full 2xl:text-xl lg:text-lg text-base space-x-2">
                         <span>Try Now</span>
                       </button>
                     </div>
                   </div>
 
-                  <div className="w-6/12 flex justify-center">
+                  <div className="lg:w-7/12 w-full">
                     <img
                       src="/img/universities/alumni-student.png"
-                      className="object-contain"
-                      alt="Feature"
+                      className="object-contain "
                     />
                   </div>
                 </div>
@@ -137,7 +134,8 @@ const Featured = () => {
             ))}
           </Swiper>
 
-          
+          {/* Custom Vertical Pagination (RIGHT SIDE) */}
+          <div className="custom-pagination absolute -left-24! top-1/2! -translate-y-1/2! flex flex-col items-center z-50 "></div>
         </div>
       </div>
 
@@ -145,7 +143,6 @@ const Featured = () => {
         .custom-pagination .swiper-pagination-bullet {
           opacity: 0.4;
           background-color: white;
-          
         }
         .custom-pagination .swiper-pagination-bullet-active {
           opacity: 1;

@@ -28,8 +28,8 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="bg-[#0D6EFD] text-white py-20 px-6 md:px-16 relative z-0 h-screen w-full overflow-hidden snap-start ">
-      <div className="space-y-20  container mx-auto  lg:px-0 px-6 ">
+    <section className="bg-[#0D6EFD] text-white py-20   relative z-0 h-screen w-full overflow-hidden snap-start ">
+      <div className="lg:space-y-20 space-y-8  container mx-auto  lg:px-0 px-6 ">
         <div className="space-y-2 text-center  ">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
@@ -51,7 +51,7 @@ export default function HowItWorks() {
           </motion.p>
         </div>
 
-        <div className="flex items-center space-x-20   ">
+        <div className="flex lg:flex-row flex-col lg:gap-20 gap-6 items-center ">
           {/* Right Side (Image) */}
           <div className="relative flex justify-center items-center w-full">
             {steps.map(
@@ -61,8 +61,6 @@ export default function HowItWorks() {
                     key={s.id}
                     src={s.img}
                     alt={s.title}
-                    width={700}
-                    height={500}
                     className="rounded-2xl shadow-2xl transition-all duration-500 w-full"
                   />
                 )
@@ -75,7 +73,7 @@ export default function HowItWorks() {
               <div
                 key={s.id}
                 onMouseEnter={() => setStep(s.id)}
-                className="cursor-pointer " 
+                className="cursor-pointer "
               >
                 <div className="flex items-center space-x-4">
                   <div
@@ -83,11 +81,13 @@ export default function HowItWorks() {
                       step === s.id ? "border-white" : "border-white/40"
                     }`}
                   >
-                    <button className="block text-sm text-white rounded-full border border-white px-6 py-1.5">
+                    <button className="block lg:text-sm text-xs text-white rounded-full border border-white lg:px-6 px-4 py-1.5">
                       Step {s.id}
                     </button>
-                    <h3 className="text-2xl font-semibold">{s.title}</h3>
-                    <p className="text-white font-light text-base  ">{s.desc}</p>
+                    <h3 className="lg:text-2xl text-lg font-semibold">{s.title}</h3>
+                    <p className="text-white font-light text-base  ">
+                      {s.desc}
+                    </p>
                   </div>
                 </div>
               </div>

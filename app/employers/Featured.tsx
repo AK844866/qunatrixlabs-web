@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper"; // 👈 import Swiper type
 import "swiper/css";
 import "swiper/css/navigation";
@@ -86,29 +86,29 @@ const Featured = () => {
             </motion.p>
           </div>
         </div>
-        <div className="relative container mx-auto block lg:w-auto w-screen lg:overflow-visible overflow-hidden lg:pl-0 pl-6">
+        <div className="relative container mx-auto block lg:w-auto w-screen lg:overflow-visible overflow-hidden ">
           <Swiper
-            modules={[Navigation, Autoplay]}
+            modules={[Navigation, Autoplay, Pagination]}
             spaceBetween={30}
             direction={"vertical"}
             loop={true}
             autoplay={{
-              delay: 2500,
-              // disableOnInteraction: false,
+              delay: 3000,
             }}
-            breakpoints={{
-              320: { slidesPerView: 1.1 }, // small phones
-              640: { slidesPerView: 1.5 }, // larger phones
-              768: { slidesPerView: 2.1 }, // tablets
-              1024: { slidesPerView: 3.5 }, // desktops
-              1920: { slidesPerView: 1 }, // desktops
+            pagination={{
+              clickable: true,
+              el: ".custom-pagination",
+              renderBullet: (index, className) => {
+                return `<span class="${className} w-3 h-3 cursor-pointer block rounded-full my-2  bg-white/30 transition-all duration-300"></span>`;
+              },
             }}
-            className="pb-10 "
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            className="lg:h-160 h-120"
           >
             {solutionData.map((slide) => (
               <SwiperSlide key={slide.id}>
-                <div className="flex items-center space-x-20 container mx-auto relative z-20 h-full  ">
-                  <div className="text-left  text-white space-y-8 w-5/12">
+                <div className="flex lg:flex-row flex-col-reverse lg:gap-20 gap-6 items-center container mx-auto relative z-20 h-full lg:px-0 px-6  ">
+                  <div className="text-left  text-white space-y-8 lg:w-5/12 w-full">
                     <button className="px-8 py-1.5 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-sm space-x-2 bg-linear-to-r  from-[#0066FF] via-[#217AFF] to-[#A1BEFF ">
                       <span>Feature {slide.id} </span>
                     </button>
@@ -138,13 +138,13 @@ const Featured = () => {
                     </div>
 
                     <div className="flex items-center space-x-4">
-                      <button className="px-10 py-3 flex items-center border border-white rounded-full 2xl:text-xl text-lg space-x-2">
+                      <button className="lg:px-10 px-8 lg:py-3 py-2 flex items-center border border-white rounded-full 2xl:text-xl lg:text-lg text-base space-x-2">
                         <span>Try Now</span>
                       </button>
                     </div>
                   </div>
 
-                  <div className="w-7/12">
+                  <div className="lg:w-7/12 w-full">
                     <img
                       src="img/employers/verified-talent-profiles.png"
                       className="object-contain "
@@ -154,6 +154,9 @@ const Featured = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+
+          {/* Custom Vertical Pagination (RIGHT SIDE) */}
+          <div className="custom-pagination absolute -left-24! top-1/2! -translate-y-1/2! flex flex-col items-center z-50 "></div>
         </div>
       </div>
     </section>
