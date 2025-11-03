@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper"; // 👈 import Swiper type
 import "swiper/css";
 import "swiper/css/navigation";
@@ -85,24 +85,24 @@ const FeaturedforEmployee = () => {
             </motion.p>
           </div>
         </div>
-        <div className="relative container mx-auto block lg:w-auto w-screen lg:overflow-visible overflow-hidden lg:pl-0 pl-6">
+        <div className="relative container mx-auto block lg:w-auto w-screen lg:overflow-visible overflow-hidden ">
           <Swiper
-            modules={[Navigation, Autoplay]}
+            modules={[Navigation, Autoplay, Pagination]}
             spaceBetween={30}
             direction={"vertical"}
             loop={true}
             autoplay={{
-              delay: 2500,
-              // disableOnInteraction: false,
+              delay: 3000,
             }}
-            breakpoints={{
-              320: { slidesPerView: 1.1 }, // small phones
-              640: { slidesPerView: 1.5 }, // larger phones
-              768: { slidesPerView: 2.1 }, // tablets
-              1024: { slidesPerView: 3.5 }, // desktops
-              1920: { slidesPerView: 1 }, // desktops
+            pagination={{
+              clickable: true,
+              el: ".custom-pagination",
+              renderBullet: (index, className) => {
+                return `<span class="${className} w-3 h-3 cursor-pointer block rounded-full my-2  bg-white/30 transition-all duration-300"></span>`;
+              },
             }}
-            className="pb-10 "
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            className="h-160"
           >
             {solutionData.map((slide) => (
               <SwiperSlide key={slide.id}>
@@ -153,8 +153,23 @@ const FeaturedforEmployee = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+
+          {/* Custom Vertical Pagination (RIGHT SIDE) */}
+          <div className="custom-pagination absolute -left-24! top-1/2 -translate-y-1/2 flex flex-col items-center z-50   "></div>
         </div>
       </div>
+      <style jsx global>{`
+        .custom-pagination .swiper-pagination-bullet {
+          opacity: 0.4;
+          background-color: white;
+        }
+        .custom-pagination .swiper-pagination-bullet-active {
+          opacity: 1;
+          background-color: #217aff;
+          transform: scale(1.4);
+          box-shadow: 0 0 10px #217aff;
+        }
+      `}</style>
     </section>
   );
 };

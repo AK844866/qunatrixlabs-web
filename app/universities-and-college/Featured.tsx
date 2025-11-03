@@ -1,119 +1,100 @@
 "use client";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
-import type { Swiper as SwiperType } from "swiper"; // 👈 import Swiper type
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { motion } from "framer-motion";
 
 const solutionData = [
   {
     id: 1,
-    img: "/img/home/profile-passport.svg",
     title: "Alumni & Student Tracking",
-    subtitle: ` Monitor achievements, career paths, and skill developmen.
-`,
-    buttonLink: "",
+    subtitle: `Monitor achievements, career paths, and skill development.`,
   },
   {
     id: 2,
-    img: "/img/home/skill-check.svg",
     title: "Event & Program Management",
-    subtitle: `Organize hackathons, job fairs, webinars, and other growth initiatives.
-`,
-    buttonLink: "",
+    subtitle: `Organize hackathons, job fairs, webinars, and other growth initiatives.`,
   },
-
   {
     id: 3,
-    img: "/img/home/client-portal.svg",
     title: "Institution Branding",
     subtitle: `Showcase verified alumni success stories to enhance institutional reputation.`,
-    buttonLink: "",
   },
-
   {
     id: 4,
-    img: "/img/home/opportunities-hub.svg",
     title: "Industry Collaboration",
     subtitle: `Connect students with companies and startups for internships and projects.`,
-    buttonLink: "",
   },
   {
     id: 5,
-    img: "/img/home/opportunities-hub.svg",
     title: "Data Insights",
-    subtitle:
-      "Access analytics to understand student and alumni outcomes, trends, and engagement.",
-    buttonLink: "",
+    subtitle: `Access analytics to understand student and alumni outcomes, trends, and engagement.`,
   },
 ];
 
 const Featured = () => {
-  const swiperRef = useRef<SwiperType | null>(null); // ✅ Properly typed ref
-
-  const handleNext = () => {
-    swiperRef.current?.slideNext();
-  };
-
-  const handlePrev = () => {
-    swiperRef.current?.slidePrev();
-  };
+  const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section className=" text-white lg:py-20 py-8  snap-start h-screen flex items-center justify-center overflow-hidden">
-      <div className="space-y-10 relative">
-        <div className="text-center  container mx-auto  lg:px-0 px-6 ">
-          <div className="space-y-2 ">
-            <motion.h1
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
-              className="2xl:text-5xl xl:text-4xl lg:text-3xl text-2xl font-semibold"
-            >
-              Feature for Employers
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
-              viewport={{ once: true }}
-              className="xl:text-xl md:text-lg text-base text-white/80 font-light"
-            >
-              Explore Features That Work for Everyone — Empowering Students,
-              Recruiters & Institutes
-            </motion.p>
-          </div>
+    <section className="text-white lg:py-20 py-8 snap-start h-screen flex items-center justify-center overflow-hidden relative">
+      <div className="space-y-10 relative w-full">
+        {/* Header */}
+        <div className="text-center container mx-auto lg:px-0 px-6 space-y-4">
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="2xl:text-5xl xl:text-4xl lg:text-3xl text-2xl font-semibold"
+          >
+            Feature for Employers
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="xl:text-xl md:text-lg text-base text-white/80 font-light"
+          >
+            Explore Features That Work for Everyone — Empowering Students,
+            Recruiters & Institutes
+          </motion.p>
         </div>
-        <div className="relative container mx-auto block lg:w-auto w-screen lg:overflow-visible overflow-hidden lg:pl-0 pl-6">
+
+        {/* Swiper */}
+        <div className="relative container mx-auto block w-full ">
+          {/* Custom Vertical Pagination (RIGHT SIDE) */}
+          <div className="custom-pagination absolute -left-24! top-1/2! -translate-y-1/2! flex flex-col items-center z-50 "></div>
           <Swiper
-            modules={[Navigation, Autoplay]}
+            modules={[Navigation, Autoplay, Pagination]}
             spaceBetween={30}
             direction={"vertical"}
             loop={true}
             autoplay={{
-              delay: 2500,
-              // disableOnInteraction: false,
+              delay: 3000,
             }}
-            breakpoints={{
-              320: { slidesPerView: 1.1 }, // small phones
-              640: { slidesPerView: 1.5 }, // larger phones
-              768: { slidesPerView: 2.1 }, // tablets
-              1024: { slidesPerView: 3.5 }, // desktops
-              1920: { slidesPerView: 1 }, // desktops
+            pagination={{
+              clickable: true,
+              el: ".custom-pagination",
+              renderBullet: (index, className) => {
+                return `<span class="${className} w-3 h-3 cursor-pointer block rounded-full my-2  bg-white/30 transition-all duration-300"></span>`;
+              },
             }}
-            className="pb-10 "
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            className="2xl:h-160 h-120"
           >
             {solutionData.map((slide) => (
               <SwiperSlide key={slide.id}>
-                <div className="flex items-center space-x-20 container mx-auto relative z-20 h-full  ">
-                  <div className="text-left  text-white space-y-8 w-5/12">
-                    <button className="px-8 py-1.5 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-sm space-x-2 bg-linear-to-r  from-[#0066FF] via-[#217AFF] to-[#A1BEFF ">
-                      <span>Feature {slide.id} </span>
+                <div className="flex items-center space-x-20 container mx-auto relative z-20 h-full">
+                  <div className="text-left text-white space-y-8 w-6/12">
+                    <button className="px-8 py-1.5 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-sm space-x-2 bg-linear-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF]">
+                      <span>Feature {slide.id}</span>
                     </button>
 
-                    <div className="space-y-4  ">
+                    <div className="space-y-4">
                       <motion.h1
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -138,24 +119,41 @@ const Featured = () => {
                     </div>
 
                     <div className="flex items-center space-x-4">
-                      <button className="px-10 py-3 flex items-center border border-white rounded-full 2xl:text-xl text-lg space-x-2">
+                      <button className="px-10 py-3 flex items-center border border-white rounded-full 2xl:text-xl text-lg space-x-2 hover:bg-white/10 transition">
                         <span>Try Now</span>
                       </button>
                     </div>
                   </div>
 
-                  <div className="w-7/12">
+                  <div className="w-6/12 flex justify-center">
                     <img
                       src="/img/universities/alumni-student.png"
-                      className="object-contain "
+                      className="object-contain"
+                      alt="Feature"
                     />
                   </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
+
+          
         </div>
       </div>
+
+      <style jsx global>{`
+        .custom-pagination .swiper-pagination-bullet {
+          opacity: 0.4;
+          background-color: white;
+          
+        }
+        .custom-pagination .swiper-pagination-bullet-active {
+          opacity: 1;
+          background-color: #217aff;
+          transform: scale(1.4);
+          box-shadow: 0 0 10px #217aff;
+        }
+      `}</style>
     </section>
   );
 };
