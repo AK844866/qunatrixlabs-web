@@ -102,12 +102,12 @@ const FeaturedforEmployee = () => {
               },
             }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
-            className="h-160"
+            className="lg:h-160 h-120"
           >
             {solutionData.map((slide) => (
               <SwiperSlide key={slide.id}>
-                <div className="flex items-center space-x-20 container mx-auto relative z-20 h-full  ">
-                  <div className="text-left  text-white space-y-8 w-5/12">
+                <div className="flex lg:flex-row flex-col-reverse lg:gap-20 gap-6 items-center container mx-auto relative z-20 h-full lg:px-0 px-6  ">
+                  <div className="text-left  text-white space-y-8 lg:w-5/12 w-full">
                     <button className="px-8 py-1.5 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-sm space-x-2 bg-linear-to-r  from-[#0066FF] via-[#217AFF] to-[#A1BEFF ">
                       <span>Feature {slide.id} </span>
                     </button>
@@ -137,13 +137,13 @@ const FeaturedforEmployee = () => {
                     </div>
 
                     <div className="flex items-center space-x-4">
-                      <button className="px-10 py-3 flex items-center border border-white rounded-full 2xl:text-xl text-lg space-x-2">
+                      <button className="lg:px-10 px-8 lg:py-3 py-2 flex items-center border border-white rounded-full 2xl:text-xl lg:text-lg text-base space-x-2">
                         <span>Try Now</span>
                       </button>
                     </div>
                   </div>
 
-                  <div className="w-7/12">
+                  <div className="lg:w-7/12 w-full">
                     <img
                       src="/img/employee/your-dream-Jobs.png"
                       className="object-contain "
@@ -155,7 +155,7 @@ const FeaturedforEmployee = () => {
           </Swiper>
 
           {/* Custom Vertical Pagination (RIGHT SIDE) */}
-          <div className="custom-pagination absolute -left-24! top-1/2 -translate-y-1/2 flex flex-col items-center z-50   "></div>
+          <div className="custom-pagination absolute -left-24! top-1/2! -translate-y-1/2! flex flex-col items-center z-50 "></div>
         </div>
       </div>
       <style jsx global>{`

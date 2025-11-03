@@ -29,10 +29,10 @@ export default function HeroSectionOther({
   return (
     <section className="relative z-0 h-screen w-full overflow-hidden snap-start ">
       {/* Hero Text */}
-      <div className="flex items-center space-x-20 container mx-auto relative z-20 h-full  ">
-        <div className="  text-left  text-white space-y-8 ">
+      <div className="flex lg:flex-row flex-col items-center justify-center lg:gap-20 gap-6 container mx-auto relative z-20 h-full lg:px-0 px-6 ">
+        <div className="  lg:text-left text-center  text-white lg:space-y-8 space-y-4 ">
           <button className="bg-linear-to-r  from-[#0066FF] via-[#217AFF] to-[#A1BEFF] p-[1px] rounded-full  transition duration-300 hover:shadow-[0_0_20px_#3b82f6]">
-            <div className="px-8 py-2 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-sm space-x-2 ">
+            <div className="px-8 py-2 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-xs space-x-2 ">
               <span>Over 20,000 Employee hired last 6 month </span>
             </div>
           </button>
@@ -56,8 +56,8 @@ export default function HeroSectionOther({
             </motion.p>
           </div>
 
-          <div className="flex items-center space-x-4">
-            <button className="px-10 py-3 flex items-center bg-black rounded-full 2xl:text-xl text-lg space-x-2 transition duration-300 hover:shadow-[0_0_20px_#3b82f6]">
+          <div className="flex lg:flex-row flex-col gap-4 items-center">
+            <button className="px-10 py-3 lg:flex hidden items-center bg-black rounded-full 2xl:text-xl text-lg space-x-2 transition duration-300 hover:shadow-[0_0_20px_#3b82f6]">
               <span>{button}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,17 +77,14 @@ export default function HeroSectionOther({
               </svg>
             </button>
 
-            <button className="px-10 py-3 flex items-center border border-white rounded-full 2xl:text-xl text-lg space-x-2">
+            <button className="px-10 py-3 flex items-center border border-white rounded-full 2xl:text-xl lg:text-lg text-sm space-x-2">
               <span>{buttonTwo}</span>
             </button>
           </div>
         </div>
 
         <div>
-          <img
-            src={img}
-            className="rounded-3xl "
-          />
+          <img src={img} className="rounded-3xl lg:aspect-auto aspect-video object-cover" />
         </div>
       </div>
       {/* Background Video */}

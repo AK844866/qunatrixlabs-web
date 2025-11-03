@@ -9,7 +9,7 @@ export default function Header() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
 
-   const pathname = usePathname();
+  const pathname = usePathname();
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -18,7 +18,6 @@ export default function Header() {
     { href: "/universities-and-college", label: "Universities & Colleges" },
     { href: "/blog", label: "Blog" },
   ];
-
 
   useEffect(() => {
     let timeout: NodeJS.Timeout;
@@ -83,7 +82,6 @@ export default function Header() {
                 {label}
               </Link>
             ))}
-            
           </nav>
 
           {/* Desktop Buttons */}
@@ -162,21 +160,34 @@ export default function Header() {
           <a onClick={() => setMenuOpen(false)} className="hover:text-white">
             Home
           </a>
-          <a onClick={() => setMenuOpen(false)} className="hover:text-white">
-            Employees
-          </a>
-          <a onClick={() => setMenuOpen(false)} className="hover:text-white">
-            Employers
-          </a>
-          <a onClick={() => setMenuOpen(false)} className="hover:text-white">
-            Institutions
-          </a>
-          <a onClick={() => setMenuOpen(false)} className="hover:text-white">
-            Students
-          </a>
-          <a onClick={() => setMenuOpen(false)} className="hover:text-white">
+          <Link
+            href="/employees"
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-white"
+          >
+            Students & Professionals
+          </Link>
+          <Link
+            href="/employers"
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-white"
+          >
+            Companies & Startups
+          </Link>
+          <Link
+            href="/universities-and-college"
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-white"
+          >
+            Universities & Colleges
+          </Link>
+          <Link
+            href="/"
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-white"
+          >
             Blog
-          </a>
+          </Link>
         </nav>
 
         <div className="mt-10 flex flex-col gap-3 w-full">

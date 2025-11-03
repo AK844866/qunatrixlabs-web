@@ -81,7 +81,7 @@ export default function ProvenStates({ DataState }: ProvenStatesProps) {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid gap-6 grid-cols-2 w-4xl mx-auto">
+        <div className="grid lg:gap-6 gap-4 grid-cols-2 lg:w-4xl w-full mx-auto lg:px-0 px-6">
           {DataState.map((slide, i) => (
             <motion.div
               key={i}
@@ -89,7 +89,7 @@ export default function ProvenStates({ DataState }: ProvenStatesProps) {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="bg-[#E0F2FE]/10 p-6 py-8 flex items-center space-x-6 rounded-3xl border border-white/10"
+              className="bg-[#E0F2FE]/10 p-6 lg:py-8 py-6 flex lg:flex-row flex-col lg:gap-6 gap-4 items-center rounded-3xl border border-white/10"
             >
               <div
                 className="w-20 h-20 rounded-full shrink-0 flex items-center justify-center"
@@ -98,11 +98,11 @@ export default function ProvenStates({ DataState }: ProvenStatesProps) {
                 <img src={slide.icon} className="size-10" alt="icon" />
               </div>
 
-              <div className="space-y-2">
-                <h3 className="text-5xl font-semibold">
+              <div className="space-y-2 lg:text-left text-center">
+                <h3 className="lg:text-5xl text-4xl font-semibold">
                   <AnimatedNumber to={slide.title} />+
                 </h3>
-                <p className="text-lg font-light">{slide.subtitle}</p>
+                <p className="lg:text-lg text-sm font-light">{slide.subtitle}</p>
               </div>
             </motion.div>
           ))}
