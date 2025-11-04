@@ -11,15 +11,16 @@ const solutionData = [
   {
     id: 1,
     img: "/img/home/profile-passport.svg",
-    title: "Opportunity Marketplace",
-    subtitle: ` Personalized recommendations for internships, jobs, freelance gigs, and volunteer roles.`,
+    title: "Verified Talent Profiles",
+    subtitle: `Access detailed profiles with validated skills, projects, education, and experience.
+`,
     buttonLink: "",
   },
   {
     id: 2,
     img: "/img/home/skill-check.svg",
-    title: "Verified Profile Passport",
-    subtitle: `Showcase your verified skills, education, projects, and experiences in one place.
+    title: "Streamlined Recruitment",
+    subtitle: `Save time with pre-verified candidates and automated onboarding tools.
 `,
     buttonLink: "",
   },
@@ -27,29 +28,29 @@ const solutionData = [
   {
     id: 3,
     img: "/img/home/client-portal.svg",
-    title: "Networking & Mentorship",
-    subtitle: `Connect with professionals, mentors, and peers to build meaningful relationships.`,
+    title: "Community Building",
+    subtitle: `Launch products, host events, and engage with your target audience.`,
     buttonLink: "",
   },
 
   {
     id: 4,
     img: "/img/home/opportunities-hub.svg",
-    title: "Skill Verification & Endorsements",
-    subtitle: `Gain credibility with verified skills and project validations`,
+    title: "Talent Insights",
+    subtitle: `Analyze industry-specific talent pools for better hiring decisions. `,
     buttonLink: "",
   },
   {
     id: 5,
     img: "/img/home/opportunities-hub.svg",
-    title: "Events & Learning",
+    title: "Employer Branding",
     subtitle:
-      "Access hackathons, workshops, webinars, and upskilling programs.",
+      "Highlight your company as a trusted partner for growth and opportunity.",
     buttonLink: "",
   },
 ];
 
-const FeaturedforEmployee = () => {
+const Featured = () => {
   const swiperRef = useRef<SwiperType | null>(null); // ✅ Properly typed ref
 
   const handleNext = () => {
@@ -71,7 +72,7 @@ const FeaturedforEmployee = () => {
               transition={{ duration: 0.8, ease: "easeInOut" }}
               className="2xl:text-5xl xl:text-4xl lg:text-3xl text-2xl font-semibold"
             >
-              Featured for Employee
+              Feature for Employers
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 40 }}
@@ -145,7 +146,7 @@ const FeaturedforEmployee = () => {
 
                   <div className="lg:w-7/12 w-full">
                     <img
-                      src="/img/employee/your-dream-Jobs.png"
+                      src="img/employers/verified-talent-profiles.png"
                       className="object-contain "
                     />
                   </div>
@@ -155,23 +156,11 @@ const FeaturedforEmployee = () => {
           </Swiper>
 
           {/* Custom Vertical Pagination (RIGHT SIDE) */}
-          <div className="custom-pagination absolute -left-24! top-1/2! -translate-y-1/2! flex flex-col items-center z-50 "></div>
+           <div className="custom-pagination absolute -left-24! top-1/2! -translate-y-1/2! lg:flex hidden flex-col items-center z-50 "></div>
         </div>
       </div>
-      <style jsx global>{`
-        .custom-pagination .swiper-pagination-bullet {
-          opacity: 0.4;
-          background-color: white;
-        }
-        .custom-pagination .swiper-pagination-bullet-active {
-          opacity: 1;
-          background-color: #217aff;
-          transform: scale(1.4);
-          box-shadow: 0 0 10px #217aff;
-        }
-      `}</style>
     </section>
   );
 };
 
-export default FeaturedforEmployee;
+export default Featured;

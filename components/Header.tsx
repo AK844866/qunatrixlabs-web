@@ -13,9 +13,9 @@ export default function Header() {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/employees", label: "Students & Professionals" },
-    { href: "/employers", label: "Companies & Startups" },
-    { href: "/universities-and-college", label: "Universities & Colleges" },
+    { href: "/talents", label: "Talents" },
+    { href: "/companies", label: "Companies" },
+    { href: "/colleges", label: "Colleges" },
     { href: "/blog", label: "Blog" },
   ];
 
@@ -157,37 +157,20 @@ export default function Header() {
         </div>
 
         <nav className="flex flex-col space-y-6 text-white/80 w-full">
-          <a onClick={() => setMenuOpen(false)} className="hover:text-white">
-            Home
-          </a>
-          <Link
-            href="/employees"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-white"
-          >
-            Students & Professionals
-          </Link>
-          <Link
-            href="/employers"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-white"
-          >
-            Companies & Startups
-          </Link>
-          <Link
-            href="/universities-and-college"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-white"
-          >
-            Universities & Colleges
-          </Link>
-          <Link
-            href="/"
-            onClick={() => setMenuOpen(false)}
-            className="hover:text-white"
-          >
-            Blog
-          </Link>
+          {navItems.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className={`transition font-medium ${
+                pathname === href
+                  ? "text-white border-white pb-1"
+                  : "hover:text-white"
+              }`}
+            >
+              {label}
+            </Link>
+          ))}
+          
         </nav>
 
         <div className="mt-10 flex flex-col gap-3 w-full">

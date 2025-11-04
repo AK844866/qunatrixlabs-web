@@ -1,12 +1,13 @@
 "use client";
 
-import { useRef, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 import Header from "./Header";
 
 export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const [hover, setHover] = useState(false);
 
   useEffect(() => {
     // Set custom video speed
@@ -31,6 +32,8 @@ export default function HeroSection() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
+  const [flipped, setFlipped] = useState(false);
+  const [flipped2, setFlipped2] = useState(false);
   return (
     <section
       className="relative z-0 h-screen w-full overflow-hidden snap-start "
@@ -59,17 +62,61 @@ export default function HeroSection() {
         src="/img/job-hero-element.svg"
         className="float-img lg:w-[14%] w-[28%] absolute top-[16%] lg:right-[13%] right-[5%] z-10 transition-transform duration-200 ease-out lg:block hidden"
       />
-      <img
+
+      <motion.div
+        className="lg:w-[22%] w-[44%] absolute lg:bottom-[18%] bottom-[14%] lg:left-[12%] left-[4%] z-20 cursor-pointer perspective-1000 lg:block hidden "
+        onMouseEnter={() => setFlipped(true)}
+        onMouseLeave={() => setFlipped(false)}
+      >
+        <motion.img
+          key={flipped ? "hover" : "default"} // 👈 makes Framer treat them as different elements
+          src={
+            flipped
+              ? "/img/home/asssment-card-hero.svg" // hover image
+              : "/img/assessment-hero-element.svg" // default image
+          }
+          initial={{ rotateY: 0 }}
+          animate={{ rotateY: flipped ? 180 : 0 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          className={` float-img transition-all duration-300 ease-out transform-gpu rounded-xl shadow-lg backface-hidden ${
+            flipped && "w-[80%]"
+          }`}
+          style={{ transformStyle: "preserve-3d" }}
+        />
+      </motion.div>
+      {/* <img
         src="/img/assessment-hero-element.svg"
         className="float-img  lg:w-[22%] w-[44%] absolute lg:bottom-[18%] bottom-[14%] lg:left-[12%] left-[4%] z-10 transition-transform duration-200 ease-out lg:block hidden"
-      />
-      <img
+      /> */}
+
+      <motion.div
+        className="float-img  lg:w-[22%] w-[44%]  absolute lg:bottom-[18%] bottom-[10%] lg:right-[12%] right-[4%] z-20 transition-transform duration-200 ease-out lg:block hidden"
+        onMouseEnter={() => setFlipped2(true)}
+        onMouseLeave={() => setFlipped2(false)}
+      >
+        <motion.img
+          key={flipped2 ? "hover" : "default"} // 👈 makes Framer treat them as different elements
+          src={
+            flipped2
+              ? "/img/home/survey-&-polls.png" // hover image
+              : "/img/survey-hero-element.svg" // default image
+          }
+          initial={{ rotateY: 0 }}
+          animate={{ rotateY: flipped2 ? 180 : 0 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          className={` float-img transition-all duration-300 ease-out transform-gpu rounded-xl shadow-lg backface-hidden ${
+            flipped2 && "w-[60%]"
+          }`}
+          style={{ transformStyle: "preserve-3d" }}
+        />
+      </motion.div>
+      {/* <img
         src="/img/survey-hero-element.svg"
         className="float-img  lg:w-[22%] w-[44%]  absolute lg:bottom-[18%] bottom-[10%] lg:right-[12%] right-[4%] z-10 transition-transform duration-200 ease-out lg:block hidden"
-      />
+      /> */}
 
       {/* Hero Text */}
-      <div className="relative z-20 flex flex-col justify-center items-center text-center h-full text-white space-y-8 md:px-0 px-4">
+      <div className="relative z-10 flex flex-col justify-center items-center text-center h-full text-white space-y-8 md:px-0 px-4">
         <div className="space-y-4">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}

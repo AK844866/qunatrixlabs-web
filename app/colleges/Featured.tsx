@@ -135,7 +135,7 @@ const Featured = () => {
           </Swiper>
 
           {/* Custom Vertical Pagination (RIGHT SIDE) */}
-          <div className="custom-pagination absolute -left-24! top-1/2! -translate-y-1/2! flex flex-col items-center z-50 "></div>
+          <div className="custom-pagination absolute -left-24! top-1/2! -translate-y-1/2! lg:flex hidden flex-col items-center z-50 "></div>
         </div>
       </div>
 
