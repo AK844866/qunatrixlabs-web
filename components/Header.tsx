@@ -85,13 +85,13 @@ export default function Header() {
           </nav>
 
           {/* Desktop Buttons */}
-          <div className="hidden lg:flex space-x-6">
-            <button className="cursor-pointer text-white/80 hover:text-white transition">
+          <div className="hidden lg:flex space-x-0">
+            <Link href="https://dev-verifide.verifide.xyz/login?redirect=%2Fuser%2Fprofile" className="cursor-pointer text-white/80 hover:text-white transition px-6 py-2">
               Login
-            </button>
-            <button className="bg-linear-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] px-4 py-2 rounded-full text-white font-medium hover:opacity-90 transition">
-              Sign in
-            </button>
+            </Link>
+            <Link href="https://dev-verifide.verifide.xyz/create-account?redirect=%2Fuser%2Fprofile" className="bg-linear-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] px-4 py-2 rounded-full text-white font-medium hover:opacity-90 transition cursor-pointer">
+              Sign Up
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
