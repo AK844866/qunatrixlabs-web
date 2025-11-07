@@ -9,27 +9,39 @@ export default function HowItWorks() {
   const steps = [
     {
       id: 1,
-      title: "Search & Discover",
+      title: "User Engement",
       desc: "Access a pool of verified profiles.",
-      img: "/img/employers/search-discover.png", // change this to your own image
+      img: "/img/employers/user-engement.png", // change this to your own image
     },
     {
       id: 2,
-      title: "Assess & Shortlist",
+      title: "Brand Growth",
       desc: "Use Verifide’s custom or pre-built assessments.",
-      img: "/img/employers/search-discover.png", // change this to your own image
+      img: "/img/employers/brand-growth.png", // change this to your own image
     },
     {
       id: 3,
-      title: "Hire with Confidence",
+      title: "User Adoption",
       desc: "Interview only candidates who meet your skill criteria.",
-      img: "/img/employers/search-discover.png", // change this to your own image
+      img: "/img/employers/user-adoption.png", // change this to your own image
+    },
+    {
+      id: 4,
+      title: "Hiring Talents",
+      desc: "Interview only candidates who meet your skill criteria.",
+      img: "/img/employers/hiring-talents.png", // change this to your own image
+    },
+    {
+      id: 5,
+      title: "Reduce Cost",
+      desc: "Interview only candidates who meet your skill criteria.",
+      img: "/img/employers/user-adoption.png", // change this to your own image
     },
   ];
 
   return (
-     <section className="bg-[#0D6EFD] text-white py-20   relative z-0 h-screen w-full overflow-hidden snap-start ">
-      <div className="lg:space-y-20 space-y-8  container mx-auto  lg:px-0 px-6 ">
+    <section className="bg-[#0E0C15] text-white py-20   relative z-0 h-screen w-full overflow-hidden snap-start ">
+      <div className="lg:space-y-20 space-y-8 relative  container mx-auto  lg:px-0 px-6 z-20 ">
         <div className="space-y-2 text-center  ">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
@@ -51,24 +63,9 @@ export default function HowItWorks() {
           </motion.p>
         </div>
 
-        <div className="flex lg:flex-row flex-col lg:gap-20 gap-6 items-center ">
-          {/* Right Side (Image) */}
-          <div className="relative flex justify-center items-center w-full">
-            {steps.map(
-              (s) =>
-                step === s.id && (
-                  <img
-                    key={s.id}
-                    src={s.img}
-                    alt={s.title}
-                    className="rounded-2xl shadow-2xl transition-all duration-500 w-full"
-                  />
-                )
-            )}
-          </div>
+        <div className="flex lg:flex-row flex-col 2xl:gap-10 gap-6 items-start w-10/12 mx-auto ">
           {/* Left Side (Text) */}
-
-          <div className="space-y-10  w-full">
+          <div className="space-y-10 shrink-0 2xl:w-96 w-80">
             {steps.map((s) => (
               <div
                 key={s.id}
@@ -77,25 +74,60 @@ export default function HowItWorks() {
               >
                 <div className="flex items-center space-x-4">
                   <div
-                    className={`border-l-4 space-y-2 pl-6 py-2 transition-all duration-300 ${
-                      step === s.id ? "border-white" : "border-white/40"
+                    className={`space-y-2 px-10 py-3 rounded-xl w-full text-left transition-all duration-300 ${
+                      step === s.id ? "bg-white/5 font-semibold text-lg" : "border-white/40 font-light text-lg  text-left"
                     }`}
                   >
-                    <button className="block lg:text-sm text-xs text-white rounded-full border border-white lg:px-6 px-4 py-1.5">
-                      Step {s.id}
-                    </button>
-                    <h3 className="lg:text-2xl text-lg font-semibold">{s.title}</h3>
-                    <p className="text-white font-light text-base  ">
+                    <h3 className="">
+                      {s.title}
+                    </h3>
+                    {/* <p className="text-white font-light text-base  ">
                       {s.desc}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
             ))}
           </div>
+          {/* Right Side (Image) */}
+          <div className="relative flex justify-center items-center w-full border-l border-white/10 pl-16">
+            {steps.map(
+              (s) =>
+                step === s.id && (
+                  <div key={s.id} className="space-y-4 ">
+                    <div className="space-y-2 ">
+                      <p className="text-lg font-medium">
+                        Maximize User Engagement
+                      </p>
+                      <ul className="list-disc text-base text-white/80 pl-4 font-light">
+                        <li>Ensure trust with transparency and contracts.· </li>
+                        <li>
+                          Boost interaction with your assets and on-chain
+                          activities.·{" "}
+                        </li>
+                        <li>
+                          Efficient incentives against time-frequency-amount
+                          weighted trading volume.
+                        </li>
+                      </ul>
+                    </div>
+                    <img
+                      key={s.id}
+                      src={s.img}
+                      alt={s.title}
+                      className="rounded-2xl shadow-2xl transition-all duration-500 object-contain"
+                    />
+                  </div>
+                )
+            )}
+          </div>
         </div>
       </div>
+      <img
+        src="/shapes/for-startup-shape.svg"
+        className="absolute -top-[15%] left-[20%] w-[60%] z-0 lg:block hidden"
+        alt="Shape"
+      />
     </section>
- 
   );
 }
