@@ -9,33 +9,58 @@ export default function HowItWorks() {
   const steps = [
     {
       id: 1,
-      title: "User Engement",
-      desc: "Access a pool of verified profiles.",
-      img: "/img/employers/user-engement.png", // change this to your own image
+      title: "User Engagement",
+      header: "Maximize User Engagement",
+      points: [
+        "Ensure trust with transparency and contracts.",
+        "Boost interaction with your assets and on-chain activities.",
+        "Efficient incentives against time-frequency-amount weighted trading volume.",
+      ],
+      img: "/img/employers/user-engagement.png",
     },
     {
       id: 2,
       title: "Brand Growth",
-      desc: "Use Verifide’s custom or pre-built assessments.",
-      img: "/img/employers/brand-growth.png", // change this to your own image
+      header: "Accelerate Brand Growth",
+      points: [
+        "Strengthen your brand with verified user engagement data.",
+        "Build credibility through transparent community interactions.",
+        "Amplify visibility with reward-driven marketing loops.",
+      ],
+      img: "/img/employers/brand-growth.png",
     },
     {
       id: 3,
       title: "User Adoption",
-      desc: "Interview only candidates who meet your skill criteria.",
-      img: "/img/employers/user-adoption.png", // change this to your own image
+      header: "Drive Rapid User Adoption",
+      points: [
+        "Simplify onboarding through gamified reward experiences.",
+        "Create value loops that retain and attract new users.",
+        "Turn first-time visitors into loyal, verified participants.",
+      ],
+      img: "/img/employers/user-adoption.png",
     },
     {
       id: 4,
       title: "Hiring Talents",
-      desc: "Interview only candidates who meet your skill criteria.",
-      img: "/img/employers/hiring-talents.png", // change this to your own image
+      header: "Simplify Talent Acquisition",
+      points: [
+        "Access verified professionals with proven on-chain credibility.",
+        "Match candidates faster through performance-based metrics.",
+        "Reduce hiring friction using smart contract–verified profiles.",
+      ],
+      img: "/img/employers/hiring-talents.png",
     },
     {
       id: 5,
       title: "Reduce Cost",
-      desc: "Interview only candidates who meet your skill criteria.",
-      img: "/img/employers/user-adoption.png", // change this to your own image
+      header: "Optimize and Reduce Operational Costs",
+      points: [
+        "Automate repetitive processes with blockchain-backed workflows.",
+        "Cut middlemen expenses via direct peer-to-peer transactions.",
+        "Leverage data-driven insights to optimize reward distribution.",
+      ],
+      img: "/img/employers/reduce-cost.png",
     },
   ];
 
@@ -75,12 +100,12 @@ export default function HowItWorks() {
                 <div className="flex items-center space-x-4">
                   <div
                     className={`space-y-2 px-10 py-3 rounded-xl w-full text-left transition-all duration-300 ${
-                      step === s.id ? "bg-white/5 font-semibold text-lg" : "border-white/40 font-light text-lg  text-left"
+                      step === s.id
+                        ? "bg-white/5 font-semibold text-lg"
+                        : "border-white/40 font-light text-lg  text-left"
                     }`}
                   >
-                    <h3 className="">
-                      {s.title}
-                    </h3>
+                    <h3 className="">{s.title}</h3>
                     {/* <p className="text-white font-light text-base  ">
                       {s.desc}
                     </p> */}
@@ -96,19 +121,11 @@ export default function HowItWorks() {
                 step === s.id && (
                   <div key={s.id} className="space-y-4 ">
                     <div className="space-y-2 ">
-                      <p className="text-lg font-medium">
-                        Maximize User Engagement
-                      </p>
+                      <p className="text-lg font-medium">{s.header}</p>
                       <ul className="list-disc text-base text-white/80 pl-4 font-light">
-                        <li>Ensure trust with transparency and contracts.· </li>
-                        <li>
-                          Boost interaction with your assets and on-chain
-                          activities.·{" "}
-                        </li>
-                        <li>
-                          Efficient incentives against time-frequency-amount
-                          weighted trading volume.
-                        </li>
+                        <li>{s.points[0]}</li>
+                        <li>{s.points[1]}</li>
+                        <li>{s.points[2]}</li>
                       </ul>
                     </div>
                     <img
