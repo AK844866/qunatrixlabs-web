@@ -47,9 +47,8 @@ export default function Footer() {
           <div className="space-y-6 ">
             <img src="/img/verifide-logo.svg" className="w-40" />
             <p className=" text-white/80 font-light">
-              Empowering businesses with intelligent automation since 2024.
-              Transform your operations and unlock your team's potential with
-              our AI-powered solutions.
+              From verified digital passports to startup-led quests, Verifide
+              enables everyone to learn, connect, and grow — faster and smarter.
             </p>
             <div className="flex items-center space-x-4">
               <div className="text-white/60 hover:text-[#2563EB] cursor-pointer   transition duration-150">
@@ -108,36 +107,34 @@ export default function Footer() {
           <div className="space-y-4 lg:border-r border-white/10 ">
             <p className="text-white/80 font-light">Features</p>
 
-            <div className="space-y-2 *:font-light  *:hover:translate-x-1 *:transition-all *:hover:text-blue-400 ">
-              <a className="block"> Segmentation</a>
-              <a className="block">Summarization</a>
-              <a className="block">Sentiment Analysis</a>
-              <a className="block">Chronology</a>
-              <a className="block">Similarity Analysis</a>
-              <a className="block">Entity Resolution</a>
+            <div className="space-y-2 *:font-light  *:hover:translate-x-1 *:transition-all *:hover:text-blue-400">
+              <a className="block">Profile Passport</a>
+              <a className="block">Skills Verification</a>
+              <a className="block">Networking</a>
+              <a className="block">Hiring fast Candidates</a>
+              <a className="block">Events & Learning</a>
+              <a className="block">New Courses</a>
             </div>
           </div>
           <div className="space-y-4 lg:border-r border-white/10 ">
             <p className="text-white/80 font-light">Tools</p>
             <div className="space-y-2 *:font-light  *:hover:translate-x-1 *:transition-all *:hover:text-blue-400 ">
-              <a className="block"> AI-Powered Homework Helper</a>
-              <a className="block">Interactive Quiz Creator</a>
-              <a className="block">Virtual Science Lab</a>
-              <a className="block">Virtual Science Lab</a>
-              <a className="block">AI Writing Assistant</a>
-              <a className="block">Learn by Drawing</a>
-              <a className="block">Digital Debate Platform</a>
+              <a className="block">Skill Check</a>
+              <a className="block">Personal Portal</a>
+              <a className="block">Opportunities Hub</a>
+              <a className="block">Quests, Feedback & Signups</a>
+              <a className="block">Soical Enagement</a>
+              <a className="block">Community Building</a>
             </div>
           </div>
           <div className="space-y-4 lg:border-r border-white/10 ">
             <p className="text-white/80 font-light">Explore</p>
             <div className="space-y-2 *:font-light  *:hover:translate-x-1 *:transition-all *:hover:text-blue-400 ">
+              <a className="block">Talents</a>
+              <a className="block">Companies</a>
+              <a className="block">Colleges</a>
               <a className="block">About Us</a>
-              <a className="block">How It Works</a>
-              <a className="block">Success Stories</a>
-              <a className="block">Blog & News</a>
-              <a className="block">Careers</a>
-              <a className="block">Research Initiatives</a>
+              <a className="block">Blog</a>
             </div>
           </div>
           <div className="space-y-4 ">
