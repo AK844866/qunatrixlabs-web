@@ -17,26 +17,26 @@ export default function HowItWorks() {
       id: 2,
       title: "Quests",
       desc: "Redeemable for higher visibility and in-app tokens.",
-      img: "/img/employee/quests.png", // change this to your own image
+      img: "/img/employee/quests.webp", // change this to your own image
     },
     {
       id: 3,
       title: "Job Opportunity",
       desc: "higher recognition and more visible opportunity.",
-      img: "/img/employee/job-opportunity.png", // change this to your own image
+      img: "/img/employee/job-opportunity.webp", // change this to your own image
     },
      {
       id: 4,
       title: "Assessment",
       desc: "Higher trust. Smarter job recommendations. Greater opportunities.",
-      img: "/img/employee/assessment.png", // change this to your own image
+      img: "/img/employee/assessment.webp", // change this to your own image
     },
   ];
 
   return (
-    <section className="bg-[#062555] text-white py-20   relative z-0 h-screen w-full overflow-hidden snap-start ">
+    <section className="bg-[#062555] text-white py-20 relative z-0 h-screen w-full overflow-hidden snap-start ">
       <div className="lg:space-y-20 space-y-8  container mx-auto  lg:px-0 px-6 ">
-        <div className="space-y-2 text-center  ">
+        <div className="space-y-2 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function HowItWorks() {
           </motion.p>
         </div>
 
-        <div className="flex lg:flex-row flex-col 2xl:gap-16 lg:gap-10 gap-6 items-center ">
+        <div className="flex lg:flex-row flex-col 2xl:gap-16 lg:gap-10 gap-6 items-center">
           {/* Right Side (Image) */}
           <div className="relative flex justify-center items-center w-full">
             {steps.map(

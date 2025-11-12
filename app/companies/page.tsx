@@ -17,7 +17,7 @@ export default function Employee() {
         subtitle="Skip the guesswork — access verified candidate profiles with AI-powered skill reports, immutable certificates, and ATS integrations."
         button=" Request a Demo"
         buttonTwo="Search Candidates"
-        img="/img/employers/employers-hero.png"
+        img="/img/employers/employers-hero.webp"
       />
       <WhyChoose />
       <Featured/>

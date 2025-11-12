@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export default function ForSection() {
+export default function ForSection() {  
   return (
     <>
       <section className="snap-start lg:h-screen flex  items-center justify-center relative bg-[#0E0C15] text-white overflow-hidden lg:px-0 px-6">
@@ -44,7 +44,7 @@ export default function ForSection() {
                 </p>
               </div>
               <img
-                src="/img/home/empowering-startups.svg"
+                src="/img/home/empowering-startups.webp"
                 className="object-cover w-full"
                 alt="Empowering Startups"
               />
@@ -60,7 +60,7 @@ export default function ForSection() {
                 </p>
               </div>
               <img
-                src="/img/home/fueling-startup.svg"
+                src="/img/home/fueling-startup.webp"
                 className="object-cover w-full"
                 alt="Fueling Startup"
               />
@@ -76,7 +76,7 @@ export default function ForSection() {
                 </p>
               </div>
               <img
-                src="/img/home/startups-verified.svg"
+                src="/img/home/startups-verified.webp"
                 className="object-cover w-full"
                 alt="Verified Startups"
               />
@@ -123,7 +123,7 @@ export default function ForSection() {
                 </p>
               </div>
               <img
-                src="/img/home/your-gateway.svg"
+                src="/img/home/your-gateway.webp"
                 className="object-cover w-full"
                 alt="Gateway"
               />
@@ -139,7 +139,7 @@ export default function ForSection() {
                 </p>
               </div>
               <img
-                src="/img/home/opportunities-made.svg"
+                src="/img/home/opportunities-made.webp"
                 className="object-cover w-full"
                 alt="Opportunities"
               />
@@ -155,7 +155,7 @@ export default function ForSection() {
                 </p>
               </div>
               <img
-                src="/img/home/verified-individuals.svg"
+                src="/img/home/verified-individuals.webp"
                 className="object-cover w-full"
                 alt="Verified Individuals"
               />

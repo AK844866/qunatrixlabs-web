@@ -51,7 +51,7 @@ export default function Employee() {
         subtitle="Showcase your skills with AI-powered assessments and immutable certificates that boost your credibility with recruiters worldwide."
         button="Create Your Profile"
         buttonTwo="Browse Assessments"
-        img="./img/employee/employees-hero.png"
+        img="./img/employee/employees-hero.webp"
       />
       <WhyChoose />
       <FeaturedforEmployee />

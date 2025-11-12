@@ -17,7 +17,7 @@ export default function Employee() {
         subtitle="Equip your students with verified credentials, run bulk assessments, and boost placement outcomes with AI-powered reports and analytics."
         button="Partner with Verifide"
         buttonTwo="Request a Demo"
-        img="/img/universities/universities-and-college-hero.png"
+        img="/img/universities/universities-and-college-hero.webp"
       />
       <WhyChoose />
       <Featured/>

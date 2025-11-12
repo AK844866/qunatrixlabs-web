@@ -16,7 +16,7 @@ export default function HowItWorks() {
         "Boost interaction with your assets and on-chain activities.",
         "Efficient incentives against time-frequency-amount weighted trading volume.",
       ],
-      img: "/img/employers/user-engagement.png",
+      img: "/img/employers/user-engagement.webp",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ export default function HowItWorks() {
         "Build credibility through transparent community interactions.",
         "Amplify visibility with reward-driven marketing loops.",
       ],
-      img: "/img/employers/brand-growth.png",
+      img: "/img/employers/brand-growth.webp",
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ export default function HowItWorks() {
         "Create value loops that retain and attract new users.",
         "Turn first-time visitors into loyal, verified participants.",
       ],
-      img: "/img/employers/user-adoption.png",
+      img: "/img/employers/user-adoption.webp",
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ export default function HowItWorks() {
         "Match candidates faster through performance-based metrics.",
         "Reduce hiring friction using smart contract–verified profiles.",
       ],
-      img: "/img/employers/hiring-talents.png",
+      img: "/img/employers/hiring-talents.webp",
     },
     {
       id: 5,
@@ -60,7 +60,7 @@ export default function HowItWorks() {
         "Cut middlemen expenses via direct peer-to-peer transactions.",
         "Leverage data-driven insights to optimize reward distribution.",
       ],
-      img: "/img/employers/reduce-cost.png",
+      img: "/img/employers/reduce-cost.webp",
     },
   ];
 

@@ -41,7 +41,7 @@ const solutionData = [
 
 const Testimonials = () => {
   return (
-    <section className="text-white lg:py-20 py-6 snap-start lg:h-screen z-0 flex flex-col justify-center    ">
+    <section className="bg-[#0E0C15] text-white lg:py-20 py-6 snap-start lg:h-screen z-0 flex flex-col justify-center ">
       <div className=" lg:space-y-16 space-y-6 my-auto ">
         <div className="text-center  container mx-auto flex items-end justify-center lg:px-0 px-4">
           <div className="text-center space-y-4">

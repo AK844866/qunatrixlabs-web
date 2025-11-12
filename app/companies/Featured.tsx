@@ -146,7 +146,7 @@ const Featured = () => {
 
                   <div className="lg:w-7/12 w-full">
                     <img
-                      src="img/employers/verified-talent-profiles.png"
+                      src="img/employers/verified-talent-profiles.webp"
                       className="object-contain "
                     />
                   </div>

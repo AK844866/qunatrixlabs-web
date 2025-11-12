@@ -11,19 +11,19 @@ export default function HowItWorks() {
       id: 1,
       title: "Register Institution",
       desc: "Onboard your college & training officers (TPOs).",
-      img: "/img/employers/search-discover.png", // change this to your own image
+      img: "/img/employers/search-discover.webp", // change this to your own image
     },
     {
       id: 2,
       title: "Run Bulk Assessments",
       desc: "Onboard your college & training officers (TPOs).",
-      img: "/img/employers/search-discover.png", // change this to your own image
+      img: "/img/employers/search-discover.webp", // change this to your own image
     },
     {
       id: 3,
       title: "Boost Placements",
       desc: "Share verified student profiles with recruiters & track outcomes.",
-      img: "/img/employers/search-discover.png", // change this to your own image
+      img: "/img/employers/search-discover.webp", // change this to your own image
     },
   ];
 
