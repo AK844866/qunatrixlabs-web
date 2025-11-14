@@ -34,6 +34,7 @@ export default function HeroSection() {
 
   const [flipped, setFlipped] = useState(false);
   const [flipped2, setFlipped2] = useState(false);
+  const [flipped3, setFlipped3] = useState(false);
   return (
     <section
       className="relative z-0 h-screen w-full overflow-hidden snap-start "
@@ -58,13 +59,36 @@ export default function HeroSection() {
         src="/img/passport-hero-element.svg"
         className="float-img lg:w-[15%] w-[25%] absolute top-[18%] left-[10%] z-10 transition-transform duration-200 ease-out lg:block hidden"
       />
-      <img
-        src="/img/job-hero-element.svg"
-        className="float-img lg:w-[14%] w-[28%] absolute top-[16%] lg:right-[13%] right-[5%] z-10 transition-transform duration-200 ease-out lg:block hidden"
-      />
 
       <motion.div
-        className="lg:w-[22%] w-[44%] absolute lg:bottom-[18%] bottom-[14%] lg:left-[12%] left-[4%] z-20 cursor-pointer perspective-1000 lg:block hidden "
+        className="float-img lg:w-[14%] w-[28%] absolute top-[16%] lg:right-[13%] right-[5%]  z-20 cursor-pointer   lg:block hidden "
+        onMouseEnter={() => setFlipped3(true)}
+        onMouseLeave={() => setFlipped3(false)}
+      >
+        <motion.img
+          key={flipped3 ? "hover" : "default"} // 👈 makes Framer treat them as different elements
+          src={
+            flipped3
+              ? "/img/job-hero-element-flip.webp" // hover image
+              : "/img/job-hero-element.webp" // default image
+          }
+          // initial={{ rotateY: 0 }}
+          animate={{ opacity: flipped3 ? 100 : 50 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          className={` float-img transition-all duration-300 ease-out transform-gpu rounded-xl shadow-lg backface-hidden ${
+            flipped && "w-[80%]"
+          }`}
+          style={{ transformStyle: "preserve-3d" }}
+        />
+      </motion.div>
+
+      {/* <img
+        src="/img/job-hero-element.webp"
+        className="float-img lg:w-[14%] w-[28%] absolute top-[16%] lg:right-[13%] right-[5%] z-10 transition-transform duration-200 ease-out lg:block hidden object-contain"
+      /> */}
+
+      <motion.div
+        className="lg:w-[21%] w-[44%] absolute lg:bottom-[18%] bottom-[14%] lg:left-[12%] left-[4%] z-20 cursor-pointer perspective-1000 lg:block hidden "
         onMouseEnter={() => setFlipped(true)}
         onMouseLeave={() => setFlipped(false)}
       >
@@ -72,14 +96,14 @@ export default function HeroSection() {
           key={flipped ? "hover" : "default"} // 👈 makes Framer treat them as different elements
           src={
             flipped
-              ? "/img/home/asssment-card-hero.svg" // hover image
-              : "/img/assessment-hero-element.svg" // default image
+              ? "/img/assessment-hero-element-flip.webp" // hover image
+              : "/img/assessment-hero-element.webp" // default image
           }
           initial={{ rotateY: 0 }}
           animate={{ rotateY: flipped ? 180 : 0 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
-          className={` float-img transition-all duration-300 ease-out transform-gpu rounded-xl shadow-lg backface-hidden ${
-            flipped && "w-[80%]"
+          transition={{ duration: 0.1, ease: "easeInOut" }}
+          className={` float-img object-contain    obtransition-all duration-300 ease-out transform-gpu rounded-xl shadow-lg backface-hidden ${
+            flipped && ""
           }`}
           style={{ transformStyle: "preserve-3d" }}
         />
@@ -98,14 +122,14 @@ export default function HeroSection() {
           key={flipped2 ? "hover" : "default"} // 👈 makes Framer treat them as different elements
           src={
             flipped2
-              ? "/img/home/survey-&-polls.png" // hover image
-              : "/img/survey-hero-element.svg" // default image
+              ? "/img/survey-hero-element-flip.webp" // hover image
+              : "/img/survey-hero-element.webp" // default image
           }
           initial={{ rotateY: 0 }}
           animate={{ rotateY: flipped2 ? 180 : 0 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
+          transition={{ duration: 0.1 , ease: "easeInOut" }}
           className={` float-img transition-all duration-300 ease-out transform-gpu rounded-xl shadow-lg backface-hidden ${
-            flipped2 && "w-[60%]"
+            flipped2 && " "
           }`}
           style={{ transformStyle: "preserve-3d" }}
         />
