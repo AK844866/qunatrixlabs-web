@@ -38,10 +38,9 @@ const solutionData = [
 
 const Mission = () => {
   return (
-    <section className="text-white lg:py-20 py-8 snap-start h-screen flex items-center justify-center overflow-hidden relative">
+    <section className="text-white lg:py-20 py-8 snap-start lg:h-screen flex items-center justify-center overflow-hidden relative">
       <div className="space-y-10 relative w-full">
         {/* Header */}
-      
 
         {/* Swiper */}
         <div className="relative container mx-auto block lg:w-auto w-screen lg:overflow-visible overflow-hidden ">
@@ -128,11 +127,9 @@ const Mission = () => {
                   adoption through events, workshops, and verified interactions.
                 </motion.p>
               </div>
-
-             
             </div>
 
-            <div className="  w-full">
+            <div className="w-full">
               <img
                 src="/img/about/our-mission.webp"
                 className="object-contain "

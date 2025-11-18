@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 const OurObjectives = () => {
   return (
-    <section className="bg-[#2563EB] text-white lg:py-20 py-8 snap-start h-screen flex items-center justify-center overflow-hidden relative">
+    <section className="bg-[#2563EB] text-white lg:py-20 py-8 snap-start lg:h-screen flex items-center justify-center overflow-hidden relative">
       <div className="space-y-10 relative w-full">
         {/* Header */}
 
         {/* Swiper */}
         <div className="relative container mx-auto block lg:w-auto w-screen lg:overflow-visible overflow-hidden ">
-          <div className="flex lg:flex-row flex-col-reverse lg:gap-20 gap-6 items-center container mx-auto relative z-20 h-full lg:px-0 px-6  ">
+          <div className="flex lg:flex-row flex-col lg:gap-20 gap-6 items-center container mx-auto relative z-20 h-full lg:px-0 px-6  ">
             <div className="w-full">
               <img
                 src="/img/about/our-objectives.webp"

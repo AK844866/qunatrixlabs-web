@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const WhyVerifide = () => {
   return (
-    <section className="text-white lg:py-20 py-8 snap-start h-screen flex items-center justify-center overflow-hidden relative">
+    <section className="text-white lg:py-20 py-8 snap-start lg:h-screen flex items-center justify-center overflow-hidden relative">
       <div className="space-y-10 relative w-full">
         {/* Header */}
 

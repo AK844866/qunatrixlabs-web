@@ -34,9 +34,9 @@ export default function HeroSectionOther({
   }, []);
 
   return (
-    <section className="relative z-0 h-screen w-full overflow-hidden snap-start ">
+    <section className="relative z-0 lg:h-screen w-full overflow-hidden snap-start lg:pt-0 pt-16">
       {/* Hero Text */}
-      <div className="flex lg:flex-row flex-col items-center justify-center lg:gap-20 gap-6 container mx-auto relative z-20 h-full lg:px-0 px-6 ">
+      <div className="flex lg:flex-row flex-col items-center justify-center lg:gap-20 gap-6 container mx-auto relative z-20 h-full lg:px-0 px-6 lg:py-0 py-6">
         <div className="  lg:text-left text-center  text-white lg:space-y-8 space-y-4 w-full ">
           {extraline && (
             <button className="bg-linear-to-r  from-[#0066FF] via-[#217AFF] to-[#A1BEFF] p-[1px] rounded-full  transition duration-300 hover:shadow-[0_0_20px_#3b82f6]">

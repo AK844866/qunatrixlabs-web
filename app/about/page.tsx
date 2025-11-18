@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HeroSectionOther from "@/components/HeroSectionOther";
 import Blog from "@/components/Blog";
-import Testimonials from "@/components/Testimonial";  
+import Testimonials from "@/components/Testimonial";
 import Mission from "./Mission";
 import Vision from "./Vision";
 import WhyVerifide from "./WhyVerifide";

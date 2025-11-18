@@ -3,17 +3,17 @@ import { motion } from "framer-motion";
 
 const Vision = () => {
   return (
-    <section className="text-white lg:py-20 py-8 snap-start h-screen flex items-center justify-center overflow-hidden relative">
+    <section className="text-white lg:py-20 py-8 snap-start lg:h-screen flex items-center justify-center overflow-hidden relative">
       {/* Swiper */}
       <div className="relative container mx-auto block lg:w-auto w-screen lg:overflow-visible overflow-hidden ">
-        <div className="flex lg:flex-row flex-col-reverse lg:gap-20 gap-6 items-center container mx-auto relative z-20 h-full lg:px-0 px-6  ">
-          <div className="  w-full">
+        <div className="flex lg:flex-row flex-col lg:gap-20 gap-6 items-center container mx-auto relative z-20 h-full lg:px-0 px-6 lg:py-0 py-6">
+          <div className="w-full">
             <img
               src="/img/about/our-vision.webp"
               className="object-contain "
             />
           </div>
-          <div className="text-left  text-white space-y-8  w-full">
+          <div className="text-left  text-white space-y-8 w-full">
             <button className="px-8 py-1.5 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-sm space-x-2 bg-linear-to-r  from-[#0066FF] via-[#217AFF] to-[#A1BEFF ">
               <span> Vision</span>
             </button>
