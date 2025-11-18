@@ -52,6 +52,8 @@ export default function Employee() {
         button="Create Your Profile"
         buttonTwo="Browse Assessments"
         img="./img/employee/employees-hero.webp"
+        extraline={true}
+
       />
       <WhyChoose />
       <FeaturedforEmployee />

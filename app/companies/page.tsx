@@ -18,6 +18,8 @@ export default function Employee() {
         button=" Request a Demo"
         buttonTwo="Search Candidates"
         img="/img/employers/employers-hero.webp"
+        extraline={true}
+
       />
       <WhyChoose />
       <Featured/>

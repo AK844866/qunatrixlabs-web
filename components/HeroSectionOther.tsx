@@ -1,20 +1,27 @@
 "use client";
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import { string } from "three/tsl";
 
 type HeroTwoContent = {
   title: string;
   subtitle: string;
+  subtitle2?: string;
+  subtitle3?: string;
   button: string;
   buttonTwo: string;
   img: string;
+  extraline?: boolean;
 };
 
 export default function HeroSectionOther({
   title,
   subtitle,
+  subtitle2,
+  subtitle3,
   button,
   buttonTwo,
+  extraline,
   img,
 }: HeroTwoContent) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -30,12 +37,14 @@ export default function HeroSectionOther({
     <section className="relative z-0 h-screen w-full overflow-hidden snap-start ">
       {/* Hero Text */}
       <div className="flex lg:flex-row flex-col items-center justify-center lg:gap-20 gap-6 container mx-auto relative z-20 h-full lg:px-0 px-6 ">
-        <div className="  lg:text-left text-center  text-white lg:space-y-8 space-y-4 ">
-          <button className="bg-linear-to-r  from-[#0066FF] via-[#217AFF] to-[#A1BEFF] p-[1px] rounded-full  transition duration-300 hover:shadow-[0_0_20px_#3b82f6]">
-            <div className="px-8 py-2 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-xs space-x-2 ">
-              <span>Over 20,000 Employee hired last 6 month </span>
-            </div>
-          </button>
+        <div className="  lg:text-left text-center  text-white lg:space-y-8 space-y-4 w-full ">
+          {extraline && (
+            <button className="bg-linear-to-r  from-[#0066FF] via-[#217AFF] to-[#A1BEFF] p-[1px] rounded-full  transition duration-300 hover:shadow-[0_0_20px_#3b82f6]">
+              <div className="px-8 py-2 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-xs space-x-2 ">
+                <span>Over 20,000 Employee hired last 6 month </span>
+              </div>
+            </button>
+          )}
           <div className="space-y-4  ">
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
@@ -53,6 +62,22 @@ export default function HeroSectionOther({
               className="xl:text-xl md:text-lg text-base text-white/80 font-light"
             >
               {subtitle}
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
+              className="xl:text-xl md:text-lg text-base text-white/80 font-light"
+            >
+              {subtitle2}
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
+              className="xl:text-xl md:text-lg text-base text-white/80 font-light"
+            >
+              {subtitle3}
             </motion.p>
           </div>
 
@@ -83,8 +108,11 @@ export default function HeroSectionOther({
           </div>
         </div>
 
-        <div>
-          <img src={img} className="rounded-3xl lg:aspect-auto aspect-video object-cover" />
+        <div className="w-full">
+          <img
+            src={img}
+            className="rounded-3xl lg:aspect-auto aspect-video object-cover"
+          />
         </div>
       </div>
       {/* Background Video */}

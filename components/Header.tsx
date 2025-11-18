@@ -16,7 +16,7 @@ export default function Header() {
     { href: "/talents", label: "Talents" },
     { href: "/companies", label: "Companies" },
     { href: "/colleges", label: "Colleges" },
-    { href: "/blog", label: "Blog" },
+    { href: "/about", label: "About us" },
   ];
 
   useEffect(() => {
@@ -61,7 +61,7 @@ export default function Header() {
             : "bg-transparent"
         } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <div className="flex justify-between items-center py-4 lg:py-6 lg:container lg:mx-auto px-4 w-full">
+        <div className="flex justify-between items-center py-4 lg:py-6 lg:container lg:mx-auto lg:px-0 px-4 w-full">
           {/* Logo */}
           <div>
             <img src="/img/verifide-logo.svg" className="lg:w-40 w-32" />

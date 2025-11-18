@@ -2,6 +2,35 @@
 
 import { motion } from "framer-motion";
 
+const solutionData = [
+  {
+    id: 1,
+    title: "Alumni & Student Tracking",
+    subtitle: `Monitor achievements, career paths, and skill development.`,
+  },
+  {
+    id: 2,
+    title: "Event & Program Management",
+    subtitle: `Organize hackathons, job fairs, webinars, and other growth initiatives.`,
+  },
+  {
+    id: 3,
+    title: "Institution Branding",
+    subtitle: `Showcase verified alumni success stories to enhance institutional reputation.`,
+  },
+  {
+    id: 4,
+    title: "Industry Collaboration",
+    subtitle: `Connect students with companies and startups for internships and projects.`,
+  },
+  {
+    id: 5,
+    title: "Data Insights",
+    subtitle: `Access analytics to understand student and alumni outcomes, trends, and engagement.`,
+  },
+];
+
+
 export default function WhyChoose() {
   return (
     <section className="snap-start lg:h-screen container mx-auto lg:py-20 py-8 lg:space-y-20 space-y-6  w-full lg:px-0 px-4 relative ">

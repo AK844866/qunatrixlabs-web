@@ -18,6 +18,8 @@ export default function Employee() {
         button="Partner with Verifide"
         buttonTwo="Request a Demo"
         img="/img/universities/universities-and-college-hero.webp"
+        extraline={true}
+
       />
       <WhyChoose />
       <Featured/>
