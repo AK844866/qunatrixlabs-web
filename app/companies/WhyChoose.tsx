@@ -30,10 +30,9 @@ const solutionData = [
   },
 ];
 
-
 export default function WhyChoose() {
   return (
-    <section className="snap-start lg:h-screen container mx-auto lg:py-20 py-8 lg:space-y-20 space-y-6  w-full lg:px-0 px-4 relative ">
+    <section className="snap-start lg:h-screen container mx-auto lg:py-20 py-8 lg:space-y-20 space-y-6 w-full lg:px-0 px-4 relative ">
       <img
         src="/shapes/for-startup-shape.svg"
         className="absolute -top-[15%] left-[20%] w-[60%] z-0 lg:block hidden"
@@ -46,7 +45,7 @@ export default function WhyChoose() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="2xl:text-5xl xl:text-4xl lg:text-3xl text-2xl font-semibold"
         >
-          Why Employees Choose Verifide
+          Why Company Choose Verifide
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 40 }}

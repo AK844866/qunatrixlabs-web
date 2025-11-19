@@ -65,7 +65,7 @@ export default function WhyChoose() {
         {Data.map((item, index) => (
           <div
             key={index}
-            className="bg-cover rounded-2xl space-y-4 2xl:p-6 p-4 last:lg:col-span-1 last:col-span-2"
+            className="bg-cover rounded-2xl lg:space-y-4 space-y-2 2xl:p-6 p-3 last:lg:col-span-1 last:col-span-2"
             style={{
               backgroundImage: `url('/img/about/nosie-bg.png')`,
             }}

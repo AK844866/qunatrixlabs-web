@@ -81,7 +81,7 @@ export default function ProvenStates({ DataState }: ProvenStatesProps) {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid lg:gap-6 gap-4 grid-cols-2 lg:w-4xl w-full mx-auto lg:px-0 px-6">
+        <div className="grid lg:gap-6 gap-4 grid-cols-2 lg:w-4xl w-full mx-auto lg:px-0 px-4">
           {DataState.map((slide, i) => (
             <motion.div
               key={i}

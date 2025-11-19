@@ -43,7 +43,7 @@ const WhyVerifide = () => {
                     delay: 0.3,
                     ease: "easeInOut",
                   }}
-                  className="xl:text-xl md:text-lg text-base text-white font-light flex items-center space-x-2 bg-white/5 px-6 py-3 rounded-lg"
+                  className="xl:text-xl md:text-lg text-base text-white font-light flex items-center space-x-2 bg-white/5 lg:px-6 px-3 py-3 rounded-lg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ const WhyVerifide = () => {
                     delay: 0.3,
                     ease: "easeInOut",
                   }}
-                  className="xl:text-xl md:text-lg text-base text-white font-light flex items-center space-x-2 bg-white/5 px-6 py-3 rounded-lg"
+                  className="xl:text-xl md:text-lg text-base text-white font-light flex items-center space-x-2 bg-white/5 lg:px-6 px-3 py-3 rounded-lg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ const WhyVerifide = () => {
                     delay: 0.3,
                     ease: "easeInOut",
                   }}
-                  className="xl:text-xl md:text-lg text-base text-white font-light flex items-center space-x-2 bg-white/5 px-6 py-3 rounded-lg"
+                  className="xl:text-xl md:text-lg text-base text-white font-light flex items-center space-x-2 bg-white/5 lg:px-6 px-3 py-3 rounded-lg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +128,7 @@ const WhyVerifide = () => {
                     delay: 0.3,
                     ease: "easeInOut",
                   }}
-                  className="xl:text-xl md:text-lg text-base text-white font-light flex items-center space-x-2 bg-white/5 px-6 py-3 rounded-lg"
+                  className="xl:text-xl md:text-lg text-base text-white font-light flex items-center space-x-2 bg-white/5 lg:px-6 px-3 py-3 rounded-lg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +157,7 @@ const WhyVerifide = () => {
                     delay: 0.3,
                     ease: "easeInOut",
                   }}
-                  className="xl:text-xl md:text-lg text-base text-white font-light flex items-center space-x-2 bg-white/5 px-6 py-3 rounded-lg"
+                  className="xl:text-xl md:text-lg text-base text-white font-light flex items-center space-x-2 bg-white/5 lg:px-6 px-3 py-3 rounded-lg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

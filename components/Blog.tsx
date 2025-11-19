@@ -33,7 +33,7 @@ export default function Blog() {
   ];
 
   return (
-    <section className="container mx-auto space-y-10 lg:py-20 py-6 xl:px-0 px-6">
+    <section className="container mx-auto space-y-10 lg:py-20 py-6 xl:px-0 px-4">
       <div className="text-center">
         <motion.h1
           initial={{ opacity: 0, y: 50 }}

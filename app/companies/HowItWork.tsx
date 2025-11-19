@@ -65,9 +65,9 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="bg-[#0E0C15] text-white py-20   relative z-0 h-screen w-full overflow-hidden snap-start ">
-      <div className="lg:space-y-20 space-y-8 relative  container mx-auto  lg:px-0 px-6 z-20 ">
-        <div className="space-y-2 text-center  ">
+    <section className="bg-[#0E0C15] text-white py-20 relative z-0 h-screen w-full overflow-hidden snap-start ">
+      <div className="lg:space-y-20 space-y-8 relative container mx-auto lg:px-0 px-4 z-20">
+        <div className="space-y-2 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -88,9 +88,9 @@ export default function HowItWorks() {
           </motion.p>
         </div>
 
-        <div className="flex lg:flex-row flex-col 2xl:gap-10 gap-6 items-start w-10/12 mx-auto ">
+        <div className="flex lg:flex-row flex-col 2xl:gap-10 gap-6 items-start lg:w-10/12 w-full mx-auto">
           {/* Left Side (Text) */}
-          <div className="space-y-10 shrink-0 2xl:w-96 w-80">
+          <div className="lg:gap-10 gap-0 shrink-0 2xl:w-96 lg:w-80 w-full overflow-x-auto flex lg:flex-col flex-row">
             {steps.map((s) => (
               <div
                 key={s.id}
@@ -99,10 +99,10 @@ export default function HowItWorks() {
               >
                 <div className="flex items-center space-x-4">
                   <div
-                    className={`space-y-2 px-10 py-3 rounded-xl w-full text-left transition-all duration-300 ${
+                    className={`space-y-2 lg:px-10 px-4 py-3 rounded-xl w-full text-left transition-all duration-300 ${
                       step === s.id
-                        ? "bg-white/5 font-semibold text-lg"
-                        : "border-white/40 font-light text-lg  text-left"
+                        ? "bg-white/5 font-semibold lg:text-lg text-base whitespace-nowrap"
+                        : "border-white/40 font-light lg:text-lg text-base whitespace-nowrap  text-left"
                     }`}
                   >
                     <h3 className="">{s.title}</h3>
@@ -115,7 +115,7 @@ export default function HowItWorks() {
             ))}
           </div>
           {/* Right Side (Image) */}
-          <div className="relative flex justify-center items-center w-full border-l border-white/10 pl-16">
+          <div className="relative flex justify-center items-center w-full lg:border-l border-white/10 lg:pl-16">
             {steps.map(
               (s) =>
                 step === s.id && (

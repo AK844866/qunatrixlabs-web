@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <section className="pt-10 border-t border-white/10 ">
       {/* <div className="bg-linear-to-r  white h-0.5"></div> */}
-      <section className="container mx-auto  lg:px-0 px-6">
+      <section className="container mx-auto  lg:px-0 px-4">
         <div
           className="rounded-3xl overflow-hidden bg-cover"
           style={{ backgroundImage: "url('/img/home/call-to-action.png')" }}

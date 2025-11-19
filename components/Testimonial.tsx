@@ -81,7 +81,7 @@ const Testimonials = () => {
             className="text-xl font-medium text-gray-300"
           >
             <div className="flex flex-row lg:gap-6 gap-4 lg:pl-6 pl-4">
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-52 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <h3 className="font-semibold lg:text-lg text-base">
@@ -107,14 +107,14 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <div className="rounded-3xl overflow-hidden lg:h-60 h-52 lg:w-96 w-80">
+              <div className="rounded-3xl overflow-hidden lg:h-60 h-48 lg:w-96 w-80">
                 <img
                   src="/img/home/image.png"
                   className="w-full h-full object-cover"
                 />
               </div>
 
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-52 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <h3 className="font-semibold lg:text-lg text-base">
@@ -140,13 +140,13 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <div className="rounded-3xl overflow-hidden lg:h-60 h-52 lg:w-96 w-80">
+              <div className="rounded-3xl overflow-hidden lg:h-60 h-48 lg:w-96 w-80">
                 <img
                   src="/img/home/image.png"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-52 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <h3 className="font-semibold lg:text-lg text-base">
@@ -171,14 +171,14 @@ const Testimonials = () => {
                   </div>
                 </div>
               </div>
-              <div className="rounded-3xl overflow-hidden lg:h-60 h-52 lg:w-96 w-80">
+              <div className="rounded-3xl overflow-hidden lg:h-60 h-48 lg:w-96 w-80">
                 <img
                   src="/img/home/image.png"
                   className="w-full h-full object-cover"
                 />
               </div>
 
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-52 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <h3 className="font-semibold lg:text-lg text-base">
@@ -213,7 +213,7 @@ const Testimonials = () => {
             className="text-xl font-medium text-gray-300"
           >
             <div className="flex flex-row lg:gap-6 gap-4 lg:pl-6 pl-4">
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-52 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <h3 className="font-semibold lg:text-lg text-base">
@@ -239,14 +239,14 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <div className="rounded-3xl overflow-hidden lg:h-60 h-52 lg:w-96 w-80">
+              <div className="rounded-3xl overflow-hidden lg:h-60 h-48 lg:w-96 w-80">
                 <img
                   src="/img/home/image.png"
                   className="w-full h-full object-cover"
                 />
               </div>
 
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-52 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <h3 className="font-semibold lg:text-lg text-base">
@@ -272,13 +272,13 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <div className="rounded-3xl overflow-hidden lg:h-60 h-52 lg:w-96 w-80">
+              <div className="rounded-3xl overflow-hidden lg:h-60 h-48 lg:w-96 w-80">
                 <img
                   src="/img/home/image.png"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-52 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <h3 className="font-semibold lg:text-lg text-base">
@@ -310,7 +310,7 @@ const Testimonials = () => {
                 />
               </div>
 
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-52 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <h3 className="font-semibold lg:text-lg text-base">

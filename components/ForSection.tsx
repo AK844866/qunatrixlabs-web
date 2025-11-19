@@ -6,7 +6,7 @@ import { useRef } from "react";
 export default function ForSection() {  
   return (
     <>
-      <section className="snap-start lg:h-screen flex  items-center justify-center relative bg-[#0E0C15] text-white overflow-hidden lg:px-0 px-6">
+      <section className="snap-start lg:h-screen flex  items-center justify-center relative bg-[#0E0C15] text-white overflow-hidden lg:px-0 px-4">
         <img
           src="/shapes/for-startup-shape.svg"
           className="absolute -top-[20%] w-[60%] z-0 lg:block hidden"
@@ -85,7 +85,7 @@ export default function ForSection() {
         </div>
       </section>
 
-      <section className="snap-start lg:h-screen flex  items-center justify-center relative bg-[#0E0C15] text-white overflow-hidden lg:px-0 px-6">
+      <section className="snap-start lg:h-screen flex  items-center justify-center relative bg-[#0E0C15] text-white overflow-hidden lg:px-0 px-4">
         <img
           src="/shapes/for-startup-shape.svg"
           className="absolute -top-[20%] right-[10%] w-[60%] z-0 lg:block hidden"
@@ -164,7 +164,7 @@ export default function ForSection() {
         </div>
       </section>
 
-      <section className="snap-start lg:h-screen flex  items-center justify-center relative bg-[#0E0C15] text-white overflow-hidden lg:px-0 px-6">
+      <section className="snap-start lg:h-screen flex  items-center justify-center relative bg-[#0E0C15] text-white overflow-hidden lg:px-0 px-4">
         <img
           src="/shapes/for-startup-shape.svg"
           className="absolute -top-[10%] -left-[10%] w-[60%] z-0 lg:block hidden"
