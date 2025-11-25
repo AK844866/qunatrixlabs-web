@@ -170,7 +170,7 @@ export default function Footer() {
                   </svg>
                 </div>
 
-                <p className="text-white/80">support@vrifide.com</p>
+                <p className="text-white/80">Connect@verifide.xyz</p>
               </div>
               {/* <div className="flex items-center space-x-2">
                 {" "}
@@ -204,7 +204,7 @@ export default function Footer() {
                 </div>
 
                 <p className="text-white/80">
-                  E310, E Block, East of Kailash, Newyork, 110065
+                 Office :1110, Damac Executive Heights, Al Barsha Heights, Dubai, UAE
                 </p>
               </div>
             </div>
