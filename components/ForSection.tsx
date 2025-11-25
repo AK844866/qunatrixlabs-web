@@ -202,7 +202,7 @@ export default function ForSection() {
                 </p>
               </div>
               <img
-                src="/img/home/elevate-your-institution.svg"
+                src="/img/home/elevate-your-institution.webp"
                 className="object-cover w-full"
                 alt="Elevate"
               />
@@ -218,7 +218,7 @@ export default function ForSection() {
                 </p>
               </div>
               <img
-                src="/img/home/redefining-institutional.svg"
+                src="/img/home/redefining-institutional.webp"
                 className="object-cover w-full"
                 alt="Reputation"
               />
@@ -234,7 +234,7 @@ export default function ForSection() {
                 </p>
               </div>
               <img
-                src="/img/home/youe-startup-ecosystem.svg"
+                src="/img/home/youe-startup-ecosystem.webp"
                 className="object-cover w-full"
                 alt="Ecosystem"
               />
