@@ -111,7 +111,7 @@ const Testimonials = () => {
                 />
               </div>
 
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
+              <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <p className="lg:text-base text-sm text-gray-300 ">
@@ -121,7 +121,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Profile Section */}
-                <div className="flex items-center gap-3 mt-8">
+                <div className="flex items-center gap-3 ">
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/male/72.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
@@ -140,7 +140,7 @@ const Testimonials = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
+              <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <p className="lg:text-base text-sm text-gray-300 ">
@@ -150,7 +150,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Profile Section */}
-                <div className="flex items-center gap-3 mt-8">
+                <div className="flex items-center gap-3 ">
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/male/29.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
@@ -169,7 +169,7 @@ const Testimonials = () => {
                 />
               </div>
 
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
+              <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <p className="lg:text-base text-sm text-gray-300 ">
@@ -178,7 +178,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Profile Section */}
-                <div className="flex items-center gap-3 mt-8">
+                <div className="flex items-center gap-3">
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/male/8.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
@@ -200,7 +200,7 @@ const Testimonials = () => {
             className="text-xl font-medium text-gray-300"
           >
             <div className="flex flex-row lg:gap-6 gap-4 lg:pl-6 pl-4">
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
+              <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
                  
@@ -212,7 +212,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Profile Section */}
-                <div className="flex items-center gap-3 mt-8">
+                <div className="flex items-center gap-3 ">
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/female/54.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
@@ -232,7 +232,7 @@ const Testimonials = () => {
                 />
               </div>
 
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
+              <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
                 
@@ -244,7 +244,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Profile Section */}
-                <div className="flex items-center gap-3 mt-8">
+                <div className="flex items-center gap-3 ">
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/male/24.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
@@ -263,7 +263,7 @@ const Testimonials = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
+              <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
                    
@@ -274,7 +274,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Profile Section */}
-                <div className="flex items-center gap-3 mt-8">
+                <div className="flex items-center gap-3 ">
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/female/71.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
@@ -286,24 +286,23 @@ const Testimonials = () => {
                   </div>
                 </div>
               </div>
-              <div className="rounded-3xl overflow-hidden lg:h-60 h-52 lg:w-96 w-80">
+              <div className="rounded-3xl overflow-hidden lg:h-60 h-48 lg:w-96 w-80">
                 <img
                   src="/img/testi5.webp"
                   className="w-full h-full object-cover"
                 />
               </div>
 
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
+              <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
-                <div className="space-y-4">
-                  
+                <div className="space-y-4"> 
                   <p className="lg:text-base text-sm text-gray-300 ">
                    "Verifide's verified credentials increased my freelance rates by 35%. Clients trust my skills immediately"
                   </p>
                 </div>
 
                 {/* Profile Section */}
-                <div className="flex items-center gap-3 mt-8">
+                <div className="flex items-center gap-3 ">
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/male/28.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
