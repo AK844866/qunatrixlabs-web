@@ -9,7 +9,7 @@ export default function Footer() {
           className="rounded-3xl overflow-hidden bg-cover"
           style={{ backgroundImage: "url('/img/home/call-to-action.png')" }}
         >
-          <div className=" flex md:flex-row flex-col items-center lg:gap-100 gap-6 lg:p-10 p-6 bg-linear-to-r from-[#2563EB]    ">
+          <div className=" flex md:flex-row flex-col items-center lg:gap-100 gap-6 lg:p-10 p-4 bg-linear-to-r from-[#2563EB]    ">
             <div className="space-y-2 ">
               <h2 className="lg:text-3xl text-2xl font-semibold ">
                 Ready to take your career to the next level?

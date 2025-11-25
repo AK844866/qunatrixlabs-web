@@ -34,8 +34,8 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="bg-[#062555] text-white py-20 relative z-0 h-screen w-full overflow-hidden snap-start ">
-      <div className="lg:space-y-20 space-y-8  container mx-auto  lg:px-0 px-6 ">
+    <section className="bg-[#062555] text-white lg:py-20 py-8 relative z-0 h-screen w-full overflow-hidden snap-start ">
+      <div className="lg:space-y-20 space-y-4  container mx-auto  lg:px-0 px-6 ">
         <div className="space-y-2 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
@@ -59,7 +59,7 @@ export default function HowItWorks() {
 
         <div className="flex lg:flex-row flex-col 2xl:gap-16 lg:gap-10 gap-6 items-center">
           {/* Right Side (Image) */}
-          <div className="relative flex justify-center items-center w-full">
+          <div className="relative flex justify-center items-center w-full bg-white/5 rounded-2xl aspect-video  ">
             {steps.map(
               (s) =>
                 step === s.id && (
@@ -83,13 +83,13 @@ export default function HowItWorks() {
               >
                 <div className="flex items-center space-x-4">
                   <div
-                    className={`border-l-2 space-y-2 pl-6 2xl:py-6 py-3 transition-all duration-300 ${
+                    className={`border-l-2 lg:space-y-2 lg:pl-6 pl-4 2xl:py-6 lg:py-3 py-1 transition-all select-none duration-300 ${
                       step === s.id ? "border-white" : "border-white/40"
                     }`}
                   >
                    
-                    <h3 className="2xl:lg:text-2xl text-xl font-semibold">{s.title}</h3>
-                    <p className="text-white font-light text-base  ">
+                    <h3 className="2xl:lg:text-2xl xl:text-xl text-lg font-semibold">{s.title}</h3>
+                    <p className="text-white font-light lg:text-base text-sm  ">
                       {s.desc}
                     </p>
                   </div>

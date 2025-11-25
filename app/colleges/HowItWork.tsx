@@ -28,7 +28,7 @@ export default function HowItWorks() {
   ];
 
   return (
-   <section className="bg-[#0D6EFD] text-white py-20   relative z-0 h-screen w-full overflow-hidden snap-start ">
+   <section className="bg-[#0D6EFD] text-white lg:py-20 py-8 relative z-0 h-screen w-full overflow-hidden snap-start ">
       <div className="lg:space-y-20 space-y-8  container mx-auto  lg:px-0 px-6 ">
         <div className="space-y-2 text-center  ">
           <motion.h1
@@ -53,7 +53,7 @@ export default function HowItWorks() {
 
         <div className="flex lg:flex-row flex-col lg:gap-20 gap-6 items-center ">
           {/* Right Side (Image) */}
-          <div className="relative flex justify-center items-center w-full">
+          <div className="relative flex justify-center items-center w-full bg-white/5 rounded-2xl aspect-video ">
             {steps.map(
               (s) =>
                 step === s.id && (
@@ -68,24 +68,24 @@ export default function HowItWorks() {
           </div>
           {/* Left Side (Text) */}
 
-          <div className="space-y-10  w-full">
+          <div className="lg:space-y-10 space-y-6  w-full">
             {steps.map((s) => (
               <div
                 key={s.id}
                 onMouseEnter={() => setStep(s.id)}
-                className="cursor-pointer "
+                className="cursor-pointer select-none "
               >
                 <div className="flex items-center space-x-4">
                   <div
-                    className={`border-l-4 space-y-2 pl-6 py-2 transition-all duration-300 ${
+                    className={`border-l-4 lg:space-y-2 lg:pl-6 pl-4 py-2 transition-all duration-300 ${
                       step === s.id ? "border-white" : "border-white/40"
                     }`}
                   >
-                    <button className="block lg:text-sm text-xs text-white rounded-full border border-white lg:px-6 px-4 py-1.5">
+                    <button className="lg:block hidden lg:text-sm text-xs text-white rounded-full border border-white lg:px-6 px-4 py-1.5">
                       Step {s.id}
                     </button>
                     <h3 className="lg:text-2xl text-lg font-semibold">{s.title}</h3>
-                    <p className="text-white font-light text-base  ">
+                    <p className="text-white font-light lg:text-base text-sm  ">
                       {s.desc}
                     </p>
                   </div>
