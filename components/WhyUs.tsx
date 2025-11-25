@@ -84,7 +84,7 @@ export default function WhyUs() {
             <img src="/img/home/real-world.svg" className="size-8" />
           </div>
           <div>
-            <h1 className="text-lg font-medium">4. Smarter, Faster Hiring</h1>
+            <h1 className="text-lg font-medium">4. Real-World Exposure</h1>
             <p className="text-sm  text-white/80 font-light">
                Stay ahead of the curve with startup-led workshops, projects, and
               practical tech experiences.
