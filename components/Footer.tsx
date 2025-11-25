@@ -22,8 +22,8 @@ export default function Footer() {
             </div>
 
             <div className="flex items-center space-x-2 lg:shrink-0 lg:w-auto w-full">
-              <button className="px-6 py-3 flex items-center bg-white text-black font-medium rounded-full text-base space-x-2 ">
-                <span>Browse Assessments</span>
+              <Link href="https://dev-verifide.verifide.xyz/create-account?redirect=%2Fuser%2Fprofile" className="px-6 py-3 flex items-center bg-white text-black font-medium rounded-full text-base space-x-2 ">
+                <span>Join us Today </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={20}
@@ -40,7 +40,7 @@ export default function Footer() {
                   <path d="M17 7l-10 10" />
                   <path d="M8 7l9 0l0 9" />
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default function Footer() {
               <a className="block">Companies</a>
               <a className="block">Colleges</a>
               <a className="block">About Us</a>
-              <a className="block">Blog</a>
+              {/* <a className="block">Blog</a> */}
             </div>
           </div>
           <div className="space-y-4 ">
@@ -172,7 +172,7 @@ export default function Footer() {
 
                 <p className="text-white/80">support@vrifide.com</p>
               </div>
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 {" "}
                 <div className="shrink-0 text-white/80">
                   <svg
@@ -187,7 +187,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <p className="text-white/80">+91-1456465420 (India)</p>
-              </div>
+              </div> */}
               <div className="flex items-start space-x-2">
                 <div className="shrink-0 pt-1 text-white/80">
                   <svg

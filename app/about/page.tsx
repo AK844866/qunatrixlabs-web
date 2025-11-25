@@ -32,7 +32,7 @@ export default function Employee() {
       <OurObjectives />
       <Testimonials />
       <div className="snap-start h-auto">
-        <Blog />
+        {/* <Blog /> */}
         <Footer />
       </div>
     </>

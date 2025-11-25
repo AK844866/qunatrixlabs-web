@@ -49,8 +49,9 @@ export default function Employee() {
       <HeroSectionOther
         title="Build Verified Credentials Employers Trust"
         subtitle="Showcase your skills with AI-powered assessments and immutable certificates that boost your credibility with recruiters worldwide."
-        button="Create Your Profile"
-        buttonTwo="Browse Assessments"
+        // button="Create Profile"
+        buttonTwo="Create Profile"
+        tagline="Verified skills. Trusted by employers."
         img="./img/employee/employees-hero.webp"
         extraline={true}
 
@@ -61,7 +62,7 @@ export default function Employee() {
       <Testimonials />
       <ProvenStates DataState={DataMatric} />
       <div className="snap-start h-auto">
-        <Blog />
+        {/* <Blog /> */}
         <Footer />
       </div>
     </>

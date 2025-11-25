@@ -81,27 +81,24 @@ const Testimonials = () => {
             className="text-xl font-medium text-gray-300"
           >
             <div className="flex flex-row lg:gap-6 gap-4 lg:pl-6 pl-4">
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
-                  <h3 className="font-semibold lg:text-lg text-base">
-                    Emily R
-                  </h3>
-                  <p className="lg:text-lg text-sm text-gray-300 ">
-                    "Every time I use it, I feel more organized and focused than
-                    ever!"
+                  <p className="lg:text-base text-sm text-gray-300 ">
+                    "Verifide made learning engaging and results-driven. I
+                    landed my dream job 3 weeks faster"
                   </p>
                 </div>
 
                 {/* Profile Section */}
                 <div className="flex items-center gap-3 mt-8">
                   <img
-                    src="https://i.pravatar.cc/150?u=fake@pravatar.com" // replace with your image path
+                    src="https://xsgames.co/randomusers/assets/avatars/female/40.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
                   />
 
                   <div>
-                    <h4 className="font-semibold text-base">Emily R</h4>
+                    <h4 className="font-semibold text-base"> Ananya Desai</h4>
                     <p className="text-gray-400 text-sm">Graphic Designer</p>
                   </div>
                 </div>
@@ -114,27 +111,24 @@ const Testimonials = () => {
                 />
               </div>
 
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
-                  <h3 className="font-semibold lg:text-lg text-base">
-                    Emily R
-                  </h3>
-                  <p className="lg:text-lg text-sm text-gray-300 ">
-                    "Every time I use it, I feel more organized and focused than
-                    ever!"
+                  <p className="lg:text-base text-sm text-gray-300 ">
+                    "I completed 5 verified courses in 3 months through
+                    Verifide. My LinkedIn profile views increased by 180%
                   </p>
                 </div>
 
                 {/* Profile Section */}
                 <div className="flex items-center gap-3 mt-8">
                   <img
-                    src="https://i.pravatar.cc/150?u=fake@pravatar.com" // replace with your image path
+                    src="https://xsgames.co/randomusers/assets/avatars/male/72.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
                   />
 
                   <div>
-                    <h4 className="font-semibold text-base">Emily R</h4>
+                    <h4 className="font-semibold text-base">Sanjay Nair</h4>
                     <p className="text-gray-400 text-sm">Graphic Designer</p>
                   </div>
                 </div>
@@ -142,63 +136,56 @@ const Testimonials = () => {
 
               <div className="rounded-3xl overflow-hidden lg:h-60 h-48 lg:w-96 w-80">
                 <img
-                  src="/img/home/image.png"
+                  src="/img/testi2.webp"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
-                  <h3 className="font-semibold lg:text-lg text-base">
-                    Emily R
-                  </h3>
-                  <p className="lg:text-lg text-sm text-gray-300 ">
-                    "Every time I use it, I feel more organized and focused than
-                    ever!"
+                  <p className="lg:text-base text-sm text-gray-300 ">
+                    "Verifide's digital passport helped me showcase my skills to
+                    recruiters instantly. I landed my dream job 3 weeks faster"
                   </p>
                 </div>
 
                 {/* Profile Section */}
                 <div className="flex items-center gap-3 mt-8">
                   <img
-                    src="https://i.pravatar.cc/150?u=fake@pravatar.com" // replace with your image path
+                    src="https://xsgames.co/randomusers/assets/avatars/male/29.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
                   />
 
                   <div>
-                    <h4 className="font-semibold text-base">Emily R</h4>
+                    <h4 className="font-semibold text-base">Rahul Kapoor</h4>
                     <p className="text-gray-400 text-sm">Graphic Designer</p>
                   </div>
                 </div>
               </div>
               <div className="rounded-3xl overflow-hidden lg:h-60 h-48 lg:w-96 w-80">
                 <img
-                  src="/img/home/image.png"
+                 src="/img/testi3.webp"
                   className="w-full h-full object-cover"
                 />
               </div>
 
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
-                  <h3 className="font-semibold lg:text-lg text-base">
-                    Emily R
-                  </h3>
-                  <p className="lg:text-lg text-sm text-gray-300 ">
-                    "Every time I use it, I feel more organized and focused than
-                    ever!"
+                  <p className="lg:text-base text-sm text-gray-300 ">
+                  "Startup quests gave me real-world experience. I moved from junior to senior product manager in 4 months."
                   </p>
                 </div>
 
                 {/* Profile Section */}
                 <div className="flex items-center gap-3 mt-8">
                   <img
-                    src="https://i.pravatar.cc/150?u=fake@pravatar.com" // replace with your image path
+                    src="https://xsgames.co/randomusers/assets/avatars/male/8.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
                   />
 
                   <div>
-                    <h4 className="font-semibold text-base">Emily R</h4>
+                    <h4 className="font-semibold text-base">Arjun Sharma</h4>
                     <p className="text-gray-400 text-sm">Graphic Designer</p>
                   </div>
                 </div>
@@ -213,28 +200,59 @@ const Testimonials = () => {
             className="text-xl font-medium text-gray-300"
           >
             <div className="flex flex-row lg:gap-6 gap-4 lg:pl-6 pl-4">
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
-                  <h3 className="font-semibold lg:text-lg text-base">
-                    Emily R
-                  </h3>
-                  <p className="lg:text-lg text-sm text-gray-300 ">
-                    "Every time I use it, I feel more organized and focused than
-                    ever!"
+                 
+                  <p className="lg:text-base text-sm text-gray-300 ">
+                    "I received 12 job offers after completing Verifide's
+                    learning quests. The verified credentials made my skills
+                    instantly credible 1."
                   </p>
                 </div>
 
                 {/* Profile Section */}
                 <div className="flex items-center gap-3 mt-8">
                   <img
-                    src="https://i.pravatar.cc/150?u=fake@pravatar.com" // replace with your image path
+                    src="https://xsgames.co/randomusers/assets/avatars/female/54.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
                   />
 
                   <div>
-                    <h4 className="font-semibold text-base">Emily R</h4>
-                    <p className="text-gray-400 text-sm">Graphic Designer</p>
+                    <h4 className="font-semibold text-base">Sneha Patel </h4>
+                    <p className="text-gray-400 text-sm"> HR Director</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-3xl overflow-hidden lg:h-60 h-48 lg:w-96 w-80">
+                <img
+                  src="/img/testi4.webp"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
+                {/* Quote Section */}
+                <div className="space-y-4">
+                
+                  <p className="lg:text-base text-sm text-gray-300 ">
+                    "Verifide's community feature connected me with 50+
+                    designers across India. Recruiters now reach out to me
+                    directly"
+                  </p>
+                </div>
+
+                {/* Profile Section */}
+                <div className="flex items-center gap-3 mt-8">
+                  <img
+                    src="https://xsgames.co/randomusers/assets/avatars/male/24.jpg" // replace with your image path
+                    className="rounded-full object-cover size-12"
+                  />
+
+                  <div>
+                    <h4 className="font-semibold text-base">Vikram Reddy</h4>
+                    <p className="text-gray-400 text-sm">Data Analyst</p>
                   </div>
                 </div>
               </div>
@@ -245,93 +263,55 @@ const Testimonials = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
-                  <h3 className="font-semibold lg:text-lg text-base">
-                    Emily R
-                  </h3>
-                  <p className="lg:text-lg text-sm text-gray-300 ">
-                    "Every time I use it, I feel more organized and focused than
-                    ever!"
+                   
+                  
+                  <p className="lg:text-base text-sm text-gray-300 ">
+                  "The verified learning paths ensured everyone had the exact skills we needed. We launched our MVP 2 months faster"
                   </p>
                 </div>
 
                 {/* Profile Section */}
                 <div className="flex items-center gap-3 mt-8">
                   <img
-                    src="https://i.pravatar.cc/150?u=fake@pravatar.com" // replace with your image path
+                    src="https://xsgames.co/randomusers/assets/avatars/female/71.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
                   />
 
                   <div>
-                    <h4 className="font-semibold text-base">Emily R</h4>
-                    <p className="text-gray-400 text-sm">Graphic Designer</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="rounded-3xl overflow-hidden lg:h-60 h-48 lg:w-96 w-80">
-                <img
-                  src="/img/home/image.png"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
-                {/* Quote Section */}
-                <div className="space-y-4">
-                  <h3 className="font-semibold lg:text-lg text-base">
-                    Emily R
-                  </h3>
-                  <p className="lg:text-lg text-sm text-gray-300 ">
-                    "Every time I use it, I feel more organized and focused than
-                    ever!"
-                  </p>
-                </div>
-
-                {/* Profile Section */}
-                <div className="flex items-center gap-3 mt-8">
-                  <img
-                    src="https://i.pravatar.cc/150?u=fake@pravatar.com" // replace with your image path
-                    className="rounded-full object-cover size-12"
-                  />
-
-                  <div>
-                    <h4 className="font-semibold text-base">Emily R</h4>
-                    <p className="text-gray-400 text-sm">Graphic Designer</p>
+                    <h4 className="font-semibold text-base"> Kavya Iyer</h4>
+                    <p className="text-gray-400 text-sm">UX Designer</p>
                   </div>
                 </div>
               </div>
               <div className="rounded-3xl overflow-hidden lg:h-60 h-52 lg:w-96 w-80">
                 <img
-                  src="/img/home/image.png"
+                  src="/img/testi5.webp"
                   className="w-full h-full object-cover"
                 />
               </div>
 
-              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80">
+              <div className="bg-[#1A1A24] text-white p-8 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
-                  <h3 className="font-semibold lg:text-lg text-base">
-                    Emily R
-                  </h3>
-                  <p className="lg:text-lg text-sm text-gray-300 ">
-                    "Every time I use it, I feel more organized and focused than
-                    ever!"
+                  
+                  <p className="lg:text-base text-sm text-gray-300 ">
+                   "Verifide's verified credentials increased my freelance rates by 35%. Clients trust my skills immediately"
                   </p>
                 </div>
 
                 {/* Profile Section */}
                 <div className="flex items-center gap-3 mt-8">
                   <img
-                    src="https://i.pravatar.cc/150?u=fake@pravatar.com" // replace with your image path
+                    src="https://xsgames.co/randomusers/assets/avatars/male/28.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
                   />
 
                   <div>
-                    <h4 className="font-semibold text-base">Emily R</h4>
-                    <p className="text-gray-400 text-sm">Graphic Designer</p>
+                    <h4 className="font-semibold text-base">Rohan Gupta</h4>
+                    <p className="text-gray-400 text-sm">Developer</p>
                   </div>
                 </div>
               </div>

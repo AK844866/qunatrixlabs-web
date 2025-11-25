@@ -18,6 +18,7 @@ export default function Employee() {
         button=" Request a Demo"
         buttonTwo="Search Candidates"
         img="/img/employers/employers-hero.webp"
+        tagline="Hire smarter with verified skills."
         extraline={true}
 
       />
@@ -26,7 +27,7 @@ export default function Employee() {
       <HowItWorks />
       <Testimonials />
       <div className="snap-start h-auto">
-        <Blog />
+        {/* <Blog /> */}
         <Footer />
       </div>
     </>

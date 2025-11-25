@@ -50,7 +50,7 @@ const Featured = () => {
               transition={{ duration: 0.8, ease: "easeInOut" }}
               className="2xl:text-5xl xl:text-4xl lg:text-3xl text-2xl font-semibold"
             >
-              Feature for Collages
+              Feature for Colleges 
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 40 }}

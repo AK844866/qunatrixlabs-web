@@ -19,6 +19,7 @@ export default function Employee() {
         buttonTwo="Request a Demo"
         img="/img/universities/universities-and-college-hero.webp"
         extraline={true}
+        tagline="Grade skills.  Simplify campus hiring."
 
       />
       <WhyChoose />
@@ -26,7 +27,7 @@ export default function Employee() {
       <HowItWorks />
       <Testimonials />
       <div className="snap-start h-auto">
-        <Blog />
+        {/* <Blog /> */}
         <Footer />
       </div>
     </>

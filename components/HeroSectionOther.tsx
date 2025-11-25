@@ -2,16 +2,18 @@
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { string } from "three/tsl";
+import Link from "next/link";
 
 type HeroTwoContent = {
   title: string;
   subtitle: string;
   subtitle2?: string;
   subtitle3?: string;
-  button: string;
-  buttonTwo: string;
+  button?: string;
+  buttonTwo?: string;
   img: string;
   extraline?: boolean;
+  tagline?: string;
 };
 
 export default function HeroSectionOther({
@@ -21,6 +23,7 @@ export default function HeroSectionOther({
   subtitle3,
   button,
   buttonTwo,
+  tagline,
   extraline,
   img,
 }: HeroTwoContent) {
@@ -41,7 +44,7 @@ export default function HeroSectionOther({
           {extraline && (
             <button className="bg-linear-to-r  from-[#0066FF] via-[#217AFF] to-[#A1BEFF] p-[1px] rounded-full  transition duration-300 hover:shadow-[0_0_20px_#3b82f6]">
               <div className="px-8 py-2 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-xs space-x-2 ">
-                <span>Over 20,000 Employee hired last 6 month </span>
+                <span>{tagline} </span>
               </div>
             </button>
           )}
@@ -82,7 +85,7 @@ export default function HeroSectionOther({
           </div>
 
           <div className="flex lg:flex-row flex-col gap-4 items-center">
-            <button className="px-10 py-3 lg:flex hidden items-center bg-black rounded-full 2xl:text-xl text-lg space-x-2 transition duration-300 hover:shadow-[0_0_20px_#3b82f6]">
+            {/* <button className="px-10 py-3 lg:flex hidden items-center bg-black rounded-full 2xl:text-xl text-lg space-x-2 transition duration-300 hover:shadow-[0_0_20px_#3b82f6]">
               <span>{button}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,11 +103,30 @@ export default function HeroSectionOther({
                 <path d="M17 7l-10 10" />
                 <path d="M8 7h9v9" />
               </svg>
-            </button>
+            </button> */}
 
-            <button className="px-10 py-3 flex items-center border border-white rounded-full 2xl:text-xl lg:text-lg text-sm space-x-2">
+            <Link
+              href="https://dev-verifide.verifide.xyz/create-account?redirect=%2Fuser%2Fprofile"
+              className="px-10 py-3 flex items-center border border-white rounded-full 2xl:text-xl lg:text-lg text-sm space-x-2 hover:bg-white/10 hover:backdrop-blur-md transition-all duration-150"
+            >
               <span>{buttonTwo}</span>
-            </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M17 7l-10 10" />
+                <path d="M8 7h9v9" />
+              </svg>
+            </Link>
           </div>
         </div>
 

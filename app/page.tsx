@@ -26,7 +26,7 @@ export default function Home() {
       <Testimonials />
 
       <div className="snap-start h-auto">
-        <Blog />
+        {/* <Blog /> */}
         <Footer />
       </div>
     </>
