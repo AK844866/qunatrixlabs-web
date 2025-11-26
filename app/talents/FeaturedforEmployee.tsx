@@ -10,14 +10,14 @@ import { motion } from "framer-motion";
 const solutionData = [
   {
     id: 1,
-    img: "/img/home/profile-passport.svg",
+    img: "/img/employee/your-dream-Jobs.webp",
     title: "Opportunity Marketplace",
     subtitle: ` Personalized recommendations for internships, jobs, freelance gigs, and volunteer roles.`,
     buttonLink: "",
   },
   {
     id: 2,
-    img: "/img/home/skill-check.svg",
+    img: "/img/employee/verified-profile-passport.webp",
     title: "Verified Profile Passport",
     subtitle: `Showcase your verified skills, education, projects, and experiences in one place.
 `,
@@ -26,7 +26,7 @@ const solutionData = [
 
   {
     id: 3,
-    img: "/img/home/client-portal.svg",
+    img: "/img/employee/networking-and-mentorship.webp",
     title: "Networking & Mentorship",
     subtitle: `Connect with professionals, mentors, and peers to build meaningful relationships.`,
     buttonLink: "",
@@ -34,14 +34,14 @@ const solutionData = [
 
   {
     id: 4,
-    img: "/img/home/opportunities-hub.svg",
+    img: "/img/employee/skill-verification.webp",
     title: "Skill Verification & Endorsements",
     subtitle: `Gain credibility with verified skills and project validations`,
     buttonLink: "",
   },
   {
     id: 5,
-    img: "/img/home/opportunities-hub.svg",
+    img: "/img/employee/events-learning.webp",
     title: "Events & Learning",
     subtitle:
       "Access hackathons, workshops, webinars, and upskilling programs.",
@@ -154,7 +154,7 @@ const FeaturedforEmployee = () => {
 
                   <div className="lg:w-7/12 w-full">
                     <img
-                      src="/img/employee/your-dream-Jobs.webp"
+                      src={slide.img}
                       className="object-contain "
                     />
                   </div>
