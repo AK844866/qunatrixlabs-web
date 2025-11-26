@@ -91,7 +91,7 @@ const WhyVerifide = () => {
                   </svg>
                   <p> Access real-world opportunities.</p>
                 </motion.div>
-                <motion.div
+                {/* <motion.div
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
@@ -118,7 +118,7 @@ const WhyVerifide = () => {
                     <path d="M2 12l5 5m5 -5l5 -5" />
                   </svg>
                   <p> Build authentic credibility.</p>
-                </motion.div>
+                </motion.div> */}
 
                  <motion.div
                   initial={{ opacity: 0, y: 40 }}

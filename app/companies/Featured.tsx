@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const solutionData = [
   {
     id: 1,
-    img: "/img/home/profile-passport.svg",
+    img: "/img/employers/verified-talent-profiles.webp",
     title: "Verified Talent Profiles",
     subtitle: `Access detailed profiles with validated skills, projects, education, and experience.
 `,
@@ -18,7 +18,7 @@ const solutionData = [
   },
   {
     id: 2,
-    img: "/img/home/skill-check.svg",
+    img: "/img/employers/streamlined-recruitment.webp",
     title: "Streamlined Recruitment",
     subtitle: `Save time with pre-verified candidates and automated onboarding tools.
 `,
@@ -27,7 +27,7 @@ const solutionData = [
 
   {
     id: 3,
-    img: "/img/home/client-portal.svg",
+    img: "/img/employers/community-building.webp",
     title: "Community Building",
     subtitle: `Launch products, host events, and engage with your target audience.`,
     buttonLink: "",
@@ -35,14 +35,14 @@ const solutionData = [
 
   {
     id: 4,
-    img: "/img/home/opportunities-hub.svg",
+    img: "/img/employers/talent-insights.webp",
     title: "Talent Insights",
     subtitle: `Analyze industry-specific talent pools for better hiring decisions. `,
     buttonLink: "",
   },
   {
     id: 5,
-    img: "/img/home/opportunities-hub.svg",
+    img: "/img/employers/employer-branding.webp",
     title: "Employer Branding",
     subtitle:
       "Highlight your company as a trusted partner for growth and opportunity.",
@@ -155,7 +155,7 @@ const Featured = () => {
 
                   <div className="lg:w-7/12 w-full">
                     <img
-                      src="/img/employers/verified-talent-profiles.webp"
+                      src={slide.img}
                       className="object-contain "
                     />
                   </div>
