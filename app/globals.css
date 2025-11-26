@@ -64,3 +64,18 @@ button {
   transform: scale(1.4);
   box-shadow: 0 0 10px #217aff;
 }
+
+.custom-pagination-desktop2 .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #217aff;
+  transform: scale(1.4);
+  box-shadow: 0 0 10px #217aff;
+}
+
+.custom-pagination-desktop3 .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #217aff;
+  transform: scale(1.4);
+  box-shadow: 0 0 10px #217aff;
+}
+

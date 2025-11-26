@@ -6,32 +6,37 @@ import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; 
 
 const solutionData = [
   {
     id: 1,
     title: "Alumni & Student Tracking",
+    img:"/img/universities/alumni-student-tracking.webp",
     subtitle: `Monitor achievements, career paths, and skill development.`,
   },
   {
     id: 2,
-    title: "Event & Program Management",
+    title: "Coureses",
+    img:"/img/universities/courses.webp", 
     subtitle: `Organize hackathons, job fairs, webinars, and other growth initiatives.`,
   },
   {
     id: 3,
     title: "Institution Branding",
+    img:"/img/universities/Iinstitution-branding.webp", 
     subtitle: `Showcase verified alumni success stories to enhance institutional reputation.`,
   },
   {
     id: 4,
     title: "Industry Collaboration",
+    img:"/img/universities/Industry-collaboration.webp", 
     subtitle: `Connect students with companies and startups for internships and projects.`,
   },
   {
     id: 5,
-    title: "Data Insights",
+    title: "Assesments",
+    img:"/img/universities/assessments.webp", 
     subtitle: `Access analytics to understand student and alumni outcomes, trends, and engagement.`,
   },
 ];
@@ -64,7 +69,7 @@ const Featured = () => {
             </motion.p>
           </div>
         </div>
-        <div className=" container mx-auto 2xl:px-0 lg:px-10 block lg:w-auto w-screen lg:overflow-visible overflow-hidden ">
+        <div className=" container mx-auto 2xl:px-0 lg:px-10 block lg:w-auto w-screen lg:overflow-visible overflow-hidden  relative  ">
           <Swiper
             modules={[Navigation, Autoplay, Pagination]}
             spaceBetween={30}
@@ -75,9 +80,9 @@ const Featured = () => {
             }}
             pagination={{
               clickable: true,
-              el: ".custom-pagination-desktop",
+              el: ".custom-pagination-desktop2 ",
               renderBullet: (index, className) => {
-                return `<span class=" ${className} w-2 h-2 cursor-pointer m-1.5 block rounded-full bg-white/30 transition-all duration-300"></span>`;
+                return `<span class=" ${className} w-2 h-2 cursor-pointer m-1.5 block rounded-full bg-white/30 transition-all duration-300 "></span>`;
               },
             }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -94,7 +99,7 @@ const Featured = () => {
           >
             {solutionData.map((slide) => (
               <SwiperSlide key={slide.id}>
-                <div className="flex md:flex-row flex-col-reverse 2xl:gap-20 lg:gap-10 gap-6 items-center container mx-auto relative z-20 h-full lg:px-0 px-6  ">
+                <div className="flex md:flex-row flex-col-reverse 2xl:gap-20 lg:gap-10 gap-6 items-center z-20 h-full lg:px-0 px-6  ">
                   <div className="text-left  text-white space-y-8 lg:w-5/12 w-full">
                     <button className="px-8 py-1.5 flex items-center bg-[#0E0C15] rounded-full lg:text-base text-sm space-x-2 bg-linear-to-r  from-[#0066FF] via-[#217AFF] to-[#A1BEFF ">
                       <span>Feature {slide.id} </span>
@@ -133,7 +138,8 @@ const Featured = () => {
 
                   <div className="lg:w-7/12 w-full">
                     <img
-                      src="/img/universities/alumni-student.webp"
+                      // src="/img/universities/alumni-student.webp"
+                      src={slide.img}
                       className="object-contain "
                     />
                   </div>
@@ -143,7 +149,7 @@ const Featured = () => {
           </Swiper>
 
           {/* Desktop Pagination – vertical right side */}
-          <div className="custom-pagination-desktop absolute 2xl:-left-[6%] lg:left-[2%]! -left-1/2 lg:w-auto w-full lg:justify-center  justify-center  lg:top-1/2 bottom-6 lg:-translate-y-1/2 translate-x-1/2 flex lg:flex-col flex-row z-50"></div>
+          <div className="custom-pagination-desktop2 absolute 2xl:-left-[6%] lg:left-[2%] -left-1/2 lg:w-auto w-full lg:justify-center justify-center lg:top-1/2 bottom-6 lg:-translate-y-1/2 translate-x-1/2 flex lg:flex-col flex-row z-50"></div>
         </div>
       </div>
 

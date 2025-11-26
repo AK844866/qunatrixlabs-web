@@ -97,7 +97,7 @@ const Featured = () => {
             }}
             pagination={{
               clickable: true,
-              el: ".custom-pagination-desktop",
+              el: ".custom-pagination-desktop3",
               renderBullet: (index, className) => {
                 return `<span class="${className} w-2 h-2 cursor-pointer m-1.5 block rounded-full bg-white/30 transition-all duration-300"></span>`;
               },
@@ -165,7 +165,7 @@ const Featured = () => {
           </Swiper>
 
           {/* Desktop Pagination – vertical right side */}
-          <div className="custom-pagination-desktop absolute 2xl:-left-[6%] lg:left-[2%]! -left-1/2 lg:w-auto w-full lg:justify-center  justify-center  lg:top-1/2 bottom-6 lg:-translate-y-1/2 translate-x-1/2 flex lg:flex-col flex-row z-50"></div>
+          <div className="custom-pagination-desktop3 absolute 2xl:-left-[6%] lg:left-[2%]! -left-1/2 lg:w-auto w-full lg:justify-center  justify-center  lg:top-1/2 bottom-6 lg:-translate-y-1/2 translate-x-1/2 flex lg:flex-col flex-row z-50"></div>
         </div>
       </div>
     </section>
