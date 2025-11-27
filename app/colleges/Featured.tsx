@@ -19,7 +19,7 @@ const solutionData = [
     id: 2,
     title: "Coureses",
     img:"/img/universities/courses.webp", 
-    subtitle: `Organize hackathons, job fairs, webinars, and other growth initiatives.`,
+    subtitle: `Launch online courses for users — and empower them with guided learning and measurable progress.`,
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const solutionData = [
     id: 5,
     title: "Assesments",
     img:"/img/universities/assessments.webp", 
-    subtitle: `Access analytics to understand student and alumni outcomes, trends, and engagement.`,
+    subtitle: `Build assessment libraries and monitor the students’ skill progress — with real-time insights and growth tracking.`,
   },
 ];
 
