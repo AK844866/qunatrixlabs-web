@@ -6,18 +6,18 @@ import { motion } from "framer-motion";
 export default function HowItWorks() {
   const [step, setStep] = useState(1);
 
-  const steps = [
+  const steps = [  
     {
       id: 1,
       title: "Register Institution",
       desc: "Onboard your college & training officers (TPOs).",
-      img: "/img/employers/search-discover.webp", // change this to your own image
+      img: "/img/universities/register-your-institution.webp", // change this to your own image
     },
     {
       id: 2,
       title: "Run Bulk Assessments",
       desc: "Onboard your college & training officers (TPOs).",
-      img: "/img/employers/search-discover.webp", // change this to your own image
+      img: "/img/universities/run-bulk-assessments.webp", // change this to your own image
     },
     {
       id: 3,
