@@ -81,6 +81,7 @@ const Solutions = () => {
           </div>
           <div className="items-center space-x-4 lg:flex hidden">
             <button
+            aria-label="Prev"
               onClick={handlePrev}
               className="lg:size-12 size-10 rounded-full flex items-center justify-center border border-white/10 hover:bg-white/5 transition-all"
             >
@@ -102,6 +103,7 @@ const Solutions = () => {
             </button>
             <button
               onClick={handleNext}
+              aria-label="Next"
               className="lg:size-12 size-10 rounded-full flex items-center justify-center border border-white/10 hover:bg-white/5 transition-all"
             >
               <svg

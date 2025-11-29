@@ -10,7 +10,7 @@ export default function ForSection() {
         <img
           src="/shapes/for-startup-shape.svg"
           className="absolute -top-[20%] w-[60%] z-0 lg:block hidden"
-          alt="Shape"
+          alt="for-startup-shape"
         />
         <div className="container mx-auto lg:py-32 py-8 lg:space-y-16 space-y-6 z-10">
           <div className="text-center space-y-2">
@@ -125,7 +125,7 @@ export default function ForSection() {
               <img
                 src="/img/home/your-gateway.webp"
                 className="object-cover w-full"
-                alt="Gateway"
+                alt="your-gateway"
               />
             </div>
 
@@ -141,7 +141,7 @@ export default function ForSection() {
               <img
                 src="/img/home/opportunities-made.webp"
                 className="object-cover w-full"
-                alt="Opportunities"
+                alt="opportunities-made"
               />
             </div>
 
@@ -157,7 +157,7 @@ export default function ForSection() {
               <img
                 src="/img/home/verified-individuals.webp"
                 className="object-cover w-full"
-                alt="Verified Individuals"
+                alt="verified-individuals"
               />
             </div>
           </div>
@@ -204,7 +204,7 @@ export default function ForSection() {
               <img
                 src="/img/home/elevate-your-institution.webp"
                 className="object-cover w-full"
-                alt="Elevate"
+                alt="elevate-your-institution"
               />
             </div>
 
@@ -220,7 +220,7 @@ export default function ForSection() {
               <img
                 src="/img/home/redefining-institutional.webp"
                 className="object-cover w-full"
-                alt="Reputation"
+                alt="redefining-institutional"
               />
             </div>
 
@@ -236,7 +236,7 @@ export default function ForSection() {
               <img
                 src="/img/home/youe-startup-ecosystem.webp"
                 className="object-cover w-full"
-                alt="Ecosystem"
+                alt="youe-startup-ecosystem"
               />
             </div>
           </div>

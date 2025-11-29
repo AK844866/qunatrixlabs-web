@@ -64,7 +64,7 @@ export default function Header() {
         <div className="flex justify-between items-center py-4 lg:py-6 lg:container lg:mx-auto lg:px-0 px-4 w-full">
           {/* Logo */}
           <div>
-            <img src="/img/verifide-logo.svg" className="lg:w-40 w-32" />
+            <img src="/img/verifide-logo.svg" alt="verifide-logo" className="lg:w-40 w-32" />
           </div>
 
           {/* Desktop Nav */}
@@ -132,9 +132,10 @@ export default function Header() {
         }`}
       >
         <div className="flex justify-between items-center mb-8 w-full">
-          <img src="/img/verifide-logo.svg" className="w-32" />
+          <img src="/img/verifide-logo.svg" alt="verifide-logo" className="w-32" />
           <button
             onClick={() => setMenuOpen(false)}
+            aria-label="menu"
             className="p-2 rounded-md bg-white/10 hover:bg-white/20 transition"
           >
             <svg

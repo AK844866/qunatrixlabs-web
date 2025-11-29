@@ -22,7 +22,10 @@ export default function Footer() {
             </div>
 
             <div className="flex items-center space-x-2 lg:shrink-0 lg:w-auto w-full">
-              <Link href="https://dev-verifide.verifide.xyz/create-account?redirect=%2Fuser%2Fprofile" className="px-6 py-3 flex items-center bg-white text-black font-medium rounded-full text-base space-x-2 ">
+              <Link
+                href="https://dev-verifide.verifide.xyz/create-account?redirect=%2Fuser%2Fprofile"
+                className="px-6 py-3 flex items-center bg-white text-black font-medium rounded-full text-base space-x-2 "
+              >
                 <span>Join us Today </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +50,11 @@ export default function Footer() {
 
         <div className="grid lg:grid-cols-5 grid-cols-1 gap-6 py-10  ">
           <div className="space-y-6 ">
-            <img src="/img/verifide-logo.svg" className="w-40" />
+            <img
+              src="/img/verifide-logo.svg"
+              alt="verifide-logo"
+              className="w-40"
+            />
             <p className=" text-white/80 font-light">
               From verified digital passports to startup-led quests, Verifide
               enables everyone to learn, connect, and grow — faster and smarter.
@@ -56,6 +63,7 @@ export default function Footer() {
               <Link
                 href="https://x.com/Verif_Labs"
                 target="blank"
+                aria-label="twitter"
                 className="text-white/60 hover:text-[#2563EB] cursor-pointer   transition duration-150"
               >
                 <svg
@@ -73,6 +81,7 @@ export default function Footer() {
               <Link
                 href="https://t.me/+hPMwQZ-_3AJlNjY1"
                 target="blank"
+                aria-label="telegram"
                 className="text-white/60 hover:text-[#2563EB] cursor-pointer   transition duration-150"
               >
                 <svg
@@ -85,12 +94,11 @@ export default function Footer() {
                 >
                   <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
                 </svg>
-
-               
               </Link>
               <Link
                 href="https://www.instagram.com/verifide.labs/?hl=en"
                 target="blank"
+                aria-label="instagram"
                 className="text-white/60 hover:text-[#2563EB] cursor-pointer   transition duration-150"
               >
                 <svg
@@ -105,7 +113,12 @@ export default function Footer() {
                 </svg>
               </Link>
 
-              <Link href="https://www.linkedin.com/company/verifidelabs/?viewAsMember=true" target="blank" className="text-white/60 hover:text-[#2563EB] cursor-pointer   transition duration-150">
+              <Link
+                href="https://www.linkedin.com/company/verifidelabs/?viewAsMember=true"
+                target="blank"
+                aria-label="linkedin"
+                className="text-white/60 hover:text-[#2563EB] cursor-pointer   transition duration-150"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={20}
@@ -204,7 +217,8 @@ export default function Footer() {
                 </div>
 
                 <p className="text-white/80">
-                 Office :1110, Damac Executive Heights, Al Barsha Heights, Dubai, UAE
+                  Office :1110, Damac Executive Heights, Al Barsha Heights,
+                  Dubai, UAE
                 </p>
               </div>
             </div>

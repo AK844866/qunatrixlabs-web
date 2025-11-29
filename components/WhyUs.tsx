@@ -32,7 +32,7 @@ export default function WhyUs() {
       </div>
 
       <div className="relative  justify-center h-full lg:flex hidden">
-        <ElectricCube /> 
+        <ElectricCube />
         {/* <img src="/img/home/why-verifide-cube.svg" className="w-[45%] mb-60" /> */}
 
         <div
@@ -40,7 +40,7 @@ export default function WhyUs() {
      transition-all duration-500 hover:border-[#217AFF] hover:shadow-[0_0_20px_2px_#217AFF]/60"
         >
           <div className="w-16 h-16 rounded-full bg-[#DA1D5D] shrink-0 flex items-center justify-center">
-            <img src="/img/home/verified-digital.svg" className="size-8" />
+            <img src="/img/home/verified-digital.svg" alt="verified-digital" className="size-8" />
           </div>
           <div className="space-y-0.5">
             <h1 className="text-lg font-medium">
@@ -55,7 +55,7 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl absolute -top-4 right-[7%] flex items-start space-x-4 p-4 w-[30%]">
           <div className="w-16 h-16 rounded-full bg-[#2563EB] shrink-0 flex items-center justify-center">
-            <img src="/img/home/skill-validation.svg" className="size-8" />
+            <img src="/img/home/skill-validation.svg" alt="skill-validation" className="size-8" />
           </div>
           <div>
             <h1 className="text-xl font-medium">2. Skill Validation & Proof</h1>
@@ -68,7 +68,7 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl absolute top-[34%] left-[2%] flex items-start space-x-4 p-4 w-[30%]">
           <div className="w-16 h-16 rounded-full bg-[#FFC417] shrink-0 flex items-center justify-center">
-            <img src="/img/home/smarter-faster.svg" className="size-8" />
+            <img src="/img/home/smarter-faster.svg" alt="smarter-faster" className="size-8" />
           </div>
           <div>
             <h1 className="text-lg font-medium">3. Smarter, Faster Hiring</h1>
@@ -81,7 +81,7 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl absolute top-[36%] right-[5%] flex items-start space-x-4 p-4 w-[30%]">
           <div className="w-16 h-16 rounded-full bg-[#4CAF50] shrink-0  flex items-center justify-center">
-            <img src="/img/home/real-world.svg" className="size-8" />
+            <img src="/img/home/real-world.svg" alt="real-world" className="size-8" />
           </div>
           <div>
             <h1 className="text-lg font-medium">4. Real-World Exposure</h1>
@@ -94,7 +94,7 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl absolute bottom-[18%] right-[34%] flex items-start space-x-4 p-4 w-[32rem]">
           <div className="w-16 h-16 rounded-full bg-[#5556D1] shrink-0 flex items-center justify-center">
-            <img src="/img/home/community-driven.svg" className="size-8" />
+            <img src="/img/home/community-driven.svg" alt="community-driven" className="size-8" />
           </div>
           <div>
             <h1 className="text-lg font-medium">5. Community-Driven Growth</h1>
@@ -109,7 +109,7 @@ export default function WhyUs() {
       <div className="lg:hidden bloack grid grid-cols-1 gap-3">
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4  ">
           <div className="w-12 h-12 rounded-full bg-[#DA1D5D] shrink-0 flex items-center justify-center ">
-            <img src="/img/home/verified-digital.svg" className="size-6" />
+            <img src="/img/home/verified-digital.svg" alt="verified-digital" className="size-6" />
           </div>
           <div className="space-y-0.5 ">
             <h1 className="lg:text-lg text-base font-medium">
@@ -124,7 +124,7 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4  ">
           <div className="w-12 h-12 rounded-full bg-[#2563EB] shrink-0 flex items-center justify-center">
-            <img src="/img/home/skill-validation.svg" className="size-6" />
+            <img src="/img/home/skill-validation.svg" alt="skill-validation" className="size-6" />
           </div>
           <div>
             <h1 className="lg:text-lg text-base font-medium">
@@ -139,7 +139,7 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl   space-y-4 p-4  ">
           <div className="w-12 h-12 rounded-full bg-[#FFC417] shrink-0 flex items-center justify-center">
-            <img src="/img/home/smarter-faster.svg" className="size-6" />
+            <img src="/img/home/smarter-faster.svg" alt="smarter-faster" className="size-6" />
           </div>
           <div>
             <h1 className="lg:text-lg text-base font-medium">
@@ -154,7 +154,7 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl   space-y-4 p-4  ">
           <div className="w-12 h-12 rounded-full bg-[#4CAF50] shrink-0  flex items-center justify-center">
-            <img src="/img/home/real-world.svg" className="size-6" />
+            <img src="/img/home/real-world.svg" alt="real-world" className="size-6" />
           </div>
           <div>
             <h1 className="lg:text-lg text-base font-medium">
@@ -169,7 +169,7 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4 col-span-1  ">
           <div className="w-12 h-12 rounded-full bg-[#5556D1] shrink-0 flex items-center justify-center">
-            <img src="/img/home/community-driven.svg" className="size-6" />
+            <img src="/img/home/community-driven.svg" alt="community-driven" className="size-6" />
           </div>
           <div>
             <h1 className="lg:text-lg text-base font-medium">

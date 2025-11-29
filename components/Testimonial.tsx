@@ -95,6 +95,7 @@ const Testimonials = () => {
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/female/40.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
+                    alt="avatars"
                   />
 
                   <div>
@@ -108,6 +109,7 @@ const Testimonials = () => {
                 <img
                   src="/img/home/image.png"
                   className="w-full h-full object-cover"
+                  alt="image"
                 />
               </div>
 
@@ -125,6 +127,7 @@ const Testimonials = () => {
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/male/72.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
+                    alt="avatars"
                   />
 
                   <div>
@@ -138,8 +141,10 @@ const Testimonials = () => {
                 <img
                   src="/img/testi2.webp"
                   className="w-full h-full object-cover"
+                  alt="testi2"
                 />
               </div>
+
               <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
@@ -154,6 +159,7 @@ const Testimonials = () => {
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/male/29.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
+                    alt="avatars"
                   />
 
                   <div>
@@ -164,8 +170,9 @@ const Testimonials = () => {
               </div>
               <div className="rounded-3xl overflow-hidden lg:h-60 h-48 lg:w-96 w-80">
                 <img
-                 src="/img/testi3.webp"
+                  src="/img/testi3.webp"
                   className="w-full h-full object-cover"
+                  alt="testi3"
                 />
               </div>
 
@@ -173,7 +180,8 @@ const Testimonials = () => {
                 {/* Quote Section */}
                 <div className="space-y-4">
                   <p className="lg:text-base text-sm text-gray-300 ">
-                  "Startup quests gave me real-world experience. I moved from junior to senior product manager in 4 months."
+                    "Startup quests gave me real-world experience. I moved from
+                    junior to senior product manager in 4 months."
                   </p>
                 </div>
 
@@ -182,6 +190,7 @@ const Testimonials = () => {
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/male/8.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
+                    alt="avatars"
                   />
 
                   <div>
@@ -203,7 +212,6 @@ const Testimonials = () => {
               <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
-                 
                   <p className="lg:text-base text-sm text-gray-300 ">
                     "I received 12 job offers after completing Verifide's
                     learning quests. The verified credentials made my skills
@@ -216,6 +224,7 @@ const Testimonials = () => {
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/female/54.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
+                    alt="avatars"
                   />
 
                   <div>
@@ -229,13 +238,13 @@ const Testimonials = () => {
                 <img
                   src="/img/testi4.webp"
                   className="w-full h-full object-cover"
+                  alt="testi4"
                 />
               </div>
 
               <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
-                
                   <p className="lg:text-base text-sm text-gray-300 ">
                     "Verifide's community feature connected me with 50+
                     designers across India. Recruiters now reach out to me
@@ -248,6 +257,7 @@ const Testimonials = () => {
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/male/24.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
+                    alt="avatars"
                   />
 
                   <div>
@@ -261,15 +271,15 @@ const Testimonials = () => {
                 <img
                   src="/img/home/image.png"
                   className="w-full h-full object-cover"
+                  alt="image"
                 />
               </div>
               <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
                 <div className="space-y-4">
-                   
-                  
                   <p className="lg:text-base text-sm text-gray-300 ">
-                  "The verified learning paths ensured everyone had the exact skills we needed. We launched our MVP 2 months faster"
+                    "The verified learning paths ensured everyone had the exact
+                    skills we needed. We launched our MVP 2 months faster"
                   </p>
                 </div>
 
@@ -278,6 +288,7 @@ const Testimonials = () => {
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/female/71.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
+                    alt="avatars"
                   />
 
                   <div>
@@ -290,14 +301,16 @@ const Testimonials = () => {
                 <img
                   src="/img/testi5.webp"
                   className="w-full h-full object-cover"
+                  alt="testi5"
                 />
               </div>
 
               <div className="bg-[#1A1A24] text-white lg:p-8 p-6 rounded-3xl shadow-lg lg:h-60 h-48 lg:w-96 w-80 flex flex-col justify-between">
                 {/* Quote Section */}
-                <div className="space-y-4"> 
+                <div className="space-y-4">
                   <p className="lg:text-base text-sm text-gray-300 ">
-                   "Verifide's verified credentials increased my freelance rates by 35%. Clients trust my skills immediately"
+                    "Verifide's verified credentials increased my freelance
+                    rates by 35%. Clients trust my skills immediately"
                   </p>
                 </div>
 
@@ -306,6 +319,7 @@ const Testimonials = () => {
                   <img
                     src="https://xsgames.co/randomusers/assets/avatars/male/28.jpg" // replace with your image path
                     className="rounded-full object-cover size-12"
+                    alt="avatars"
                   />
 
                   <div>

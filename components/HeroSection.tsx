@@ -56,7 +56,7 @@ export default function HeroSection() {
 
       {/* Floating Elements */}
       <img
-        src="/img/passport-hero-element.svg"
+        src="/img/passport-hero-element.svg" alt="passport-hero-element"
         className="float-img lg:w-[15%] w-[25%] absolute top-[18%] left-[10%] z-10 transition-transform duration-200 ease-out lg:block hidden"
       />
 
@@ -72,6 +72,7 @@ export default function HeroSection() {
               ? "/img/job-hero-element-flip.webp" // hover image
               : "/img/job-hero-element.webp" // default image
           }
+          alt="job-hero-element"
           // initial={{ rotateY: 0 }}
           animate={{ opacity: flipped3 ? 100 : 50 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -99,6 +100,8 @@ export default function HeroSection() {
               ? "/img/assessment-hero-element-flip.webp" // hover image
               : "/img/assessment-hero-element.webp" // default image
           }
+          alt="assessment-hero-element"
+
           initial={{ rotateY: 0 }}
           animate={{ rotateY: flipped ? 180 : 0 }}
           transition={{ duration: 0.1, ease: "easeInOut" }}
@@ -125,6 +128,7 @@ export default function HeroSection() {
               ? "/img/survey-hero-element-flip.webp" // hover image
               : "/img/survey-hero-element.webp" // default image
           }
+          alt="survey-hero-element-flip" 
           initial={{ rotateY: 0 }}
           animate={{ rotateY: flipped2 ? 180 : 0 }}
           transition={{ duration: 0.1 , ease: "easeInOut" }}
