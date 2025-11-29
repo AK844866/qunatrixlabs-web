@@ -21,13 +21,13 @@ const solutionData = [
     img: "/img/home/skill-check.svg",
     title: "Skill Check",
     subtitle:
-      "No fluff, just proof. Test your skills, get verified, and show you’ve got the chops startups actually need.",
+      "No fluff, just proof. Test your skills, get verified, and show you’ve got the chops startups actually need — with real measurable results.",
     buttonLink: "",
   },
 
   {
     id: 3,
-    img: "/img/home/client-portal.svg",
+    img: "/img/home/client-portal.webp",
     title: "Client Portal",
     subtitle:
       "Step into what’s next. Explore trending skills, unlock learning paths, and level up to stay startup-ready — all from one hub.",
@@ -39,7 +39,7 @@ const solutionData = [
     img: "/img/home/opportunities-hub.svg",
     title: "Opportunities Hub",
     subtitle:
-      "Find your next big move — internships, gigs, or full-time roles. Startups can discover pre-vetted talent, handle screening, interviews, and hiring — all in one smooth flow.",
+      "Find your next big move — internships, gigs, or roles. Startups hire pre-vetted talent with streamlined screening, interviews, and hiring.",
     buttonLink: "",
   },
 ];

@@ -15,7 +15,7 @@ export default function Footer() {
                 Ready to take your career to the next level?
               </h2>
               <p className="lg:text-base text-sm font-light text-white">
-                At vrifide, we use creativity and teamwork to shape the
+                At verifide, we use creativity and teamwork to shape the
                 direction of technology. Our innovative solutions help the times
                 in a world that is changing quickly.{" "}
               </p>
