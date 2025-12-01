@@ -34,6 +34,7 @@ export default function ForSection() {
           </div>
 
           <div className="grid md:grid-cols-3 grid-cols-1 xl:gap-10 gap-4">
+            
             <div className="bg-[#2563EB] rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-200">
               <div className="lg:p-6 p-4">
                 <h1 className="lg:text-2xl text-2xl font-medium">
