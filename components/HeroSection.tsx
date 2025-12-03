@@ -152,7 +152,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, ease: "easeInOut" }}
             className="2xl:text-4xl xl:text-3xl text-3xl font-medium viga"
           >
-            Passport for growth
+            Passport for Growth
           </motion.h2>
 
           <p className="text-base text-white/70">Powered by</p>

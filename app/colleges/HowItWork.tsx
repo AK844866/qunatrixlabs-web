@@ -23,7 +23,7 @@ export default function HowItWorks() {
       id: 3,
       title: "Boost Placements",
       desc: "Share verified student profiles with recruiters & track outcomes.",
-      img: "/img/employers/search-discover.webp", // change this to your own image
+      img: "/img/universities/boost-placements.webp", // change this to your own image
     },
   ];
 
