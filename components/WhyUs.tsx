@@ -40,67 +40,96 @@ export default function WhyUs() {
      transition-all duration-500 hover:border-[#217AFF] hover:shadow-[0_0_20px_2px_#217AFF]/60"
         >
           <div className="w-16 h-16 rounded-full bg-[#DA1D5D] shrink-0 flex items-center justify-center">
-            <img src="/img/home/verified-digital.svg" alt="verified-digital" className="size-8" />
+            <img
+              src="/img/home/verified-digital.svg"
+              alt="verified-digital"
+              className="size-8"
+            />
           </div>
           <div className="space-y-0.5">
             <h1 className="text-lg font-medium">
-              1. Verified Digital Passport
+              1. Verified Profiles & Trust
             </h1>
             <p className="text-sm text-white/80 font-light">
-              Build instant trust with a verified identity — showcasing verified
-              credentials like education, experience and achievements.
+              Every startup and every individual on Verifide is verified —
+              making collaboration, hiring, and partnerships faster and more
+              reliable from day one.
             </p>
           </div>
         </div>
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl absolute -top-4 right-[7%] flex items-start space-x-4 p-4 w-[30%]">
           <div className="w-16 h-16 rounded-full bg-[#2563EB] shrink-0 flex items-center justify-center">
-            <img src="/img/home/skill-validation.svg" alt="skill-validation" className="size-8" />
+            <img
+              src="/img/home/skill-validation.svg"
+              alt="skill-validation"
+              className="size-8"
+            />
           </div>
           <div>
-            <h1 className="text-xl font-medium">2. Skill Validation & Proof</h1>
+            <h1 className="text-xl font-medium">2. Skills with Proof</h1>
             <p className="text-sm  text-white/80 font-light">
-              Skills assessed and verified, creating transparent credibility for
-              employers and collaborators.
+              Skills are backed by real work, projects, and assessments — giving
+              startups confidence and giving students credible proof of what
+              they can do.
             </p>
           </div>
         </div>
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl absolute top-[34%] left-[2%] flex items-start space-x-4 p-4 w-[30%]">
           <div className="w-16 h-16 rounded-full bg-[#FFC417] shrink-0 flex items-center justify-center">
-            <img src="/img/home/smarter-faster.svg" alt="smarter-faster" className="size-8" />
+            <img
+              src="/img/home/smarter-faster.svg"
+              alt="smarter-faster"
+              className="size-8"
+            />
           </div>
           <div>
-            <h1 className="text-lg font-medium">3. Smarter, Faster Hiring</h1>
+            <h1 className="text-lg font-medium">
+              3. Collaboration Beyond Hiring
+            </h1>
             <p className="text-sm  text-white/80 font-light">
-              Enable easy hiring through automated skill-matching , screening &
-              shortlisting— saving time and effort for both sides.
+              Startups collaborate with startups, startups work with students,
+              and students learn by contributing — all within one connected
+              ecosystem.
             </p>
           </div>
         </div>
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl absolute top-[36%] right-[5%] flex items-start space-x-4 p-4 w-[30%]">
           <div className="w-16 h-16 rounded-full bg-[#4CAF50] shrink-0  flex items-center justify-center">
-            <img src="/img/home/real-world.svg" alt="real-world" className="size-8" />
+            <img
+              src="/img/home/real-world.svg"
+              alt="real-world"
+              className="size-8"
+            />
           </div>
           <div>
-            <h1 className="text-lg font-medium">4. Real-World Exposure</h1>
+            <h1 className="text-lg font-medium">
+              4. Real-World Experience & Execution
+            </h1>
             <p className="text-sm  text-white/80 font-light">
-               Stay ahead of the curve with startup-led workshops, projects, and
-              practical tech experiences.
+              Students gain hands-on exposure through real startup work, while
+              startups get execution support and fresh perspectives to move
+              faster.
             </p>
           </div>
         </div>
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl absolute bottom-[18%] right-[34%] flex items-start space-x-4 p-4 w-[32rem]">
           <div className="w-16 h-16 rounded-full bg-[#5556D1] shrink-0 flex items-center justify-center">
-            <img src="/img/home/community-driven.svg" alt="community-driven" className="size-8" />
+            <img
+              src="/img/home/community-driven.svg"
+              alt="community-driven"
+              className="size-8"
+            />
           </div>
           <div>
-            <h1 className="text-lg font-medium">5. Community-Driven Growth</h1>
+            <h1 className="text-lg font-medium">5. Community-Led Growth</h1>
             <p className="text-sm text-white/80 font-light">
-              Connecting startups, users, and mentors to exchange feedback,
-              drive adoption, and grow together via Quests.
+              A growing network where feedback, learning, partnerships, and
+              opportunities flow naturally — helping everyone in the ecosystem
+              grow together.
             </p>
           </div>
         </div>
@@ -109,7 +138,11 @@ export default function WhyUs() {
       <div className="lg:hidden bloack grid grid-cols-1 gap-3">
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4  ">
           <div className="w-12 h-12 rounded-full bg-[#DA1D5D] shrink-0 flex items-center justify-center ">
-            <img src="/img/home/verified-digital.svg" alt="verified-digital" className="size-6" />
+            <img
+              src="/img/home/verified-digital.svg"
+              alt="verified-digital"
+              className="size-6"
+            />
           </div>
           <div className="space-y-0.5 ">
             <h1 className="lg:text-lg text-base font-medium">
@@ -124,7 +157,11 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4  ">
           <div className="w-12 h-12 rounded-full bg-[#2563EB] shrink-0 flex items-center justify-center">
-            <img src="/img/home/skill-validation.svg" alt="skill-validation" className="size-6" />
+            <img
+              src="/img/home/skill-validation.svg"
+              alt="skill-validation"
+              className="size-6"
+            />
           </div>
           <div>
             <h1 className="lg:text-lg text-base font-medium">
@@ -139,7 +176,11 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl   space-y-4 p-4  ">
           <div className="w-12 h-12 rounded-full bg-[#FFC417] shrink-0 flex items-center justify-center">
-            <img src="/img/home/smarter-faster.svg" alt="smarter-faster" className="size-6" />
+            <img
+              src="/img/home/smarter-faster.svg"
+              alt="smarter-faster"
+              className="size-6"
+            />
           </div>
           <div>
             <h1 className="lg:text-lg text-base font-medium">
@@ -154,7 +195,11 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl   space-y-4 p-4  ">
           <div className="w-12 h-12 rounded-full bg-[#4CAF50] shrink-0  flex items-center justify-center">
-            <img src="/img/home/real-world.svg" alt="real-world" className="size-6" />
+            <img
+              src="/img/home/real-world.svg"
+              alt="real-world"
+              className="size-6"
+            />
           </div>
           <div>
             <h1 className="lg:text-lg text-base font-medium">
@@ -169,7 +214,11 @@ export default function WhyUs() {
 
         <div className="bg-linear-to-b from-[#FFFFFF]/10 to-[#ffffff]/0 border border-[#FFFFFF]/10 rounded-2xl  space-y-4 p-4 col-span-1  ">
           <div className="w-12 h-12 rounded-full bg-[#5556D1] shrink-0 flex items-center justify-center">
-            <img src="/img/home/community-driven.svg" alt="community-driven" className="size-6" />
+            <img
+              src="/img/home/community-driven.svg"
+              alt="community-driven"
+              className="size-6"
+            />
           </div>
           <div>
             <h1 className="lg:text-lg text-base font-medium">

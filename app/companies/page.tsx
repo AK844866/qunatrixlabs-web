@@ -13,12 +13,12 @@ export default function Employee() {
     <>
       <Header />
       <HeroSectionOther
-        title="Hire Perfect Candidate Faster with Verified Skills"
-        subtitle="Skip the guesswork — access verified candidate profiles with AI-powered skill reports, immutable certificates, and ATS integrations."
+        title="Build, Collaborate, and Grow with Verified Talent"
+        subtitle="Skip the guesswork. Connect with verified talent and startups to collaborate, hire, execute projects, and unlock new growth opportunities."
         button=" Request a Demo"
-        buttonTwo="Search Candidates"
+        buttonTwo="Explore the Ecosystem"
         img="/img/employers/employers-hero.webp"
-        tagline="Hire smarter with verified skills."
+        tagline="Where startups find people, partners, and growth"
         extraline={true}
 
       />

@@ -54,8 +54,7 @@ export default function WhyChoose() {
           viewport={{ once: true }}
           className="xl:text-xl md:text-lg text-base text-white/80 font-light"
         >
-          Our streamlined process ensures seamless integration and maximum
-          impact for your business operations.
+          A growth-focused ecosystem to hire, collaborate, and build faster.
         </motion.p>
       </div>
 
@@ -85,10 +84,11 @@ export default function WhyChoose() {
           </div>
           <div className="space-y-0.5 ">
             <h1 className="lg:text-lg text-base font-medium">
-              Verified Candidate Search
+              Verified People You Can Trust
             </h1>
             <p className="text-sm  text-white/80 font-light">
-              Find candidates with trusted skill reports & certificates.
+              Access verified people and startups you can hire, collaborate
+              with, and build real work together.
             </p>
           </div>
         </div>
@@ -117,10 +117,12 @@ export default function WhyChoose() {
             </svg>
           </div>
           <div>
-            <h1 className="lg:text-lg text-base font-medium">Faster Hiring</h1>
+            <h1 className="lg:text-lg text-base font-medium">
+              Hire When You Need To
+            </h1>
             <p className="text-sm  text-white/80 font-light">
-              Cut down average hire time by 28% with ready-to-go verified
-              talent.
+              Connect with execution-ready talent for internships, projects, or
+              full-time roles — without long hiring cycles.
             </p>
           </div>
         </div>
@@ -150,10 +152,11 @@ export default function WhyChoose() {
           </div>
           <div>
             <h1 className="lg:text-lg text-base font-medium">
-              Custom Assessments
+              Work Before You Hire
             </h1>
             <p className="text-sm  text-white/80 font-light">
-              Create domain-specific tests tailored to your job roles.
+              Collaborate on live projects or short-term work before committing
+              — reduce risk and make better decisions.
             </p>
           </div>
         </div>
@@ -183,10 +186,11 @@ export default function WhyChoose() {
           </div>
           <div>
             <h1 className="lg:text-lg text-base font-medium">
-              Seamless Integration
+              Collaborate Beyond Hiring
             </h1>
             <p className="text-sm  text-white/80 font-light">
-              Connect with your ATS or HR systems effortlessly.
+              Partner with fellow startups to share ideas, resources, and
+              explore growth opportunities together.
             </p>
           </div>
         </div>
@@ -216,10 +220,11 @@ export default function WhyChoose() {
           </div>
           <div>
             <h1 className="lg:text-lg text-base font-medium">
-              Data & Analytics
+              Grow Through the Community
             </h1>
             <p className="text-sm text-white/80 font-light">
-              Insights into candidate performance and hiring outcomes.
+              Be part of an active startup ecosystem where feedback, visibility,
+              and growth happen naturally.
             </p>
           </div>
         </div>
