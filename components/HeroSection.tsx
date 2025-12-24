@@ -67,14 +67,9 @@ export default function HeroSection() {
       {/* Dark Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-[#0E0C15]/70 backdrop-blur-2xl"></div>
 
-      {/* Floating Elements */}
-      {/* <img
-        src="/img/passport-hero-element.svg"
-        alt="passport-hero-element"
-        className="float-img lg:w-[15%] w-[25%] absolute top-[18%] left-[10%] z-10 transition-transform duration-200 ease-out lg:block hidden"
-      /> */}
-
-      <div className="absolute top-44 left-[10%] hidden xl:block animate-[bounce_4s_ease-in-out_infinite]">
+    
+ {/* Card 1: Collaborate & Build (Top Right) */}
+      <div className="absolute 2xl:top-44 top-36 2xl:left-[10%] left-[8%] hidden xl:block 2xl:scale-100 scale-[90%]  ">
         <GlassCard className="w-64 float-img transition-all duration-300 ease-out transform-gpu">
           <div className="flex -space-x-2 mb-4">
             <img src="/img/verified-community.webp" />
@@ -88,31 +83,10 @@ export default function HeroSection() {
         </GlassCard>
       </div>
 
-      {/* <motion.div
-        className="float-img lg:w-[14%] w-[28%] absolute top-[16%] lg:right-[13%] right-[5%]  z-20 cursor-pointer   lg:block hidden "
-        onMouseEnter={() => setFlipped3(true)}
-        onMouseLeave={() => setFlipped3(false)}
-      >
-        <motion.img
-          key={flipped3 ? "hover" : "default"} // 👈 makes Framer treat them as different elements
-          src={
-            flipped3
-              ? "/img/job-hero-element-flip.webp" // hover image
-              : "/img/job-hero-element.webp" // default image
-          }
-          alt="job-hero-element"
-          // initial={{ rotateY: 0 }}
-          animate={{ opacity: flipped3 ? 100 : 50 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
-          className={` float-img transition-all duration-300 ease-out transform-gpu rounded-xl shadow-lg backface-hidden ${
-            flipped && "w-[80%]"
-          }`}
-          style={{ transformStyle: "preserve-3d" }}
-        />
-      </motion.div> */}
+     
 
       {/* Card 2: Collaborate & Build (Top Right) */}
-      <div className="absolute top-36 right-[10%] hidden xl:block animate-[pulse_5s_ease-in-out_infinite]">
+      <div className="absolute 2xl:top-36 top-32 2xl:right-[10%] right-[7%]   hidden xl:block 2xl:scale-100 scale-[90%]">
         <GlassCard className="w-64 float-img transition-all duration-300 ease-out transform-gpu">
           <div className="flex justify-between items-center mb-4">
             <img src="/img/collaborate-build.webp" />
@@ -126,31 +100,10 @@ export default function HeroSection() {
         </GlassCard>
       </div>
 
-      {/* <motion.div
-        className="lg:w-[21%] w-[44%] absolute lg:bottom-[18%] bottom-[14%] lg:left-[12%] left-[4%] z-20 cursor-pointer perspective-1000 lg:block hidden "
-        onMouseEnter={() => setFlipped(true)}
-        onMouseLeave={() => setFlipped(false)}
-      >
-        <motion.img
-          key={flipped ? "hover" : "default"} // 👈 makes Framer treat them as different elements
-          src={
-            flipped
-              ? "/img/assessment-hero-element-flip.webp" // hover image
-              : "/img/assessment-hero-element.webp" // default image
-          }
-          alt="assessment-hero-element"
-          initial={{ rotateY: 0 }}
-          animate={{ rotateY: flipped ? 180 : 0 }}
-          transition={{ duration: 0.1, ease: "easeInOut" }}
-          className={` float-img object-contain    obtransition-all duration-300 ease-out transform-gpu rounded-xl shadow-lg backface-hidden ${
-            flipped && ""
-          }`}
-          style={{ transformStyle: "preserve-3d" }}
-        />
-      </motion.div> */}
+    
 
       {/* Card 3: Real Opportunities (Bottom Left) */}
-      <div className="absolute bottom-24 left-[12%] hidden xl:block">
+      <div className="absolute bottom-24 left-[12%] hidden xl:block 2xl:scale-100 scale-[90%]">
         <GlassCard className="w-70 float-img transition-all duration-300 ease-out transform-gpu">
           <h4 className="font-bold text-base text-white ">
             Real Opportunities
@@ -162,31 +115,10 @@ export default function HeroSection() {
         </GlassCard>
       </div>
 
-      {/* <motion.div
-        className="float-img  lg:w-[22%] w-[44%]  absolute lg:bottom-[18%] bottom-[10%] lg:right-[12%] right-[4%] z-20 transition-transform duration-200 ease-out lg:block hidden"
-        onMouseEnter={() => setFlipped2(true)}
-        onMouseLeave={() => setFlipped2(false)}
-      >
-        <motion.img
-          key={flipped2 ? "hover" : "default"} // 👈 makes Framer treat them as different elements
-          src={
-            flipped2
-              ? "/img/survey-hero-element-flip.webp" // hover image
-              : "/img/survey-hero-element.webp" // default image
-          }
-          alt="survey-hero-element-flip"
-          initial={{ rotateY: 0 }}
-          animate={{ rotateY: flipped2 ? 180 : 0 }}
-          transition={{ duration: 0.1, ease: "easeInOut" }}
-          className={` float-img transition-all duration-300 ease-out transform-gpu rounded-xl shadow-lg backface-hidden ${
-            flipped2 && " "
-          }`}
-          style={{ transformStyle: "preserve-3d" }}
-        />
-      </motion.div> */}
+      
 
       {/* Card 4: Ecosystem Growth (Bottom Right) */}
-      <div className="absolute bottom-16 right-[15%] hidden xl:block">
+      <div className="absolute bottom-16 right-[15%] hidden xl:block 2xl:scale-100 scale-[90%]">
         <GlassCard className="w-72  overflow-hidden group/card float-img transition-all duration-300 ease-out transform-gpu">
           <div className="flex justify-between items-center mb-4">
             <img src="/img/ecosystem-growth.webp" />
@@ -216,8 +148,8 @@ export default function HeroSection() {
           </motion.h2> */}
 
           {/* <p className="text-base text-white/70">Powered by</p> */}
-          <h2 className="2xl:text-7xl xl:text-6xl text-5xl  font-semibold">
-            A Collaborative <br /> Ecosystem for <br />
+          <h2 className="2xl:text-6xl xl:text-5xl text-5xl  font-semibold">
+            A Collaborative  Ecosystem for <br />
             Startups and Talent
           </h2>
           <p className="2xl:text-2xl xl:text-lg text-base font-light">
