@@ -1,8 +1,7 @@
 "use client";
 import { useRef, useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Header from "./Header";
-import { IconRosetteDiscountCheck } from "@tabler/icons-react";
+import Header from "./Header"; 
 
  
 interface GlassCardProps {
