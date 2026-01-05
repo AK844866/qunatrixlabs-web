@@ -158,7 +158,7 @@ const Solutions = () => {
                       <p className="lg:text-base text-white/80 font-light">
                         {slide.subtitle}
                       </p>
-                      <button className="flex items-center space-x-2">
+                      <a href="https://dev-verifide.verifide.xyz/login?redirect=%2Fuser%2Fprofile" className="flex items-center space-x-2">
                         <span>Try Now</span>
                         <span className="w-5 h-5 rounded-full bg-linear-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] flex justify-center items-center">
                           <svg
@@ -176,7 +176,7 @@ const Solutions = () => {
                             <path d="M9 6l6 6l-6 6" />
                           </svg>
                         </span>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>

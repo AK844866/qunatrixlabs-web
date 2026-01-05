@@ -147,9 +147,12 @@ const Featured = () => {
                     </div>
 
                     <div className="flex items-center space-x-4">
-                      <button className="lg:px-10 px-8 lg:py-3 py-2 flex items-center border border-white rounded-full 2xl:text-xl lg:text-lg text-base space-x-2">
+                      <a
+                        href="https://dev-verifide.verifide.xyz/login?redirect=%2Fuser%2Fprofile"
+                        className="lg:px-10 px-8 lg:py-3 py-2 flex items-center border border-white rounded-full 2xl:text-xl lg:text-lg text-base space-x-2"
+                      >
                         <span>Try Now</span>
-                      </button>
+                      </a>
                     </div>
                   </div>
 
@@ -161,7 +164,7 @@ const Featured = () => {
                   </div>
                 </div>
               </SwiperSlide>
-            ))}
+            ))} 
           </Swiper>
 
           {/* Desktop Pagination – vertical right side */}

@@ -157,7 +157,10 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <button className="bg-linear-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] p-[1px] rounded-full transition duration-300 hover:shadow-[0_0_20px_#3b82f6]">
+        <a
+          href="https://dev-verifide.verifide.xyz/login?redirect=%2Fuser%2Fprofile"
+          className="bg-linear-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] p-[1px] rounded-full transition duration-300 hover:shadow-[0_0_20px_#3b82f6]"
+        >
           <div className="px-10 py-3 flex items-center bg-black rounded-full 2xl:text-xl text-lg space-x-2">
             <span>Get Started</span>
             <svg
@@ -177,7 +180,7 @@ export default function HeroSection() {
               <path d="M8 7h9v9" />
             </svg>
           </div>
-        </button>
+        </a>
       </div>
     </section>
   );
