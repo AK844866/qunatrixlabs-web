@@ -1,0 +1,3 @@
+module.exports=[33290,a=>{"use strict";var b=a.i(7997);function c({children:a}){return(0,b.jsx)("html",{lang:"en",className:"bg-[#0E0C15] snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth overflow-hidden ",children:(0,b.jsx)("body",{children:a})})}a.s(["default",()=>c,"metadata",0,{title:"Verifide | Connect Share & Grow",description:"Verifide is a trusted startup ecosystem platform designed to connect verified individuals, emerging startups, and reputed institutions on a single, credible network.",icons:{icon:"/favicon.ico"}}])}];
+
+//# sourceMappingURL=app_layout_tsx_271801d7._.js.map
