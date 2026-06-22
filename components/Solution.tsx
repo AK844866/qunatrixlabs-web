@@ -2,45 +2,44 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import type { Swiper as SwiperType } from "swiper"; // 👈 import Swiper type
+import type { Swiper as SwiperType } from "swiper"; 
 import "swiper/css";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const solutionData = [
   {
     id: 1,
-    img: "/img/home/profile-passport.svg",
-    title: "Profile Passport",
+    img: "/img/passport-hero-element.svg",
+    title: "Aviation & Ticketing Hub",
     subtitle:
-      "Your digital flex — a verified profile that proves who you are and what you can do. Skills, projects, and wins — all legit, all in one place.",
-    buttonLink: "",
+      "Multi-GDS integrations, real-time seat inventory mapping, baggage control telemetry, and high-frequency booking workflows.",
+    buttonLink: "/contact",
   },
   {
     id: 2,
-    img: "/img/home/skill-check.svg",
-    title: "Skill Check",
+    img: "/img/assessment-hero-element.svg",
+    title: "Fintech & Billing Systems",
     subtitle:
-      "No fluff, just proof. Test your skills, get verified, and show you’ve got the chops startups actually need — with real measurable results.",
-    buttonLink: "",
+      "PCI-compliant transaction ledgers, digital wallet integrations, automated invoicing engines, and real-time transaction processing.",
+    buttonLink: "/contact",
   },
-
   {
     id: 3,
     img: "/img/home/client-portal.webp",
-    title: "Client Portal",
+    title: "Enterprise Odoo / ERP Next",
     subtitle:
-      "Step into what’s next. Explore trending skills, unlock learning paths, and level up to stay startup-ready — all from one hub.",
-    buttonLink: "",
+      "Centralized warehouse tracking, automated manufacturing supply runs, double-entry bookkeeping, and custom HRMS workflows.",
+    buttonLink: "/contact",
   },
-
   {
     id: 4,
-    img: "/img/home/opportunities-hub.svg",
-    title: "Opportunities Hub",
+    img: "/img/survey-hero-element.svg",
+    title: "Blockchain & Web3",
     subtitle:
-      "Find your next big move — internships, gigs, or roles. Startups hire pre-vetted talent with streamlined screening, interviews, and hiring.",
-    buttonLink: "",
+      "Custom smart contract development, DeFi liquidity rails, secure multisig crypto custody, and Web3 browser app integrations.",
+    buttonLink: "/contact",
   },
 ];
 
@@ -66,7 +65,7 @@ const Solutions = () => {
               transition={{ duration: 0.8, ease: "easeInOut" }}
               className="2xl:text-5xl xl:text-4xl lg:text-3xl text-2xl font-semibold"
             >
-              Solutions
+              Key Client Solutions
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 40 }}
@@ -75,8 +74,7 @@ const Solutions = () => {
               viewport={{ once: true }}
               className="xl:text-xl md:text-lg text-base text-white/80 font-light"
             >
-              Empowering startups, talents, and institutions to grow together —
-              through trust, verification, and real-world opportunity.
+              Tailored software suites engineered to solve complex operational challenges across specialized business domains.
             </motion.p>
           </div>
           <div className="items-center space-x-4 lg:flex hidden">
@@ -158,9 +156,9 @@ const Solutions = () => {
                       <p className="lg:text-base text-white/80 font-light">
                         {slide.subtitle}
                       </p>
-                      <a href="https://dev-verifide.verifide.xyz/login?redirect=%2Fuser%2Fprofile" className="flex items-center space-x-2">
-                        <span>Try Now</span>
-                        <span className="w-5 h-5 rounded-full bg-linear-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] flex justify-center items-center">
+                      <Link href="/contact" className="flex items-center space-x-2">
+                        <span>Request Demo</span>
+                        <span className="w-5 h-5 rounded-full bg-gradient-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] flex justify-center items-center">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width={16}
@@ -176,7 +174,7 @@ const Solutions = () => {
                             <path d="M9 6l6 6l-6 6" />
                           </svg>
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

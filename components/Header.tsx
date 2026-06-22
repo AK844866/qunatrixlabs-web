@@ -13,10 +13,10 @@ export default function Header() {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/talents", label: "Talents" },
-    { href: "/companies", label: "Companies" },
-    { href: "/colleges", label: "Colleges" },
+    { href: "/services", label: "Services" },
+    { href: "/case-studies", label: "Case Studies" },
     { href: "/about", label: "About us" },
+    { href: "/contact", label: "Contact us" },
   ];
 
   useEffect(() => {
@@ -63,9 +63,10 @@ export default function Header() {
       >
         <div className="flex justify-between items-center py-4 lg:py-6 lg:container lg:mx-auto lg:px-0 px-4 w-full">
           {/* Logo */}
-          <div>
-            <img src="/img/verifide-logo.svg" alt="verifide-logo" className="lg:w-40 w-32" />
-          </div>
+          <Link href="/" className="flex items-center space-x-2 font-bold text-xl tracking-wider text-white">
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 text-transparent bg-clip-text font-black">QUNATRIX</span>
+            <span className="text-white/80 font-light text-xs bg-white/10 px-2 py-0.5 rounded-full border border-white/10">LABS</span>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center space-x-6 text-white/70">
@@ -85,12 +86,9 @@ export default function Header() {
           </nav>
 
           {/* Desktop Buttons */}
-          <div className="hidden lg:flex space-x-0">
-            <Link href="https://dev-verifide.verifide.xyz/login?redirect=%2Fuser%2Fprofile" className="cursor-pointer text-white/80 hover:text-white transition px-6 py-2">
-              Login
-            </Link>
-            <Link href="https://dev-verifide.verifide.xyz/create-account?redirect=%2Fuser%2Fprofile" className="bg-linear-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] px-4 py-2 rounded-full text-white font-medium hover:opacity-90 transition cursor-pointer">
-              Sign Up
+          <div className="hidden lg:flex">
+            <Link href="/contact" className="bg-gradient-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] px-6 py-2.5 rounded-full text-white font-medium hover:opacity-90 hover:shadow-[0_0_15px_rgba(33,122,255,0.4)] transition cursor-pointer">
+              Get a Quote
             </Link>
           </div>
 
@@ -132,7 +130,10 @@ export default function Header() {
         }`}
       >
         <div className="flex justify-between items-center mb-8 w-full">
-          <img src="/img/verifide-logo.svg" alt="verifide-logo" className="w-32" />
+          <Link href="/" className="flex items-center space-x-1.5 font-bold text-lg tracking-wider text-white">
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 text-transparent bg-clip-text font-black">QUNATRIX</span>
+            <span className="text-white/80 font-light text-[10px] bg-white/10 px-1.5 py-0.2 rounded-full border border-white/10">LABS</span>
+          </Link>
           <button
             onClick={() => setMenuOpen(false)}
             aria-label="menu"
@@ -175,12 +176,9 @@ export default function Header() {
         </nav>
 
         <div className="mt-10 flex flex-col gap-3 w-full">
-          <button className="w-full text-center px-4 py-2 border border-white/20 rounded-full hover:bg-white/10 transition">
-            Login
-          </button>
-          <button className="w-full bg-linear-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] px-4 py-2 rounded-full font-medium hover:opacity-90 transition">
-            Sign in
-          </button>
+          <Link href="/contact" onClick={() => setMenuOpen(false)} className="w-full text-center bg-gradient-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] px-4 py-2 rounded-full font-medium hover:opacity-90 transition">
+            Get a Quote
+          </Link>
         </div>
       </div>
     </div>

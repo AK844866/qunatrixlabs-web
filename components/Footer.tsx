@@ -12,21 +12,19 @@ export default function Footer() {
           <div className=" flex md:flex-row flex-col items-center lg:gap-100 gap-6 lg:p-10 p-4 bg-linear-to-r from-[#2563EB]    ">
             <div className="space-y-2 ">
               <h2 className="lg:text-3xl text-2xl font-semibold ">
-                Ready to take your career to the next level?
+                Ready to accelerate your next digital venture?
               </h2>
               <p className="lg:text-base text-sm font-light text-white">
-                At verifide, we use creativity and teamwork to shape the
-                direction of technology. Our innovative solutions help the times
-                in a world that is changing quickly.{" "}
+                Partner with Qunatrix Labs to engineer custom, robust, and highly scalable software solutions tailored precisely to your operational workflow. Let's build something extraordinary.
               </p>
             </div>
 
             <div className="flex items-center space-x-2 lg:shrink-0 lg:w-auto w-full">
               <Link
-                href="https://dev-verifide.verifide.xyz/create-account?redirect=%2Fuser%2Fprofile"
+                href="/contact"
                 className="px-6 py-3 flex items-center bg-white text-black font-medium rounded-full text-base space-x-2 "
               >
-                <span>Join us Today </span>
+                <span>Get in Touch</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={20}
@@ -50,14 +48,12 @@ export default function Footer() {
 
         <div className="grid lg:grid-cols-5 grid-cols-1 gap-6 py-10  ">
           <div className="space-y-6 ">
-            <img
-              src="/img/verifide-logo.svg"
-              alt="verifide-logo"
-              className="w-40"
-            />
+            <Link href="/" className="flex items-center space-x-2 font-bold text-xl tracking-wider text-white mb-4 block">
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 text-transparent bg-clip-text font-black">QUNATRIX</span>
+              <span className="text-white/80 font-light text-xs bg-white/10 px-2 py-0.5 rounded-full border border-white/10">LABS</span>
+            </Link>
             <p className=" text-white/80 font-light">
-              From verified digital passports to startup-led quests, Verifide
-              enables everyone to learn, connect, and grow — faster and smarter.
+              Qunatrix Labs is a premier IT consulting and development firm specializing in custom enterprise applications, Blockchain & crypto engineering, AI integrations, IoT systems, and bespoke industry software.
             </p>
             <div className="flex items-center space-x-4">
               <Link
@@ -134,41 +130,41 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4 lg:border-r border-white/10 ">
-            <p className="text-white/80 font-light">Features</p>
+            <p className="text-white/80 font-semibold text-white">Services</p>
 
             <div className="space-y-2 text-white/80 *:font-light  *:hover:translate-x-1 *:transition-all *:hover:text-blue-400">
-              <a className="block">Profile Passport</a>
-              <a className="block">Skills Verification</a>
-              <a className="block">Networking</a>
-              <a className="block">Hiring fast Candidates</a>
-              <a className="block">Events & Learning</a>
-              <a className="block">New Courses</a>
+              <Link href="/services?tab=blockchain" className="block">Blockchain & Crypto</Link>
+              <Link href="/services?tab=enterprise" className="block">Odoo & ERP Next</Link>
+              <Link href="/services?tab=enterprise" className="block">CRM & HRMS</Link>
+              <Link href="/services?tab=blockchain" className="block">AI Solutions</Link>
+              <Link href="/services?tab=integrations" className="block">POS Integrations</Link>
+              <Link href="/services?tab=blockchain" className="block">IoT Device Control</Link>
             </div>
           </div>
           <div className="space-y-4 lg:border-r border-white/10 ">
-            <p className="text-white/80 font-light">Tools</p>
+            <p className="text-white/80 font-semibold text-white">Industries</p>
             <div className="space-y-2 text-white/80  *:font-light  *:hover:translate-x-1 *:transition-all *:hover:text-blue-400 ">
-              <a className="block">Skill Check</a>
-              <a className="block">Personal Portal</a>
-              <a className="block">Opportunities Hub</a>
-              <a className="block">Quests, Feedback & Signups</a>
-              <a className="block">Soical Enagement</a>
-              <a className="block">Community Building</a>
+              <Link href="/services?tab=industries" className="block">Aviation & Ticketing</Link>
+              <Link href="/services?tab=industries" className="block">Fintech Solutions</Link>
+              <Link href="/services?tab=industries" className="block">Hospital & Healthcare</Link>
+              <Link href="/services?tab=industries" className="block">LMS & E-learning</Link>
+              <Link href="/services?tab=industries" className="block">E-commerce Platforms</Link>
+              <Link href="/services?tab=enterprise" className="block">Manufacturing Workflow</Link>
             </div>
           </div>
           <div className="space-y-4 lg:border-r border-white/10 ">
-            <p className="text-white/80 font-light">Explore</p>
+            <p className="text-white/80 font-semibold text-white">Explore</p>
             <div className="space-y-2 text-white/80  *:font-light  *:hover:translate-x-1 *:transition-all *:hover:text-blue-400 ">
-              <a className="block">Talents</a>
-              <a className="block">Companies</a>
-              <a className="block">Colleges</a>
-              <a className="block">About Us</a>
-              {/* <a className="block">Blog</a> */}
+              <Link href="/" className="block">Home</Link>
+              <Link href="/services" className="block">Our Services</Link>
+              <Link href="/case-studies" className="block">Case Studies</Link>
+              <Link href="/about" className="block">About Us</Link>
+              <Link href="/contact" className="block">Contact Us</Link>
             </div>
           </div>
           <div className="space-y-4 ">
-            <p className="text-white/80 font-light">Contact Info</p>
-            <div className="space-y-2 ">
+            <p className="text-white/80 font-semibold text-white">Contact Info</p>
+            <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <div className="shrink-0 text-white/80">
                   <svg
@@ -182,54 +178,42 @@ export default function Footer() {
                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                   </svg>
                 </div>
-
-                <p className="text-white/80">Connect@verifide.xyz</p>
+                <p className="text-white/80">Sales@qunatrixlabs.com</p>
               </div>
-              {/* <div className="flex items-center space-x-2">
-                {" "}
-                <div className="shrink-0 text-white/80">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={16}
-                    height={16}
-                    fill="currentColor"
-                    className="bi bi-telephone"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                  </svg>
-                </div>
-                <p className="text-white/80">+91-1456465420 (India)</p>
-              </div> */}
-              <div className="flex items-start space-x-2">
-                <div className="shrink-0 pt-1 text-white/80">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={16}
-                    height={16}
-                    fill="currentColor"
-                    className="bi bi-geo-alt"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
-                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                  </svg>
-                </div>
 
-                <p className="text-white/80">
-                  Office :1110, Damac Executive Heights, Al Barsha Heights,
-                  Dubai, UAE
-                </p>
+              <div className="flex items-start space-x-2">
+                <div className="shrink-0 pt-0.5 text-xs">🇮🇳</div>
+                <div className="text-white/80">
+                  <p className="text-xs font-bold text-white/95">India Office</p>
+                  <p className="text-[11px] font-light mt-0.5 leading-normal">
+                    5th Floor, Cloud-9, Office no. S-538, Ghaziabad, UP 201010
+                  </p>
+                  <p className="text-xs font-mono text-cyan-400 mt-0.5 font-semibold">+91-8448665756</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-2">
+                <div className="shrink-0 pt-0.5 text-xs">🇺🇸</div>
+                <div className="text-white/80">
+                  <p className="text-xs font-bold text-white/95">USA Office</p>
+                  <p className="text-[11px] font-light mt-0.5 leading-normal">
+                    1510 clear circle garden, Houston, Texas 77047
+                  </p>
+                  <p className="text-xs font-mono text-cyan-400 mt-0.5 font-semibold">+1 (877) 209-6488</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div className="flex md:flex-row flex-col gap-4 items-center justify-between py-4 border-t border-white/10 text-sm">
-          <p>© 2024 Vrifide Pvt. Ltd.</p>
-          <div className="text-white/80 font-light lg:text-left text-center">
-            All Right Reserved Terms & Condition | Privacy Policy | Cookie
-            Preferences
+          <p>© 2026 Qunatrix Labs. All Rights Reserved.</p>
+          <div className="text-white/60 font-light lg:text-left text-center flex flex-wrap gap-2 items-center justify-center">
+            <Link href="/terms" className="hover:text-blue-400 transition-colors">Terms & Conditions</Link>
+            <span className="text-white/20">|</span>
+            <Link href="/privacy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link>
+            <span className="text-white/20">|</span>
+            <Link href="/cookies" className="hover:text-blue-400 transition-colors">Cookie Preferences</Link>
           </div>
         </div>
       </section>

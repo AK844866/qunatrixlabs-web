@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+import Link from "next/link";
 import Header from "./Header"; 
 
  
@@ -85,51 +86,55 @@ export default function HeroSection() {
 
      
 
-      {/* Card 2: Collaborate & Build (Top Right) */}
+      {/* Card 2: Enterprise ERP & CRM */}
       <div className="absolute 2xl:top-36 top-32 2xl:right-[10%] right-[7%]   hidden xl:block 2xl:scale-100 scale-[90%]">
         <GlassCard className="w-64 float-img transition-all duration-300 ease-out transform-gpu">
-          <div className="flex justify-between items-center mb-4">
-            <img src="/img/collaborate-build.webp" />
+          <div className="flex items-center space-x-2 mb-4">
+            <span className="text-2xl">💼</span>
+            <span className="text-xs bg-blue-500/20 text-blue-300 font-mono px-2 py-0.5 rounded border border-blue-500/30">Scalable</span>
           </div>
           <h4 className="font-bold text-white text-base mb-1">
-            Collaborate & Build
+            Odoo & ERP Next
           </h4>
           <p className="text-sm text-white/80 leading-relaxed">
-            Work together on real projects and shared goals.
+            Tailored CRM, automated manufacturing workflows, and full-stack HRMS integrations.
           </p>
         </GlassCard>
       </div>
 
     
 
-      {/* Card 3: Real Opportunities (Bottom Left) */}
+      {/* Card 3: Aviation & Air Ticketing */}
       <div className="absolute bottom-24 left-[12%] hidden xl:block 2xl:scale-100 scale-[90%]">
-        <GlassCard className="w-70 float-img transition-all duration-300 ease-out transform-gpu">
-          <h4 className="font-bold text-base text-white ">
-            Real Opportunities
+        <GlassCard className="w-64 float-img transition-all duration-300 ease-out transform-gpu">
+          <div className="flex items-center space-x-2 mb-4">
+            <span className="text-2xl">✈️</span>
+            <span className="text-xs bg-indigo-500/20 text-indigo-300 font-mono px-2 py-0.5 rounded border border-indigo-500/30">Verticals</span>
+          </div>
+          <h4 className="font-bold text-base text-white mb-1">
+            Aviation Systems
           </h4>
-          <p className="text-sm text-white/80 mb-5">
-            Hands-on work that leads to meaningful outcomes.
+          <p className="text-sm text-white/80 leading-relaxed">
+            High-performance air ticketing networks, baggage tracking, and reservation workflows.
           </p>
-          <img src="/img/real-opportunities.webp" />
         </GlassCard>
       </div>
 
       
 
-      {/* Card 4: Ecosystem Growth (Bottom Right) */}
+      {/* Card 4: AI & IoT Devices */}
       <div className="absolute bottom-16 right-[15%] hidden xl:block 2xl:scale-100 scale-[90%]">
-        <GlassCard className="w-72  overflow-hidden group/card float-img transition-all duration-300 ease-out transform-gpu">
-          <div className="flex justify-between items-center mb-4">
-            <img src="/img/ecosystem-growth.webp" />
+        <GlassCard className="w-72 overflow-hidden group/card float-img transition-all duration-300 ease-out transform-gpu">
+          <div className="flex items-center space-x-2 mb-4">
+            <span className="text-2xl">🤖</span>
+            <span className="text-xs bg-purple-500/20 text-purple-300 font-mono px-2 py-0.5 rounded border border-purple-500/30">Cognitive</span>
           </div>
-
           <div className="">
             <h4 className="font-bold text-base text-white mb-1">
-              Ecosystem Growth
+              AI & IoT Devices
             </h4>
             <p className="text-sm text-white/80 leading-relaxed">
-              Grow through connections, collaboration, and learning.
+              Smart POS machine integrations, connected IoT device telemetry, and predictive model APIs.
             </p>
           </div>
         </GlassCard>
@@ -138,31 +143,26 @@ export default function HeroSection() {
       {/* Hero Text */}
       <div className="relative z-10 flex flex-col justify-center items-center text-center h-full text-white space-y-8 md:px-0 px-4">
         <div className="space-y-4">
-          {/* <motion.h2
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="2xl:text-4xl xl:text-3xl text-3xl font-medium viga"
-          >
-            Should reflect that it belongs to boty Startup and Student
-          </motion.h2> */}
-
-          {/* <p className="text-base text-white/70">Powered by</p> */}
-          <h2 className="2xl:text-6xl xl:text-5xl text-5xl  font-semibold">
-            A Collaborative  Ecosystem for <br />
-            Startups and Talent
-          </h2>
-          <p className="2xl:text-2xl xl:text-lg text-base font-light">
-            Build, collaborate, and grow — together
+          <span className="text-sm font-semibold tracking-widest text-cyan-400 bg-cyan-500/10 px-4 py-1.5 rounded-full border border-cyan-500/20 uppercase">
+            Next-Gen Software Development Studio
+          </span>
+          <h1 className="2xl:text-7xl xl:text-6xl text-4xl font-extrabold tracking-tight leading-tight pt-2">
+            We Engineer High-Performance <br />
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 text-transparent bg-clip-text">
+              Custom Tech Solutions
+            </span>
+          </h1>
+          <p className="2xl:text-xl xl:text-lg text-base font-light text-white/80 max-w-2xl mx-auto">
+            From Blockchain & AI-powered models to custom ERPs, Odoo, IoT, and domain-specific aviation/hospital workflows.
           </p>
         </div>
 
-        <a
-          href="https://dev-verifide.verifide.xyz/login?redirect=%2Fuser%2Fprofile"
-          className="bg-linear-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] p-[1px] rounded-full transition duration-300 hover:shadow-[0_0_20px_#3b82f6]"
+        <Link
+          href="/services"
+          className="bg-gradient-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] p-[1px] rounded-full transition duration-300 hover:shadow-[0_0_20px_#3b82f6]"
         >
-          <div className="px-10 py-3 flex items-center bg-black rounded-full 2xl:text-xl text-lg space-x-2">
-            <span>Get Started</span>
+          <div className="px-10 py-4 flex items-center bg-[#0C0A15] hover:bg-transparent transition-all rounded-full 2xl:text-xl text-lg space-x-2">
+            <span>Explore Services</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}
@@ -180,7 +180,7 @@ export default function HeroSection() {
               <path d="M8 7h9v9" />
             </svg>
           </div>
-        </a>
+        </Link>
       </div>
     </section>
   );

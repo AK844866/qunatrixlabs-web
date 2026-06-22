@@ -47,22 +47,22 @@
       "namedRegex": "^/about(?:/)?$"
     },
     {
-      "page": "/colleges",
-      "regex": "^/colleges(?:/)?$",
+      "page": "/case-studies",
+      "regex": "^/case\\-studies(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/colleges(?:/)?$"
+      "namedRegex": "^/case\\-studies(?:/)?$"
     },
     {
-      "page": "/companies",
-      "regex": "^/companies(?:/)?$",
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/companies(?:/)?$"
+      "namedRegex": "^/contact(?:/)?$"
     },
     {
-      "page": "/talents",
-      "regex": "^/talents(?:/)?$",
+      "page": "/services",
+      "regex": "^/services(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/talents(?:/)?$"
+      "namedRegex": "^/services(?:/)?$"
     }
   ],
   "dataRoutes": [],

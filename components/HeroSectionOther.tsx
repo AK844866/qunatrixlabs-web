@@ -106,7 +106,7 @@ export default function HeroSectionOther({
             </button> */}
 
             <Link
-              href="https://dev-verifide.verifide.xyz/create-account?redirect=%2Fuser%2Fprofile"
+              href="/contact"
               className="px-10 py-3 flex items-center border border-white rounded-full 2xl:text-xl lg:text-lg text-sm space-x-2 hover:bg-white/10 hover:backdrop-blur-md transition-all duration-150"
             >
               <span>{buttonTwo}</span>
