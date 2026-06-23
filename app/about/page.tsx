@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HeroSectionOther from "@/components/HeroSectionOther";
@@ -8,6 +9,23 @@ import Vision from "./Vision";
 import WhyQunatrix from "./WhyQunatrix";
 import OurObjectives from "./OurObjectives";
 import WhyChoose from "./WhyChoose";
+
+export const metadata: Metadata = {
+  title: "About Us | Qunatrix Labs",
+  description: "Qunatrix Labs is a premier IT consulting and development firm specializing in custom enterprise applications, Blockchain & crypto engineering, AI integrations, and IoT systems.",
+  openGraph: {
+    title: "About Us | Qunatrix Labs",
+    description: "Qunatrix Labs is a premier IT consulting and development firm specializing in custom enterprise applications, Blockchain & crypto engineering, AI integrations, and IoT systems.",
+    type: "website",
+    url: "https://qunatrixlabs.com/about",
+    siteName: "Qunatrix Labs",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Qunatrix Labs",
+    description: "Qunatrix Labs is a premier IT consulting and development firm specializing in custom enterprise applications, Blockchain & crypto engineering, AI integrations, and IoT systems.",
+  }
+};
 
 export default function Employee() {
   return (

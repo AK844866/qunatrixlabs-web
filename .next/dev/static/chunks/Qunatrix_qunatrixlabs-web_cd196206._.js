@@ -1470,6 +1470,7 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Qunatrix/qunatrixlabs-web/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Qunatrix/qunatrixlabs-web/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Qunatrix/qunatrixlabs-web/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Qunatrix/qunatrixlabs-web/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$components$2f$Header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Qunatrix/qunatrixlabs-web/components/Header.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$components$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Qunatrix/qunatrixlabs-web/components/Footer.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Qunatrix/qunatrixlabs-web/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
@@ -1487,6 +1488,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -1514,7 +1516,8 @@ const caseStudies = [
             "Gas-optimized ERC-721 smart contracts",
             "Secure third-party API verification"
         ],
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldCheck$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldCheck$3e$__["IconShieldCheck"]
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldCheck$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldCheck$3e$__["IconShieldCheck"],
+        image: "/img/case-studies/verified.png"
     },
     {
         id: "mailtrail",
@@ -1535,7 +1538,8 @@ const caseStudies = [
             "Under 100ms processing and queueing dispatch",
             "Interactive analytics graphs with CanvasJS"
         ],
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMail$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMail$3e$__["IconMail"]
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMail$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMail$3e$__["IconMail"],
+        image: "/img/case-studies/mailtrail.png"
     },
     {
         id: "kendrag",
@@ -1556,7 +1560,8 @@ const caseStudies = [
             "Instant PDF load calculations",
             "FAA audit-ready compliance reporter"
         ],
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconPlane$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconPlane$3e$__["IconPlane"]
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconPlane$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconPlane$3e$__["IconPlane"],
+        image: "/img/case-studies/kendrag.png"
     },
     {
         id: "eliteprime",
@@ -1577,7 +1582,8 @@ const caseStudies = [
             "Automated broker load match matching",
             "30% reduction in average container dwell time"
         ],
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconTruck$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconTruck$3e$__["IconTruck"]
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconTruck$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconTruck$3e$__["IconTruck"],
+        image: "/img/case-studies/eliteprime.png"
     },
     {
         id: "eyision",
@@ -1598,7 +1604,8 @@ const caseStudies = [
             "RTC peer-to-peer clinical teleconsultations",
             "99.99% clinical database uptime"
         ],
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconActivity$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconActivity$3e$__["IconActivity"]
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconActivity$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconActivity$3e$__["IconActivity"],
+        image: "/img/case-studies/eyision.png"
     },
     {
         id: "diarchgo",
@@ -1619,7 +1626,8 @@ const caseStudies = [
             "Dynamic cost calculation for 5,000+ items",
             "Custom inventory forecasts using simple stats"
         ],
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconSettings$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconSettings$3e$__["IconSettings"]
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconSettings$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconSettings$3e$__["IconSettings"],
+        image: "/img/case-studies/diarchgo.png"
     },
     {
         id: "eyeaddon",
@@ -1640,7 +1648,8 @@ const caseStudies = [
             "Dynamic hardware terminal configuration",
             "Live hardware health telemetry"
         ],
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconDevices$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconDevices$3e$__["IconDevices"]
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconDevices$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconDevices$3e$__["IconDevices"],
+        image: "/img/case-studies/eyeaddon.png"
     },
     {
         id: "dream11",
@@ -1661,7 +1670,8 @@ const caseStudies = [
             "Under 1s updates during match highlights",
             "Fully automated fallback match scheduler"
         ],
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconTrophy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconTrophy$3e$__["IconTrophy"]
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconTrophy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconTrophy$3e$__["IconTrophy"],
+        image: "/img/case-studies/dream11.png"
     }
 ];
 const categories = [
@@ -1720,7 +1730,7 @@ function CaseStudiesPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$components$2f$Header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                lineNumber: 162,
+                lineNumber: 172,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -1730,14 +1740,14 @@ function CaseStudiesPage() {
                         className: "absolute top-[15%] right-[-10%] w-[35rem] h-[35rem] rounded-full bg-blue-600/10 blur-[130px] pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                        lineNumber: 165,
+                        lineNumber: 175,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute bottom-[15%] left-[-10%] w-[35rem] h-[35rem] rounded-full bg-purple-600/10 blur-[130px] pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                        lineNumber: 166,
+                        lineNumber: 176,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1756,13 +1766,13 @@ function CaseStudiesPage() {
                                                 children: "Case Studies"
                                             }, void 0, false, {
                                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                lineNumber: 173,
+                                                lineNumber: 183,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                        lineNumber: 171,
+                                        lineNumber: 181,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1770,13 +1780,13 @@ function CaseStudiesPage() {
                                         children: "Discover how Qunatrix Labs engineers robust architectures, resolves complex data synchronization pipelines, and designs enterprise workflows."
                                     }, void 0, false, {
                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                        lineNumber: 177,
+                                        lineNumber: 187,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                lineNumber: 170,
+                                lineNumber: 180,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1790,12 +1800,12 @@ function CaseStudiesPage() {
                                                 children: cat.label
                                             }, cat.id, false, {
                                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                lineNumber: 186,
+                                                lineNumber: 196,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                        lineNumber: 184,
+                                        lineNumber: 194,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1809,7 +1819,7 @@ function CaseStudiesPage() {
                                                 className: "w-full bg-white/5 border border-white/10 rounded-full px-5 py-2.5 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-white placeholder-white/40 transition-all"
                                             }, void 0, false, {
                                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                lineNumber: 201,
+                                                lineNumber: 211,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1817,19 +1827,19 @@ function CaseStudiesPage() {
                                                 children: "🔍"
                                             }, void 0, false, {
                                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                lineNumber: 208,
+                                                lineNumber: 218,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                        lineNumber: 200,
+                                        lineNumber: 210,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                lineNumber: 183,
+                                lineNumber: 193,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1859,174 +1869,224 @@ function CaseStudiesPage() {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$components$2f$ui$2f$spotlight$2d$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["GlowCard"], {
                                                 glowColor: categoryGlow[project.category] ?? 'blue',
                                                 customSize: true,
-                                                className: "p-8 flex flex-col justify-between h-full group",
+                                                className: "flex flex-col justify-between h-full group overflow-hidden",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "space-y-6",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex justify-between items-start",
+                                                                className: "relative h-52 w-full overflow-hidden bg-white/5",
                                                                 children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-600/20 to-indigo-600/20 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform duration-300",
-                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconComponent, {
-                                                                            size: 28
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                            lineNumber: 237,
-                                                                            columnNumber: 29
-                                                                        }, this)
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                        src: project.image,
+                                                                        alt: project.title,
+                                                                        fill: true,
+                                                                        sizes: "(max-width: 768px) 100vw, 50vw",
+                                                                        className: "object-cover transition-transform duration-500 group-hover:scale-105"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                        lineNumber: 236,
+                                                                        lineNumber: 247,
+                                                                        columnNumber: 27
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "absolute inset-0 bg-gradient-to-t from-[#0A0914] via-[#0A0914]/20 to-transparent"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                        lineNumber: 254,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     project.url !== "#" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                                         href: project.url,
                                                                         target: "_blank",
                                                                         rel: "noopener noreferrer",
-                                                                        className: "text-white/40 hover:text-cyan-400 transition-colors p-2 bg-white/5 rounded-full border border-white/10 hover:border-cyan-500/30",
+                                                                        className: "absolute top-4 right-4 z-20 text-white/80 hover:text-cyan-400 transition-colors p-2.5 bg-black/40 backdrop-blur-md rounded-full border border-white/10 hover:border-cyan-500/30",
                                                                         title: "Visit Website",
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconExternalLink$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconExternalLink$3e$__["IconExternalLink"], {
-                                                                            size: 20
+                                                                            size: 18
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                            lineNumber: 241,
+                                                                            lineNumber: 265,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                        lineNumber: 240,
+                                                                        lineNumber: 258,
                                                                         columnNumber: 29
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "absolute top-4 left-4 z-20 text-[10px] uppercase font-mono tracking-wider bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-cyan-400",
+                                                                        children: project.category
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                        lineNumber: 270,
+                                                                        columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                lineNumber: 235,
+                                                                lineNumber: 246,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "space-y-1",
+                                                                className: "p-8 space-y-6 pt-6",
                                                                 children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                        className: "text-2xl font-bold group-hover:text-blue-400 transition-colors duration-300",
-                                                                        children: project.title
-                                                                    }, void 0, false, {
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex items-center gap-4",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600/20 to-indigo-600/20 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform duration-300 shrink-0",
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IconComponent, {
+                                                                                    size: 24
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                                    lineNumber: 279,
+                                                                                    columnNumber: 31
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                                lineNumber: 278,
+                                                                                columnNumber: 29
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "space-y-0.5",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                                        className: "text-xl font-bold group-hover:text-blue-400 transition-colors duration-300 line-clamp-1",
+                                                                                        children: project.title
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                                        lineNumber: 282,
+                                                                                        columnNumber: 31
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                                        className: "text-xs text-cyan-400 font-mono tracking-wider font-semibold",
+                                                                                        children: project.subtitle
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                                        lineNumber: 283,
+                                                                                        columnNumber: 31
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                                lineNumber: 281,
+                                                                                columnNumber: 29
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
                                                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                        lineNumber: 246,
+                                                                        lineNumber: 277,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        className: "text-xs text-cyan-400 font-mono tracking-wider font-semibold",
-                                                                        children: project.subtitle
+                                                                        className: "text-sm text-white/70 font-light leading-relaxed min-h-[60px]",
+                                                                        children: project.description
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                        lineNumber: 247,
+                                                                        lineNumber: 287,
+                                                                        columnNumber: 27
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex flex-wrap gap-2 pt-1",
+                                                                        children: project.stack.map((tech)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                className: "text-[11px] font-mono bg-white/5 border border-white/5 px-2.5 py-1 rounded text-white/60",
+                                                                                children: tech
+                                                                            }, tech, false, {
+                                                                                fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                                lineNumber: 291,
+                                                                                columnNumber: 31
+                                                                            }, this))
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                        lineNumber: 289,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                lineNumber: 245,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-sm text-white/70 font-light leading-relaxed",
-                                                                children: project.description
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                lineNumber: 249,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex flex-wrap gap-2 pt-2",
-                                                                children: project.stack.map((tech)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-[11px] font-mono bg-white/5 border border-white/5 px-2.5 py-1 rounded text-white/60",
-                                                                        children: tech
-                                                                    }, tech, false, {
-                                                                        fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                        lineNumber: 252,
-                                                                        columnNumber: 29
-                                                                    }, this))
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                lineNumber: 250,
+                                                                lineNumber: 276,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                        lineNumber: 234,
+                                                        lineNumber: 244,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "mt-8 pt-6 border-t border-white/5 space-y-3",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                className: "text-xs font-bold uppercase tracking-wider text-white/40",
-                                                                children: "Key Accomplishments"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                lineNumber: 257,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                                className: "space-y-2",
-                                                                children: project.highlights.map((highlight, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                        className: "text-xs text-white/80 font-light flex items-center space-x-2",
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "text-cyan-400 font-bold",
-                                                                                children: "✦"
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                                lineNumber: 261,
-                                                                                columnNumber: 31
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                children: highlight
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                                lineNumber: 262,
-                                                                                columnNumber: 31
-                                                                            }, this)
-                                                                        ]
-                                                                    }, index, true, {
-                                                                        fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                        lineNumber: 260,
-                                                                        columnNumber: 29
-                                                                    }, this))
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                                lineNumber: 258,
-                                                                columnNumber: 25
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
+                                                        className: "px-8 pb-8",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "pt-6 border-t border-white/5 space-y-3",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                    className: "text-xs font-bold uppercase tracking-wider text-white/40",
+                                                                    children: "Key Accomplishments"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                    lineNumber: 299,
+                                                                    columnNumber: 27
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                                    className: "space-y-2",
+                                                                    children: project.highlights.map((highlight, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                            className: "text-xs text-white/80 font-light flex items-start space-x-2",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "text-cyan-400 font-bold mt-0.5",
+                                                                                    children: "✦"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                                    lineNumber: 303,
+                                                                                    columnNumber: 33
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    children: highlight
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                                    lineNumber: 304,
+                                                                                    columnNumber: 33
+                                                                                }, this)
+                                                                            ]
+                                                                        }, index, true, {
+                                                                            fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                            lineNumber: 302,
+                                                                            columnNumber: 31
+                                                                        }, this))
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                                    lineNumber: 300,
+                                                                    columnNumber: 27
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
+                                                            lineNumber: 298,
+                                                            columnNumber: 25
+                                                        }, this)
+                                                    }, void 0, false, {
                                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                        lineNumber: 256,
+                                                        lineNumber: 297,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                lineNumber: 229,
+                                                lineNumber: 239,
                                                 columnNumber: 21
                                             }, this)
                                         }, project.id, false, {
                                             fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                            lineNumber: 221,
+                                            lineNumber: 231,
                                             columnNumber: 19
                                         }, this);
                                     })
                                 }, void 0, false, {
                                     fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                    lineNumber: 217,
+                                    lineNumber: 227,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                lineNumber: 213,
+                                lineNumber: 223,
                                 columnNumber: 11
                             }, this),
                             filteredCases.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2043,7 +2103,7 @@ function CaseStudiesPage() {
                                         children: "🔎"
                                     }, void 0, false, {
                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                        lineNumber: 281,
+                                        lineNumber: 324,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2051,7 +2111,7 @@ function CaseStudiesPage() {
                                         children: "No projects matching found"
                                     }, void 0, false, {
                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                        lineNumber: 282,
+                                        lineNumber: 325,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2059,13 +2119,13 @@ function CaseStudiesPage() {
                                         children: "Try searching with different terms or reset your category filter."
                                     }, void 0, false, {
                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                        lineNumber: 283,
+                                        lineNumber: 326,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                lineNumber: 276,
+                                lineNumber: 319,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2075,7 +2135,7 @@ function CaseStudiesPage() {
                                         className: "absolute inset-0 bg-[#0A0914]/40 z-0"
                                     }, void 0, false, {
                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                        lineNumber: 291,
+                                        lineNumber: 334,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2086,7 +2146,7 @@ function CaseStudiesPage() {
                                                 children: "Ready to build your success story?"
                                             }, void 0, false, {
                                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                lineNumber: 293,
+                                                lineNumber: 336,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2094,7 +2154,7 @@ function CaseStudiesPage() {
                                                 children: "Discuss custom software solutions, backend synchronization flows, or hardware terminal setup with our expert engineering team."
                                             }, void 0, false, {
                                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                lineNumber: 294,
+                                                lineNumber: 337,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2103,36 +2163,36 @@ function CaseStudiesPage() {
                                                 children: "Start Your Project"
                                             }, void 0, false, {
                                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                                lineNumber: 297,
+                                                lineNumber: 340,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                        lineNumber: 292,
+                                        lineNumber: 335,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                                lineNumber: 290,
+                                lineNumber: 333,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                        lineNumber: 168,
+                        lineNumber: 178,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                lineNumber: 163,
+                lineNumber: 173,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$components$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/case-studies/page.tsx",
-                lineNumber: 307,
+                lineNumber: 350,
                 columnNumber: 7
             }, this)
         ]

@@ -1086,7 +1086,9 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix
 
 __turbopack_context__.s([
     "default",
-    ()=>Employee
+    ()=>Employee,
+    "metadata",
+    ()=>metadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Qunatrix/qunatrixlabs-web/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$components$2f$Footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Qunatrix/qunatrixlabs-web/components/Footer.tsx [app-rsc] (ecmascript)");
@@ -1108,12 +1110,28 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$
 ;
 ;
 ;
+const metadata = {
+    title: "About Us | Qunatrix Labs",
+    description: "Qunatrix Labs is a premier IT consulting and development firm specializing in custom enterprise applications, Blockchain & crypto engineering, AI integrations, and IoT systems.",
+    openGraph: {
+        title: "About Us | Qunatrix Labs",
+        description: "Qunatrix Labs is a premier IT consulting and development firm specializing in custom enterprise applications, Blockchain & crypto engineering, AI integrations, and IoT systems.",
+        type: "website",
+        url: "https://qunatrixlabs.com/about",
+        siteName: "Qunatrix Labs"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "About Us | Qunatrix Labs",
+        description: "Qunatrix Labs is a premier IT consulting and development firm specializing in custom enterprise applications, Blockchain & crypto engineering, AI integrations, and IoT systems."
+    }
+};
 function Employee() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$components$2f$Header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/about/page.tsx",
-                lineNumber: 15,
+                lineNumber: 33,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$components$2f$HeroSectionOther$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1127,49 +1145,49 @@ function Employee() {
                 extraline: false
             }, void 0, false, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/about/page.tsx",
-                lineNumber: 16,
+                lineNumber: 34,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$app$2f$about$2f$Mission$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/about/page.tsx",
-                lineNumber: 26,
+                lineNumber: 44,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$app$2f$about$2f$Vision$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/about/page.tsx",
-                lineNumber: 27,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$app$2f$about$2f$WhyChoose$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/about/page.tsx",
-                lineNumber: 28,
+                lineNumber: 46,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$app$2f$about$2f$WhyQunatrix$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/about/page.tsx",
-                lineNumber: 29,
+                lineNumber: 47,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$app$2f$about$2f$OurObjectives$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/about/page.tsx",
-                lineNumber: 30,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$components$2f$Testimonial$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/about/page.tsx",
-                lineNumber: 31,
+                lineNumber: 49,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "snap-start h-auto",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Qunatrix$2f$qunatrixlabs$2d$web$2f$components$2f$Footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/Qunatrix/qunatrixlabs-web/app/about/page.tsx",
-                    lineNumber: 34,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Qunatrix/qunatrixlabs-web/app/about/page.tsx",
-                lineNumber: 32,
+                lineNumber: 50,
                 columnNumber: 7
             }, this)
         ]

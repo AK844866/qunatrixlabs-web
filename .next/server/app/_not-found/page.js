@@ -1,0 +1,13 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_not-found/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__92bfcfe7._.js")
+R.c("server/chunks/ssr/68b0d_next_dist_d8ab0052._.js")
+R.c("server/chunks/ssr/68b0d_next_dist_esm_build_templates_app-page_5fd6fa99.js")
+R.c("server/chunks/ssr/[root-of-the-server]__56fa96d0._.js")
+R.c("server/chunks/ssr/68b0d_next_dist_e7525349._.js")
+R.c("server/chunks/ssr/68b0d_next_dist_e3a6b5de._.js")
+R.c("server/chunks/ssr/Qunatrix_qunatrixlabs-web_eba19dad._.js")
+R.c("server/chunks/ssr/68b0d_next_dist_client_components_1746c95e._.js")
+R.c("server/chunks/ssr/68b0d_next_dist_client_components_builtin_forbidden_4ae82f66.js")
+R.c("server/chunks/ssr/cdd97_qunatrixlabs-web__next-internal_server_app__not-found_page_actions_56ab352d.js")
+R.m(3066)
+module.exports=R.m(3066).exports
