@@ -2,6 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
 @import "tailwindcss";
 
+/* ── Design Tokens (shadcn-compatible) ──────────────────────── */
+:root {
+  --background: #0E0C15;
+  --foreground: #f0f0f0;
+  --border: rgba(255, 255, 255, 0.1);
+  --muted: rgba(255, 255, 255, 0.08);
+  --primary: #217AFF;
+  --primary-foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

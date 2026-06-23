@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
+import { GlowCard } from "@/components/ui/spotlight-card";
 import {
   IconShieldCheck,
   IconMail,
@@ -128,6 +129,13 @@ const categories = [
   { id: "iot", label: "IoT & Healthcare" },
 ];
 
+const categoryGlow: Record<string, 'blue' | 'purple' | 'green' | 'cyan'> = {
+  blockchain: 'purple',
+  enterprise: 'blue',
+  logistics: 'green',
+  iot: 'cyan',
+};
+
 export default function CaseStudiesPage() {
   const [activeCategory, setActiveCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
@@ -217,71 +225,46 @@ export default function CaseStudiesPage() {
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.3 }}
                     key={project.id}
-                    className="bg-white/[0.02] backdrop-blur-md border border-white/10 p-8 rounded-3xl flex flex-col justify-between hover:border-blue-500/50 hover:shadow-[0_0_40px_rgba(59,130,246,0.15)] group transition-all duration-300"
                   >
-                    <div className="space-y-6">
-                      <div className="flex justify-between items-start">
-                        {/* Icon */}
-                        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-600/20 to-indigo-600/20 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform duration-300">
-                          <IconComponent size={28} />
+                    <GlowCard
+                      glowColor={categoryGlow[project.category] ?? 'blue'}
+                      customSize
+                      className="p-8 flex flex-col justify-between h-full group"
+                    >
+                      <div className="space-y-6">
+                        <div className="flex justify-between items-start">
+                          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-600/20 to-indigo-600/20 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform duration-300">
+                            <IconComponent size={28} />
+                          </div>
+                          {project.url !== "#" && (
+                            <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-cyan-400 transition-colors p-2 bg-white/5 rounded-full border border-white/10 hover:border-cyan-500/30" title="Visit Website">
+                              <IconExternalLink size={20} />
+                            </a>
+                          )}
                         </div>
-
-                        {/* External Link */}
-                        {project.url !== "#" && (
-                          <a
-                            href={project.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-white/40 hover:text-cyan-400 transition-colors p-2 bg-white/5 rounded-full border border-white/10 hover:border-cyan-500/30"
-                            title="Visit Website"
-                          >
-                            <IconExternalLink size={20} />
-                          </a>
-                        )}
+                        <div className="space-y-1">
+                          <h3 className="text-2xl font-bold group-hover:text-blue-400 transition-colors duration-300">{project.title}</h3>
+                          <p className="text-xs text-cyan-400 font-mono tracking-wider font-semibold">{project.subtitle}</p>
+                        </div>
+                        <p className="text-sm text-white/70 font-light leading-relaxed">{project.description}</p>
+                        <div className="flex flex-wrap gap-2 pt-2">
+                          {project.stack.map((tech) => (
+                            <span key={tech} className="text-[11px] font-mono bg-white/5 border border-white/5 px-2.5 py-1 rounded text-white/60">{tech}</span>
+                          ))}
+                        </div>
                       </div>
-
-                      {/* Header Title */}
-                      <div className="space-y-1">
-                        <h3 className="text-2xl font-bold group-hover:text-blue-400 transition-colors duration-300">
-                          {project.title}
-                        </h3>
-                        <p className="text-xs text-cyan-400 font-mono tracking-wider font-semibold">
-                          {project.subtitle}
-                        </p>
+                      <div className="mt-8 pt-6 border-t border-white/5 space-y-3">
+                        <h4 className="text-xs font-bold uppercase tracking-wider text-white/40">Key Accomplishments</h4>
+                        <ul className="space-y-2">
+                          {project.highlights.map((highlight, index) => (
+                            <li key={index} className="text-xs text-white/80 font-light flex items-center space-x-2">
+                              <span className="text-cyan-400 font-bold">✦</span>
+                              <span>{highlight}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-
-                      {/* Description */}
-                      <p className="text-sm text-white/70 font-light leading-relaxed">
-                        {project.description}
-                      </p>
-
-                      {/* Tech Stack Chips */}
-                      <div className="flex flex-wrap gap-2 pt-2">
-                        {project.stack.map((tech) => (
-                          <span
-                            key={tech}
-                            className="text-[11px] font-mono bg-white/5 border border-white/5 px-2.5 py-1 rounded text-white/60"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Highlights List */}
-                    <div className="mt-8 pt-6 border-t border-white/5 space-y-3">
-                      <h4 className="text-xs font-bold uppercase tracking-wider text-white/40">
-                        Key Accomplishments
-                      </h4>
-                      <ul className="space-y-2">
-                        {project.highlights.map((highlight, index) => (
-                          <li key={index} className="text-xs text-white/80 font-light flex items-center space-x-2">
-                            <span className="text-cyan-400 font-bold">✦</span>
-                            <span>{highlight}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    </GlowCard>
                   </motion.div>
                 );
               })}

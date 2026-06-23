@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
+import { GlowCard } from "@/components/ui/spotlight-card";
 import {
   IconServer,
   IconCoin,
@@ -279,6 +280,13 @@ export default function ServicesPage() {
             <AnimatePresence mode="popLayout">
               {filteredItems.map((service) => {
                 const IconComponent = service.icon;
+                // Pick glow colour per category
+                const categoryGlow: Record<string, 'purple' | 'blue' | 'green' | 'orange'> = {
+                  enterprise: 'blue',
+                  blockchain: 'purple',
+                  industries: 'green',
+                  integrations: 'orange',
+                };
                 return (
                   <motion.div
                     layout
@@ -287,45 +295,50 @@ export default function ServicesPage() {
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.3 }}
                     key={service.id}
-                    className="bg-white/[0.02] backdrop-blur-md border border-white/10 p-6 rounded-3xl flex flex-col justify-between hover:border-blue-500/50 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] group transition-all duration-300"
                   >
-                    <div className="space-y-4">
-                      {/* Icon */}
-                      <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600/20 to-indigo-600/20 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform duration-300">
-                        <IconComponent size={24} />
+                    <GlowCard
+                      glowColor={categoryGlow[service.category] ?? 'purple'}
+                      customSize
+                      className="w-full h-full p-6 flex flex-col justify-between group"
+                    >
+                      <div className="space-y-4">
+                        {/* Icon */}
+                        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600/20 to-indigo-600/20 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform duration-300">
+                          <IconComponent size={24} />
+                        </div>
+
+                        {/* Content */}
+                        <div className="space-y-2">
+                          <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors duration-300">
+                            {service.title}
+                          </h3>
+                          <p className="text-sm text-white/70 font-light leading-relaxed">
+                            {service.description}
+                          </p>
+                        </div>
                       </div>
 
-                      {/* Content */}
-                      <div className="space-y-2">
-                        <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors duration-300">
-                          {service.title}
-                        </h3>
-                        <p className="text-sm text-white/70 font-light leading-relaxed">
-                          {service.description}
-                        </p>
+                      {/* Features list */}
+                      <div className="mt-6 pt-4 border-t border-white/5 space-y-3">
+                        <div className="flex flex-wrap gap-1.5">
+                          {service.features.map((feat, idx) => (
+                            <span
+                              key={idx}
+                              className="text-[11px] font-medium bg-white/5 border border-white/5 px-2 py-0.5 rounded text-white/80"
+                            >
+                              ✓ {feat}
+                            </span>
+                          ))}
+                        </div>
+                        <Link
+                          href={`/contact?service=${service.id}`}
+                          className="mt-4 flex items-center justify-center space-x-2 text-xs font-semibold bg-white/5 hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600 text-white hover:text-white py-2 rounded-full border border-white/10 hover:border-transparent transition-all w-full"
+                        >
+                          <span>Request Customization</span>
+                          <span>➔</span>
+                        </Link>
                       </div>
-                    </div>
-
-                    {/* Features list */}
-                    <div className="mt-6 pt-4 border-t border-white/5 space-y-3">
-                      <div className="flex flex-wrap gap-1.5">
-                        {service.features.map((feat, idx) => (
-                          <span
-                            key={idx}
-                            className="text-[11px] font-medium bg-white/5 border border-white/5 px-2 py-0.5 rounded text-white/80"
-                          >
-                            ✓ {feat}
-                          </span>
-                        ))}
-                      </div>
-                      <Link
-                        href={`/contact?service=${service.id}`}
-                        className="mt-4 flex items-center justify-center space-x-2 text-xs font-semibold bg-white/5 hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600 text-white hover:text-white py-2 rounded-full border border-white/10 hover:border-transparent transition-all w-full"
-                      >
-                        <span>Request Customization</span>
-                        <span>➔</span>
-                      </Link>
-                    </div>
+                    </GlowCard>
                   </motion.div>
                 );
               })}

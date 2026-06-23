@@ -2,6 +2,52 @@
 
 import { motion } from "framer-motion";
 import ElectricCube from "./ElectricCube";
+import { GlowCard } from "@/components/ui/spotlight-card";
+
+const cards = [
+  {
+    emoji: "🏗️",
+    color: "#DA1D5D",
+    title: "1. End-to-End Delivery",
+    desc: "From initial system design, rapid prototyping, production UI/UX engineering, to secure deployment pipelines.",
+    glowColor: "blue" as const,
+    // desktop absolute coords
+    top: "0%", left: "6.5%", right: "auto", bottom: "auto", width: "30%",
+  },
+  {
+    emoji: "🚀",
+    color: "#2563EB",
+    title: "2. Cutting-Edge Tech",
+    desc: "Advanced implementation in AI/LLM applications, custom Blockchain systems, crypto wallets, and interactive web apps.",
+    glowColor: "cyan" as const,
+    top: "0", left: "auto", right: "7%", bottom: "auto", width: "30%",
+    extraTop: "-16px",
+  },
+  {
+    emoji: "⚙️",
+    color: "#FFC417",
+    title: "3. Odoo & ERP Next",
+    desc: "Full lifecycle customization of Odoo, ERP Next, CRM configurations, HRMS databases, and document management flows.",
+    glowColor: "orange" as const,
+    top: "34%", left: "2%", right: "auto", bottom: "auto", width: "30%",
+  },
+  {
+    emoji: "📟",
+    color: "#4CAF50",
+    title: "4. Hardware & POS",
+    desc: "Connecting IoT devices, programming billing solutions, POS machine API integrations, and custom manufacturing automation.",
+    glowColor: "green" as const,
+    top: "36%", left: "auto", right: "5%", bottom: "auto", width: "30%",
+  },
+  {
+    emoji: "🌐",
+    color: "#5556D1",
+    title: "5. Multi-Domain Industry Expertise",
+    desc: "Custom software tailored to Aviation & ticketing, fintech pipelines, LMS learning portals, Hospital Services, and E-commerce.",
+    glowColor: "purple" as const,
+    top: "auto", left: "auto", right: "34%", bottom: "18%", width: "32rem",
+  },
+];
 
 export default function WhyUs() {
   return (
@@ -31,152 +77,54 @@ export default function WhyUs() {
         </motion.p>
       </div>
 
-      {/* Desktop Layout with 3D ElectricCube */}
+      {/* ── Desktop ─────────────────────────────────────────────── */}
       <div className="relative justify-center h-full lg:flex hidden">
         <ElectricCube />
-
-        {/* Card 1: End-to-End Development */}
-        <div
-          className="w-[30%] bg-gradient-to-b from-white/10 to-white/0 border border-white/10 rounded-2xl absolute top-[0%] left-[6.5%] flex items-start space-x-4 p-4
-          transition-all duration-500 hover:border-[#DA1D5D] hover:shadow-[0_0_20px_2px_#DA1D5D]/60"
-        >
-          <div className="w-16 h-16 rounded-full bg-[#DA1D5D] shrink-0 flex items-center justify-center font-bold text-xl text-white">
-            🏗️
+        {cards.map((card) => (
+          <div
+            key={card.title}
+            style={{
+              position: "absolute",
+              top: card.top,
+              left: card.left,
+              right: card.right,
+              bottom: card.bottom,
+              width: card.width,
+              marginTop: card.extraTop ?? 0,
+            }}
+          >
+            <GlowCard glowColor={card.glowColor} customSize className="w-full flex items-start space-x-4 p-4">
+              <div
+                className="w-16 h-16 rounded-full shrink-0 flex items-center justify-center font-bold text-xl text-white"
+                style={{ backgroundColor: card.color }}
+              >
+                {card.emoji}
+              </div>
+              <div className="space-y-0.5">
+                <h1 className="text-lg font-medium">{card.title}</h1>
+                <p className="text-sm text-white/80 font-light">{card.desc}</p>
+              </div>
+            </GlowCard>
           </div>
-          <div className="space-y-0.5">
-            <h1 className="text-lg font-medium">1. End-to-End Delivery</h1>
-            <p className="text-sm text-white/80 font-light">
-              From initial system design, rapid prototyping, production UI/UX engineering, to secure deployment pipelines.
-            </p>
-          </div>
-        </div>
-
-        {/* Card 2: Cutting-Edge Tech */}
-        <div
-          className="bg-gradient-to-b from-white/10 to-white/0 border border-white/10 rounded-2xl absolute -top-4 right-[7%] flex items-start space-x-4 p-4 w-[30%]
-          transition-all duration-500 hover:border-[#2563EB] hover:shadow-[0_0_20px_2px_#2563EB]/60"
-        >
-          <div className="w-16 h-16 rounded-full bg-[#2563EB] shrink-0 flex items-center justify-center font-bold text-xl text-white">
-            🚀
-          </div>
-          <div>
-            <h1 className="text-xl font-medium">2. Cutting-Edge Tech</h1>
-            <p className="text-sm text-white/80 font-light">
-              Advanced implementation in AI/LLM applications, custom Blockchain systems, crypto wallets, and interactive web apps.
-            </p>
-          </div>
-        </div>
-
-        {/* Card 3: Odoo & ERP Next */}
-        <div
-          className="bg-gradient-to-b from-white/10 to-white/0 border border-white/10 rounded-2xl absolute top-[34%] left-[2%] flex items-start space-x-4 p-4 w-[30%]
-          transition-all duration-500 hover:border-[#FFC417] hover:shadow-[0_0_20px_2px_#FFC417]/60"
-        >
-          <div className="w-16 h-16 rounded-full bg-[#FFC417] shrink-0 flex items-center justify-center font-bold text-xl text-white">
-            ⚙️
-          </div>
-          <div>
-            <h1 className="text-lg font-medium">3. Odoo & ERP Next</h1>
-            <p className="text-sm text-white/80 font-light">
-              Full lifecycle customization of Odoo, ERP Next, CRM configurations, HRMS databases, and document management flows.
-            </p>
-          </div>
-        </div>
-
-        {/* Card 4: Hardware & POS */}
-        <div
-          className="bg-gradient-to-b from-white/10 to-white/0 border border-white/10 rounded-2xl absolute top-[36%] right-[5%] flex items-start space-x-4 p-4 w-[30%]
-          transition-all duration-500 hover:border-[#4CAF50] hover:shadow-[0_0_20px_2px_#4CAF50]/60"
-        >
-          <div className="w-16 h-16 rounded-full bg-[#4CAF50] shrink-0 flex items-center justify-center font-bold text-xl text-white">
-            📟
-          </div>
-          <div>
-            <h1 className="text-lg font-medium">4. Hardware & POS</h1>
-            <p className="text-sm text-white/80 font-light">
-              Connecting IoT devices, programming billing solutions, POS machine API integrations, and custom manufacturing automation.
-            </p>
-          </div>
-        </div>
-
-        {/* Card 5: Industry Verticals */}
-        <div
-          className="bg-gradient-to-b from-white/10 to-white/0 border border-white/10 rounded-2xl absolute bottom-[18%] right-[34%] flex items-start space-x-4 p-4 w-[32rem]
-          transition-all duration-500 hover:border-[#5556D1] hover:shadow-[0_0_20px_2px_#5556D1]/60"
-        >
-          <div className="w-16 h-16 rounded-full bg-[#5556D1] shrink-0 flex items-center justify-center font-bold text-xl text-white">
-            🌐
-          </div>
-          <div>
-            <h1 className="text-lg font-medium">5. Multi-Domain Industry Expertise</h1>
-            <p className="text-sm text-white/80 font-light">
-              Custom software tailored to Aviation & ticketing, fintech pipelines, LMS learning portals, Hospital Services, and E-commerce.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
 
-      {/* Mobile Layout */}
-      <div className="lg:hidden block grid grid-cols-1 gap-3">
-        <div className="bg-gradient-to-b from-white/10 to-white/0 border border-white/10 rounded-2xl space-y-4 p-4">
-          <div className="w-12 h-12 rounded-full bg-[#DA1D5D] shrink-0 flex items-center justify-center font-bold text-lg text-white">
-            🏗️
-          </div>
-          <div className="space-y-0.5">
-            <h1 className="text-base font-medium">1. End-to-End Delivery</h1>
-            <p className="text-sm text-white/80 font-light">
-              Complete product design, rapid prototyping, development, and secure deployment pipelines.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-b from-white/10 to-white/0 border border-white/10 rounded-2xl space-y-4 p-4">
-          <div className="w-12 h-12 rounded-full bg-[#2563EB] shrink-0 flex items-center justify-center font-bold text-lg text-white">
-            🚀
-          </div>
-          <div>
-            <h1 className="text-base font-medium">2. Cutting-Edge Tech</h1>
-            <p className="text-sm text-white/80 font-light">
-              Next-gen implementation in AI/LLMs, Blockchain ledgers, crypto wallets, and rich web applications.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-b from-white/10 to-white/0 border border-white/10 rounded-2xl space-y-4 p-4">
-          <div className="w-12 h-12 rounded-full bg-[#FFC417] shrink-0 flex items-center justify-center font-bold text-lg text-white">
-            ⚙️
-          </div>
-          <div>
-            <h1 className="text-base font-medium">3. Odoo & ERP Next</h1>
-            <p className="text-sm text-white/80 font-light">
-              Robust CRM integration, ERP customization, HRMS portals, and automated business workflows.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-b from-white/10 to-white/0 border border-white/10 rounded-2xl space-y-4 p-4">
-          <div className="w-12 h-12 rounded-full bg-[#4CAF50] shrink-0 flex items-center justify-center font-bold text-lg text-white">
-            📟
-          </div>
-          <div>
-            <h1 className="text-base font-medium">4. Hardware & POS Integrations</h1>
-            <p className="text-sm text-white/80 font-light">
-              Smart IoT telemetry, billing APIs, POS hardware setups, and industrial manufacturing triggers.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-b from-white/10 to-white/0 border border-white/10 rounded-2xl space-y-4 p-4">
-          <div className="w-12 h-12 rounded-full bg-[#5556D1] shrink-0 flex items-center justify-center font-bold text-lg text-white">
-            🌐
-          </div>
-          <div>
-            <h1 className="text-base font-medium">5. Multi-Domain Industry Expertise</h1>
-            <p className="text-sm text-white/80 font-light">
-              Bespoke systems built for Aviation & ticketing, Fintech, LMS, Hospitals, and high-conversion E-commerce.
-            </p>
-          </div>
-        </div>
+      {/* ── Mobile ──────────────────────────────────────────────── */}
+      <div className="lg:hidden grid grid-cols-1 gap-3">
+        {cards.map((card) => (
+          <GlowCard key={card.title} glowColor={card.glowColor} customSize className="flex items-start space-x-4 p-4 w-full">
+            <div
+              className="w-12 h-12 rounded-full shrink-0 flex items-center justify-center font-bold text-lg text-white"
+              style={{ backgroundColor: card.color }}
+            >
+              {card.emoji}
+            </div>
+            <div className="space-y-0.5">
+              <h1 className="text-base font-medium">{card.title}</h1>
+              <p className="text-sm text-white/80 font-light">{card.desc}</p>
+            </div>
+          </GlowCard>
+        ))}
       </div>
     </section>
   );

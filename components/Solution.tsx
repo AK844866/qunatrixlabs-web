@@ -2,11 +2,14 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import type { Swiper as SwiperType } from "swiper"; 
+import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { GlowCard } from "@/components/ui/spotlight-card";
+
+const slideColors: Array<'blue' | 'purple' | 'cyan' | 'green'> = ['blue', 'purple', 'cyan', 'green'];
 
 const solutionData = [
   {
@@ -140,14 +143,18 @@ const Solutions = () => {
             }}
             className="pb-10 !overflow-visible"
           >
-            {solutionData.map((slide) => (
+            {solutionData.map((slide, idx) => (
               <SwiperSlide key={slide.id}>
-                <div className="bg-[#FFFFFF]/5 border border-white/10 rounded-3xl text-white flex flex-col justify-between overflow-hidden h-full">
+                <GlowCard
+                  glowColor={slideColors[idx % slideColors.length]}
+                  customSize
+                  className="flex flex-col justify-between h-full"
+                >
                   <div>
                     <img
                       src={slide.img}
                       alt={slide.title}
-                      className="w-full object-cover  "
+                      className="w-full object-cover"
                     />
                     <div className="p-6 space-y-4">
                       <h3 className="font-semibold lg:text-2xl text-xl">
@@ -159,17 +166,7 @@ const Solutions = () => {
                       <Link href="/contact" className="flex items-center space-x-2">
                         <span>Request Demo</span>
                         <span className="w-5 h-5 rounded-full bg-gradient-to-r from-[#0066FF] via-[#217AFF] to-[#A1BEFF] flex justify-center items-center">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={16}
-                            height={16}
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth={2}
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
+                          <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M9 6l6 6l-6 6" />
                           </svg>
@@ -177,7 +174,7 @@ const Solutions = () => {
                       </Link>
                     </div>
                   </div>
-                </div>
+                </GlowCard>
               </SwiperSlide>
             ))}
           </Swiper>

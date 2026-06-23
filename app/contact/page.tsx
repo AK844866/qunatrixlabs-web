@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import { GlowCard } from "@/components/ui/spotlight-card";
 
 function ContactFormContent() {
   const searchParams = useSearchParams();
@@ -75,17 +76,17 @@ function ContactFormContent() {
 
         <div className="space-y-6">
           {/* Email Card */}
-          <div className="bg-white/5 border border-white/10 p-6 rounded-3xl flex items-start space-x-4">
+          <GlowCard glowColor="red" customSize className="p-6 flex items-start space-x-4 w-full">
             <span className="text-2xl mt-1">📧</span>
             <div>
               <h4 className="font-bold text-white">Email Inquiries</h4>
               <p className="text-sm text-cyan-400 font-light mt-1">Sales@qunatrixlabs.com</p>
               <p className="text-sm text-white/60 font-light">info@qunatrixlabs.com</p>
             </div>
-          </div>
+          </GlowCard>
 
           {/* India Card */}
-          <div className="bg-white/5 border border-white/10 p-6 rounded-3xl flex items-start space-x-4">
+          <GlowCard glowColor="orange" customSize className="p-6 flex items-start space-x-4 w-full">
             <span className="text-2xl mt-1">🇮🇳</span>
             <div>
               <h4 className="font-bold text-white">India Office</h4>
@@ -94,10 +95,10 @@ function ContactFormContent() {
               </p>
               <p className="text-sm text-cyan-400 font-mono mt-1.5 font-semibold">+91-8448665756</p>
             </div>
-          </div>
+          </GlowCard>
 
           {/* USA Card */}
-          <div className="bg-white/5 border border-white/10 p-6 rounded-3xl flex items-start space-x-4">
+          <GlowCard glowColor="blue" customSize className="p-6 flex items-start space-x-4 w-full">
             <span className="text-2xl mt-1">🇺🇸</span>
             <div>
               <h4 className="font-bold text-white">USA Office</h4>
@@ -106,12 +107,12 @@ function ContactFormContent() {
               </p>
               <p className="text-sm text-cyan-400 font-mono mt-1.5 font-semibold">+1 (877) 209-6488</p>
             </div>
-          </div>
+          </GlowCard>
         </div>
       </div>
 
-      {/* Quote Form Formulator */}
-      <div className="lg:col-span-8 bg-white/[0.02] backdrop-blur-md border border-white/10 rounded-3xl p-8 shadow-2xl relative overflow-hidden">
+      {/* Quote Form */}
+      <GlowCard glowColor="purple" customSize className="lg:col-span-8 p-8 shadow-2xl relative overflow-hidden">
         {submitted ? (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -258,7 +259,7 @@ function ContactFormContent() {
             </button>
           </form>
         )}
-      </div>
+      </GlowCard>
     </div>
   );
 }

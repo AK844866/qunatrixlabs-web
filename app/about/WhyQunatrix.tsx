@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { GlowCard } from "@/components/ui/spotlight-card";
 
 const WhyQunatrix = () => {
   return (
@@ -27,105 +28,24 @@ const WhyQunatrix = () => {
                   Modern enterprises require tailor-made software solutions that run without compromises. Qunatrix Labs unites deep domain research, next-gen technology stacks, and reliable delivery practices to build high-performance systems.
                 </motion.p>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-                  className="xl:text-lg md:text-base text-sm text-white font-light flex items-center space-x-3 bg-white/5 lg:px-6 px-4 py-3 rounded-2xl"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="icon icon-tabler shrink-0 text-cyan-400"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M7 12l5 5l10 -10" />
-                    <path d="M2 12l5 5m5 -5l5 -5" />
-                  </svg>
-                  <p>Production-Grade Security (Audit Ready)</p>
-                </motion.div>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.4, ease: "easeInOut" }}
-                  className="xl:text-lg md:text-base text-sm text-white font-light flex items-center space-x-3 bg-white/5 lg:px-6 px-4 py-3 rounded-2xl"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="icon icon-tabler shrink-0 text-blue-400"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M7 12l5 5l10 -10" />
-                    <path d="M2 12l5 5m5 -5l5 -5" />
-                  </svg>
-                  <p>Flexible Cloud & On-Premises Deployments</p>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-                  className="xl:text-lg md:text-base text-sm text-white font-light flex items-center space-x-3 bg-white/5 lg:px-6 px-4 py-3 rounded-2xl"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="icon icon-tabler shrink-0 text-indigo-400"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M7 12l5 5l10 -10" />
-                    <path d="M2 12l5 5m5 -5l5 -5" />
-                  </svg>
-                  <p>Full API Synchronization & Documentation</p>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.6, ease: "easeInOut" }}
-                  className="xl:text-lg md:text-base text-sm text-white font-light flex items-center space-x-3 bg-white/5 lg:px-6 px-4 py-3 rounded-2xl"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="icon icon-tabler shrink-0 text-purple-400"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M7 12l5 5l10 -10" />
-                    <path d="M2 12l5 5m5 -5l5 -5" />
-                  </svg>
-                  <p>Dedicated Engineering Pods & Account Managers</p>
-                </motion.div>
+                {[
+                  { delay: 0.3, color: 'cyan' as const,   iconColor: 'text-cyan-400',   text: 'Production-Grade Security (Audit Ready)' },
+                  { delay: 0.4, color: 'blue' as const,   iconColor: 'text-blue-400',   text: 'Flexible Cloud & On-Premises Deployments' },
+                  { delay: 0.5, color: 'purple' as const, iconColor: 'text-indigo-400', text: 'Full API Synchronization & Documentation' },
+                  { delay: 0.6, color: 'orange' as const, iconColor: 'text-purple-400', text: 'Dedicated Engineering Pods & Account Managers' },
+                ].map((item) => (
+                  <motion.div key={item.text} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: item.delay, ease: 'easeInOut' }}>
+                    <GlowCard glowColor={item.color} customSize className="xl:text-lg md:text-base text-sm text-white font-light flex items-center space-x-3 lg:px-6 px-4 py-3 w-full">
+                      <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className={`icon icon-tabler shrink-0 ${item.iconColor}`}>
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 12l5 5l10 -10" />
+                        <path d="M2 12l5 5m5 -5l5 -5" />
+                      </svg>
+                      <p>{item.text}</p>
+                    </GlowCard>
+                  </motion.div>
+                ))}
               </div>
             </div>
 

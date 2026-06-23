@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { GlowCard } from "@/components/ui/spotlight-card";
 
 const OurObjectives = () => {
   const objectives = [
@@ -33,7 +34,7 @@ const OurObjectives = () => {
                   Our Objectives
                 </motion.h1>
 
-                <div className="space-y-4 pt-4">
+                <div className="space-y-3 pt-4">
                   {objectives.map((obj, index) => (
                     <motion.div
                       key={index}
@@ -44,25 +45,30 @@ const OurObjectives = () => {
                         delay: 0.1 * index,
                         ease: "easeInOut",
                       }}
-                      className="xl:text-lg md:text-base text-sm text-white/80 font-light flex items-start space-x-3 bg-white/[0.02] border border-white/5 p-4 rounded-2xl hover:border-blue-500/30 transition-all duration-300"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={24}
-                        height={24}
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="icon icon-tabler shrink-0 text-cyan-400"
+                      <GlowCard
+                        glowColor="orange"
+                        customSize
+                        className="xl:text-lg md:text-base text-sm text-white/80 font-light flex items-start space-x-3 p-4 w-full"
                       >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M7 12l5 5l10 -10" />
-                        <path d="M2 12l5 5m5 -5l5 -5" />
-                      </svg>
-                      <p>{obj}</p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width={24}
+                          height={24}
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="icon icon-tabler shrink-0 text-orange-400"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M7 12l5 5l10 -10" />
+                          <path d="M2 12l5 5m5 -5l5 -5" />
+                        </svg>
+                        <p>{obj}</p>
+                      </GlowCard>
                     </motion.div>
                   ))}
                 </div>
