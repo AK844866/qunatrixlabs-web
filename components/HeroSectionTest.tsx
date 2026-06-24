@@ -15,7 +15,7 @@ const GlassCard: React.FC<GlassCardProps> = ({ children, className = "" }) => (
   </div>
 );
 
-const VerifideHero: React.FC = () => {
+const QunatrixHero: React.FC = () => {
   return (
     <section className="h-screen snap-start bg-[#020203] text-white font-sans overflow-hidden relative selection:bg-blue-500/30">
       {/* --- BACKGROUND AMBIENCE --- */}
@@ -136,4 +136,4 @@ const VerifideHero: React.FC = () => {
   );
 };
 
-export default VerifideHero;
+export default QunatrixHero;

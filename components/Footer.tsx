@@ -57,7 +57,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center space-x-4">
               <Link
-                href="https://x.com/Verif_Labs"
+                href="https://x.com/QunatrixLabs"
                 target="blank"
                 aria-label="twitter"
                 className="text-white/60 hover:text-[#2563EB] cursor-pointer   transition duration-150"
@@ -92,7 +92,7 @@ export default function Footer() {
                 </svg>
               </Link>
               <Link
-                href="https://www.instagram.com/verifide.labs/?hl=en"
+                href="https://www.instagram.com/qunatrixlabs/?hl=en"
                 target="blank"
                 aria-label="instagram"
                 className="text-white/60 hover:text-[#2563EB] cursor-pointer   transition duration-150"
@@ -110,7 +110,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="https://www.linkedin.com/company/verifidelabs/?viewAsMember=true"
+                href="https://www.linkedin.com/company/qunatrixlabs/?viewAsMember=true"
                 target="blank"
                 aria-label="linkedin"
                 className="text-white/60 hover:text-[#2563EB] cursor-pointer   transition duration-150"

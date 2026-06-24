@@ -51,7 +51,7 @@ const WhyQunatrix = () => {
 
             <div className="w-full">
               <img
-                src="/img/about/why-verifide.webp"
+                src="/img/about/why-qunatrix.webp"
                 className="object-contain rounded-3xl shadow-2xl"
                 alt="Qunatrix Labs Advantages"
               />

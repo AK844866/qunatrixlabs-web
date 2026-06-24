@@ -67,7 +67,7 @@ export default function ForSection() {
               For Startups
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }} viewport={{ once: true }} className="xl:text-xl md:text-lg text-base text-white/80 font-light">
-              From Learning to Earning: The Verifide Path
+              From Learning to Earning: The Qunatrix Labs Path
             </motion.p>
           </div>
           <div className="grid md:grid-cols-3 grid-cols-1 xl:gap-10 gap-4">

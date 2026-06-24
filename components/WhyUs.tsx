@@ -45,7 +45,7 @@ const cards = [
     title: "5. Multi-Domain Industry Expertise",
     desc: "Custom software tailored to Aviation & ticketing, fintech pipelines, LMS learning portals, Hospital Services, and E-commerce.",
     glowColor: "purple" as const,
-    top: "auto", left: "auto", right: "34%", bottom: "18%", width: "32rem",
+    top: "auto", left: "auto", right: "34%", bottom: "-2%", width: "32rem",
   },
 ];
 

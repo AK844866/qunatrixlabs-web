@@ -83,7 +83,7 @@ const Testimonials = () => {
             <div className="flex flex-row lg:gap-6 gap-4 lg:pl-6 pl-4">
               <QuoteCard
                 glowColor="blue"
-                quote='"Verifide made learning engaging and results-driven. I landed my dream job 3 weeks faster"'
+                quote='"Qunatrix Labs made learning engaging and results-driven. I landed my dream job 3 weeks faster"'
                 avatar="https://xsgames.co/randomusers/assets/avatars/female/40.jpg"
                 name="Ananya Desai"
                 role="Graphic Designer"
@@ -91,7 +91,7 @@ const Testimonials = () => {
               <PhotoTile src="/img/home/image.png" alt="testimonial" />
               <QuoteCard
                 glowColor="cyan"
-                quote='"I completed 5 verified courses in 3 months through Verifide. My LinkedIn profile views increased by 180%"'
+                quote='"I completed 5 verified courses in 3 months through Qunatrix Labs. My LinkedIn profile views increased by 180%"'
                 avatar="https://xsgames.co/randomusers/assets/avatars/male/72.jpg"
                 name="Sanjay Nair"
                 role="Graphic Designer"
@@ -99,7 +99,7 @@ const Testimonials = () => {
               <PhotoTile src="/img/testi2.webp" alt="testi2" />
               <QuoteCard
                 glowColor="purple"
-                quote={`"Verifide's digital passport helped me showcase my skills to recruiters instantly. I landed my dream job 3 weeks faster"`}
+                quote={`"Qunatrix Labs' digital passport helped me showcase my skills to recruiters instantly. I landed my dream job 3 weeks faster"`}
                 avatar="https://xsgames.co/randomusers/assets/avatars/male/29.jpg"
                 name="Rahul Kapoor"
                 role="Graphic Designer"
@@ -120,7 +120,7 @@ const Testimonials = () => {
             <div className="flex flex-row lg:gap-6 gap-4 lg:pl-6 pl-4">
               <QuoteCard
                 glowColor="orange"
-                quote={`"I received 12 job offers after completing Verifide's learning quests. The verified credentials made my skills instantly credible."`}
+                quote={`"I received 12 job offers after completing Qunatrix Labs' learning quests. The verified credentials made my skills instantly credible."`}
                 avatar="https://xsgames.co/randomusers/assets/avatars/female/54.jpg"
                 name="Sneha Patel"
                 role="HR Director"
@@ -128,7 +128,7 @@ const Testimonials = () => {
               <PhotoTile src="/img/testi4.webp" alt="testi4" />
               <QuoteCard
                 glowColor="red"
-                quote={`"Verifide's community feature connected me with 50+ designers across India. Recruiters now reach out to me directly"`}
+                quote={`"Qunatrix Labs' community feature connected me with 50+ designers across India. Recruiters now reach out to me directly"`}
                 avatar="https://xsgames.co/randomusers/assets/avatars/male/24.jpg"
                 name="Vikram Reddy"
                 role="Data Analyst"
@@ -144,7 +144,7 @@ const Testimonials = () => {
               <PhotoTile src="/img/testi5.webp" alt="testi5" />
               <QuoteCard
                 glowColor="blue"
-                quote={`"Verifide's verified credentials increased my freelance rates by 35%. Clients trust my skills immediately"`}
+                quote={`"Qunatrix Labs' verified credentials increased my freelance rates by 35%. Clients trust my skills immediately"`}
                 avatar="https://xsgames.co/randomusers/assets/avatars/male/28.jpg"
                 name="Rohan Gupta"
                 role="Developer"
